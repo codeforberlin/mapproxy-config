@@ -15,8 +15,53 @@ Run local
 ---------
 
 ```
-mapproxy-util serve-develop config.yml
+make serve
 ```
+
+Deploment
+---------
+
+```
+make wsgi  # creates the wsgi.py script
+```
+
+Create a systemd service script in `/etc/systemd/system/mapproxy.service`.
+
+```
+[Unit]
+Description=Mapproxy gunicorn daemon
+After=network.target
+
+[Service]
+User=tiles
+Group=tiles
+WorkingDirectory=/srv/tiles/proxy
+ExecStart=/srv/tiles/proxy/env/bin/gunicorn --access-logfile /var/log/mapproxy/access.log --error-logfile /var/log/mapproxy/error.log --bind unix:/tmp/mapproxy.sock --workers 9 wsgi:application
+
+[Install]
+WantedBy=multi-user.target
+```
+
+```bash
+systemctl daemon-reload
+systemctl start mapproxy
+```
+
+Add to nginx configuration:
+
+```
+    location /proxy/ {
+        proxy_pass http://unix:/tmp/mapproxy.sock;
+        proxy_set_header Host $http_host;
+        proxy_set_header X-Script-Name /proxy;
+    }
+```
+
+```bash
+nginx -t
+systemctl start nginx
+```
+
 
 Useful WMS query params
 -----------------------
