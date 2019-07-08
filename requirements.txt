@@ -1,3 +1,2 @@
 mapproxy
-PyYAML
 gunicorn
