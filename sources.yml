@@ -8,6 +8,11 @@
   url: http://sgx.geodatenzentrum.de/wms_topplus_open
   layer: p5
 
+- name: webatlas
+  title: WebAtlas Berlin
+  url: https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_webatlasberlin
+  layer: 0
+
 - name: zoom
   title: Berlin Zoom
   url: https://fbinter.stadt-berlin.de/fb/wms/senstadt/berlinzoom
