@@ -50,7 +50,7 @@ for source in sources:
             'layers': source['layer'],
             'style': 'default',
             'format': 'png',
-            'transparent': True
+            'transparent': source['transparent']
         }
     }
 
