@@ -64,6 +64,12 @@
   layer: 0
   transparent: false
 
+- name: '2013'
+  title: Digitale farbige Trueorthophotos 2013
+  url: https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2013
+  layer: 0
+  transparent: false
+
 - name: '1953'
   title: Berlin 1953
   url: https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild1953
