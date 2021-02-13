@@ -10,6 +10,11 @@
   layer: p5
   transparent: false
 
+- name: webatlas
+  title: WebAtlas Berlin
+  url: https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_webatlasberlin
+  layer: 0
+
 - name: zoom
   title: Berlin Zoom
   url: https://fbinter.stadt-berlin.de/fb/wms/senstadt/berlinzoom
