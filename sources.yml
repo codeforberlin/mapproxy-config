@@ -1,3 +1,10 @@
+- name: k_wfs_baumbestand
+  title: Baumbestand Berlin
+  url: https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_wfs_baumbestand
+  layer: 0
+  transparent: false
+
+Standard:	
 - name: topplus_web
   title: TopPlusOpen web
   url: http://sgx.geodatenzentrum.de/wms_topplus_open
