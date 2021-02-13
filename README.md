@@ -1,5 +1,5 @@
-fis-broker-proxy
-================
+mapproxy-config
+===============
 
 Install
 -------
@@ -8,21 +8,21 @@ Install
 python3 -m venv env
 source env/bin/activate
 pip install -r requirements.txt
-make  # will produce config.yml
 ```
 
 Run local
 ---------
 
 ```
-make serve
+mapproxy-util serve-develop config.yml
 ```
 
 Deploment
 ---------
 
 ```
-make wsgi  # creates the wsgi.py script
+# creates the wsgi.py script
+mapproxy-util create -t wsgi-app -f config.yml wsgi.py
 ```
 
 Create a systemd service script in `/etc/systemd/system/mapproxy.service`.

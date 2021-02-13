@@ -14,5 +14,4 @@ dist
 
 cache_data
 
-config.yml
 wsgi.py
