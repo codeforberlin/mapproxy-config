@@ -35,6 +35,14 @@ layers:
   sources: [2019_cache]
   title: Digitale farbige Orthophotos 2019 (DOP20RGB)
 
+- name: '2020'
+  sources: [2021_cache]
+  title: Digitale farbige Orthophotos 2020 (DOP20RGB)
+
+- name: '2021'
+  sources: [2021_cache]
+  title: Digitale farbige Orthophotos 2021 (DOP20RGBI)
+
 - name: alkis_30
   sources: [alkis_30_cache]
   title: ALKIS Berlin (Amtliches Liegenschaftskatasterinformationssystem)
@@ -116,6 +124,14 @@ caches:
   2019_cache:
     grids: [mercator]
     sources: [2019_source]
+
+  2020_cache:
+    grids: [mercator]
+    sources: [2020_source]
+
+  2021_cache:
+    grids: [mercator]
+    sources: [2021_source]
 
   alkis_30_cache:
     grids: [mercator]
@@ -244,6 +260,28 @@ sources:
       style: default
       transparent: false
       url: 'https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2019_rgb'
+    supported_srs: ['EPSG:25833']
+    type: wms
+    wms_opts: {version: 1.3.0}
+
+  2020_source:
+    req:
+      format: png
+      layers: 0
+      style: default
+      transparent: false
+      url: 'https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2020_rgb'
+    supported_srs: ['EPSG:25833']
+    type: wms
+    wms_opts: {version: 1.3.0}
+
+  2021_source:
+    req:
+      format: png
+      layers: 0
+      style: default
+      transparent: false
+      url: 'https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2021_rgb'
     supported_srs: ['EPSG:25833']
     type: wms
     wms_opts: {version: 1.3.0}
