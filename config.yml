@@ -40,7 +40,7 @@ layers:
   title: Digitale farbige TrueOrthophotos 2020 (TrueDOP20RGB) - Sommerbefliegung
 
 - name: '2020'
-  sources: [2021_cache]
+  sources: [2020_cache]
   title: Digitale farbige Orthophotos 2020 (DOP20RGB)
 
 - name: '2021'
