@@ -47,8 +47,8 @@ Run local
 mapproxy-util serve-develop config.yml
 ```
 
-Deploment
----------
+Deployment
+----------
 
 ```
 # creates the wsgi.py script
