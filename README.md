@@ -63,10 +63,10 @@ Description=Mapproxy gunicorn daemon
 After=network.target
 
 [Service]
-User=tiles
-Group=tiles
-WorkingDirectory=/srv/tiles/proxy
-ExecStart=/srv/tiles/proxy/env/bin/gunicorn --access-logfile /var/log/mapproxy/access.log --error-logfile /var/log/mapproxy/error.log --bind unix:/tmp/mapproxy.sock --workers 9 wsgi:application
+User=mapproxy
+Group=mapproxy
+WorkingDirectory=/home/mapproxy/mapproxy-config
+ExecStart=/home/mapproxy/mapproxy-config/env/bin/gunicorn --access-logfile /var/log/mapproxy/access.log --error-logfile /var/log/mapproxy/error.log --bind 0.0.0.0:9000 --workers 3 wsgi:application
 
 [Install]
 WantedBy=multi-user.target
