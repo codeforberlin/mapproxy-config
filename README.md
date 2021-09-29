@@ -95,6 +95,13 @@ nginx -t
 systemctl start nginx
 ```
 
+Debugging
+---------
+
+The [Mapproxy Debug Page](https://mapproxy.codefor.de/demo/) lists all layers that are avaliable based on the config.
+
+However, there is an issue with the projection, so the previews do not work.
+
 
 Useful WMS query params
 -----------------------
