@@ -98,10 +98,40 @@ systemctl start nginx
 Debugging
 ---------
 
-The [Mapproxy Debug Page](https://mapproxy.codefor.de/demo/) lists all layers that are avaliable based on the config.
+_Which config sources are recognized by Mapproxy?_
 
+Use the [Mapproxy Debug Page](https://mapproxy.codefor.de/demo/). It lists all layers that are avaliable based on the config.
 However, there is an issue with the projection, so the previews do not work.
 
+_Which URLs does the Mapproxy call?_
+
+Uncomment [log.ini](log.ini), restart and use `cat mapproxy-config/mapproxy_log/source-requests.log` to see the requested URLs.
+
+Copy one of those URLs and fiddle with the URL params the browser until the right image is shown.
+
+_Remeber to delete the file system cache._
+
+`ls mapproxy-config/cache_data/` shows all layer that have cached images. Remove the folder to trigger a cache refresh, eg `rm -rf mapproxy-config/cache_data/alkis_30_cache_EPSG900913`
+
+_Remeber to refresh the browser cache._
+
+Even with a fresh file system cache, images might still be cached in the browser. Unfortunately, iD Editor does not allow hard reloads to refresh this data. One workaround is, to zoom and pan the map so new images are requested.
+
+_Which layer are avaliable for a given WMS service?_
+
+Use URLs like `https://fbinter.stadt-berlin.de/fb/wms/senstadt/wmsk_alkis?service=WMS&request=GetCapabilities&version=1.3.0` to create a list of layer IDs with description. Examples are [layer_alkis_berlin.md] and [layer_strassenbefahrung_berlin.md].
+
+_Mapproxy documentation._
+
+https://mapproxy.org/docs/latest/index.html
+
+To see the installed version of mapproxy:
+```
+cd mapproxy-config
+source env/bin/activate
+mapproxy-util --version
+# MapProxy 1.13.2
+```
 
 Useful WMS query params
 -----------------------
@@ -109,7 +139,7 @@ Useful WMS query params
 ```
 ?service=WMS&request=GetCapabilities&version=1.3.0
 
-?format=image%2Fpng&height=512&bbox=388800.010065,5818137.195276,393794.488433,5821374.047744&layers=0&srs=ESPG:25833&style=default&service=WMS&request=GetMap&width=512&version=1.1.1
+?format=image%2Fpng&height=512&bbox=388800.010065,5818137.195276,393794.488433,5821374.047744&layers=0&srs=ESPG:25833&style=default&service=WMS&request=GetMap&width=512&version=1.3.0
 
-?width=512&height=512&bbox=388800,5818137,393794,5821374&layers=0&srs=EPSG:4326&styles=default&format=image/png&service=WMS&request=GetMap&version=1.1.1
+?width=512&height=512&bbox=388800,5818137,393794,5821374&layers=0&srs=EPSG:4326&styles=default&format=image/png&service=WMS&request=GetMap&version=1.3.0
 ```
