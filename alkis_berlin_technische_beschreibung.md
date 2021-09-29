@@ -4,7 +4,8 @@
 
 Source https://fbinter.stadt-berlin.de/fb/wms/senstadt/wmsk_alkis?service=WMS&request=GetCapabilities&version=1.3.0
 
-> ALKIS Berlin (Amtliches Liegenschaftskatasterinformationssystem)</Title>
+> ALKIS Berlin (Amtliches Liegenschaftskatasterinformationssystem)
+>
 > In ALKIS Berlin werden die aktuellen Grundrissdaten des Liegenschaftskatasters flächendeckend geführt.
 
 | `<name>` | `<Title>` | `<Abstract>` |
