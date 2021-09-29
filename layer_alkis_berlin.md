@@ -1,4 +1,4 @@
-# Alkis Berlin Technische Beschreibung
+# Layer definition Alkis Berlin
 
 ~~Source https://fbinter.stadt-berlin.de/fb_daten/beschreibung/datenformatbeschreibung/datenformatbeschreibung_alkis_berlin.pdf~~ – Diese Layer IDs funktionierne nicht.
 
