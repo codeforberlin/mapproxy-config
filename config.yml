@@ -103,6 +103,10 @@ layers:
   sources: [baumbestand_0_1_3_4_cache]
   title: Baumbestand Berlin - Straßenbäume und Anlagenbäume mit und ohne Datenbankeintrag
 
+- name: baumbestand_0_1_3_4_layers
+  sources: [baumbestand_0_1_3_4_layers_cache]
+  title: Baumbestand Berlin - Straßenbäume und Anlagenbäume mit und ohne Datenbankeintrag
+
 caches:
 
   1928_cache:
@@ -200,6 +204,10 @@ caches:
   baumbestand_0_1_3_4_cache:
     grids: [mercator]
     sources: [baumbestand_0_source, baumbestand_1_source, baumbestand_3_source, baumbestand_4_source]
+
+  baumbestand_0_1_3_4_layers_cache:
+    grids: [mercator]
+    sources: [baumbestand_0_1_3_4_layers_source]
 
 sources:
 
@@ -451,6 +459,17 @@ sources:
       layers: 4
       style: default
       transparent: true
+      url: 'https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_wfs_baumbestand'
+    supported_srs: ['EPSG:25833']
+    type: wms
+    wms_opts: {version: 1.3.0}
+
+  baumbestand_0_1_3_4_layers_source:
+    req:
+      format: png
+      layers: 0,1,3,4
+      style: default
+      transparent: false
       url: 'https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_wfs_baumbestand'
     supported_srs: ['EPSG:25833']
     type: wms
