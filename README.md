@@ -107,7 +107,7 @@ Useful WMS query params
 -----------------------
 
 ```
-?service=WMS&request=GetCapabilities&version=1.1.1
+?service=WMS&request=GetCapabilities&version=1.3.0
 
 ?format=image%2Fpng&height=512&bbox=388800.010065,5818137.195276,393794.488433,5821374.047744&layers=0&srs=ESPG:25833&style=default&service=WMS&request=GetMap&width=512&version=1.1.1
 
