@@ -308,8 +308,8 @@ sources:
   alkis_30_source:
     req:
       format: png
-      layers: 3
-      style: defaul
+      layers: 0
+      style: default
       transparent: false
       url: 'https://fbinter.stadt-berlin.de/fb/wms/senstadt/wmsk_alkis'
     supported_srs: ['EPSG:25833']
