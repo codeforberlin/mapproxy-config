@@ -55,6 +55,8 @@ Deployment
 mapproxy-util create -t wsgi-app -f config.yml wsgi.py
 ```
 
+Note: We don't use `make_wsgi_app(…, reloader=True)` but restart the server manually. The auto reloading would only restart if the config is valid, which would hide a broken edit. The manual reload will make the error visible.
+
 Create a systemd service script in `/etc/systemd/system/mapproxy.service`.
 
 ```
