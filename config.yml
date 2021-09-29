@@ -48,7 +48,7 @@ layers:
   title: Digitale farbige Orthophotos 2021 (DOP20RGBI)
 
 - name: alkis_30
-  sources: [alkis_30_source]
+  sources: [alkis_30_cache]
   title: ALKIS Berlin (Amtliches Liegenschaftskatasterinformationssystem)
 
 - name: atkis_dom
