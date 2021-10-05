@@ -1,0 +1,54 @@
+'1928':
+  deprecated: true
+  deprecation_note: Switch to `https://tiles.codefor.de/berlin-1928/{z}/{x}/{y}.png`. Example at https://luftbilder.berlin.codefor.de/.
+'1953':
+  no_comment:
+'2013':
+  no_comment:
+2015_cir:
+  no_comment:
+2016_cir:
+  no_comment:
+'2018':
+  deprecated: true
+  deprecation_note: Switch to `https://tiles.codefor.de/berlin-2018-dop20rgb/{z}/{x}/{y}.png`. Example at https://luftbilder.berlin.codefor.de/.
+'2019':
+  deprecated: true
+  deprecation_note: Switch to `https://tiles.codefor.de/berlin-2019-dop20rgb/{z}/{x}/{y}.png`. Example at https://luftbilder.berlin.codefor.de/.
+'2020_true':
+  no_comment:
+'2020':
+  deprecated: true
+  deprecation_note: Switch to `https://tiles.codefor.de/berlin-2020-dop20rgb/{z}/{x}/{y}.png`. Example at https://luftbilder.berlin.codefor.de/.
+  osm_editing_note: Proxied data is blurred for some reason (the original data is not).
+'2021':
+  deprecated: true
+  deprecation_note: Switch to ` https://tiles.codefor.de/berlin-2021-dop20rgbi`. Example at https://luftbilder.berlin.codefor.de/.
+alkis_30:
+  no_comment:
+atkis_dom:
+  osm_editing_note: OK for trees and houses, but otherwise pretty pixelated.
+atkis_dgm_1:
+  osm_editing_note: Don't use. Level of detail not feasable for mapping.
+atkis_dgm_3:
+  osm_editing_note: TODO check; shows only house numbers?; maybe background needs to be white?
+strassenbefahrung:
+  no_comment:
+topplus_p5:
+  osm_editing_note: Don't use. Other data is better for mapping.
+topplus_web:
+  osm_editing_note: Don't use. Other data is better for mapping.
+webatlas:
+  osm_editing_note: Don't use. Other data is better for mapping.
+zoom:
+  no_comment:
+baumbestand_0:
+  osm_editing_note: Merged layer is recommended for mapping.
+baumbestand_1:
+  osm_editing_note: Merged layer is recommended for mapping.
+baumbestand_3:
+  osm_editing_note: Merged layer is recommended for mapping.
+baumbestand_4:
+  osm_editing_note: Merged layer is recommended for mapping.
+baumbestand_0_1_3_4_merged:
+  no_comment:
