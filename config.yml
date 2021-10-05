@@ -59,10 +59,6 @@ layers:
   sources: [atkis_dgm_1_cache]
   title: "ATKIS\xAE DGM - Digitales Gel\xE4ndemodell"
 
-- name: atkis_dgm_3
-  sources: [atkis_dgm_3_cache]
-  title: "ATKIS\xAE DGM - Digitales Gel\xE4ndemodell"
-
 - name: strassenbefahrung
   sources: [strassenbefahrung_cache]
   title: "Stra\xDFenbefahrung 2014"
@@ -152,10 +148,6 @@ caches:
   atkis_dgm_1_cache:
     grids: [mercator]
     sources: [atkis_dgm_1_source]
-
-  atkis_dgm_3_cache:
-    grids: [mercator]
-    sources: [atkis_dgm_3_source]
 
   atkis_dom_cache:
     grids: [mercator]
@@ -328,17 +320,6 @@ sources:
     req:
       format: png
       layers: 1
-      style: default
-      transparent: true
-      url: 'https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_dgm1'
-    supported_srs: ['EPSG:25833']
-    type: wms
-    wms_opts: {version: 1.3.0}
-
-  atkis_dgm_3_source:
-    req:
-      format: png
-      layers: 3
       style: default
       transparent: true
       url: 'https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_dgm1'
