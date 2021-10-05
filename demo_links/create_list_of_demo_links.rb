@@ -25,19 +25,19 @@ config['layers'].each do |layer|
   list << <<~EOH
     ## #{comments[layer['name']]['deprecated'] ? '⚠️' : ''} #{layer['title']}
 
-    <img src="#{tms_url.gsub('{z}', '16').gsub('{x}', '35198').gsub('{y}', '21494')}" width=100 alt="Demo image for #{layer['title']}" />
+    <img src="#{tms_url.gsub('{z}', '16').gsub('{x}', '35198').gsub('{y}', '21494')}" width=200 alt="Demo image for #{layer['title']}" />
 
     #{comments[layer['name']]['deprecated'] ? "> ⚠️ DEPRECATED: #{comments[layer['name']]['deprecation_note']}" : ''}
 
-    * TMS URL: `#{tms_url}`
+    * TMS URL: ```#{tms_url}```
 
-    * [Preview layer](https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=#{tms_url})
+    * <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=#{tms_url})">Preview layer</a>
 
-    * [Use layer to edit OSM](https://www.openstreetmap.org/edit?editor=id#background=custom:#{tms_url}&disable_features=boundaries&map=20.00/52.47241/13.44637)
+    * <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:#{tms_url}&disable_features=boundaries&map=20.00/52.47241/13.44637)">Use layer to edit OSM</a>
       #{(note = comments[layer['name']]['osm_editing_note']) ? "> #{note}" : ''}
 
     <details>
-    <summary>Show config options</summary>
+    <summary>Show layer config options</summary>
 
     ```
     #{source_data.inspect}
