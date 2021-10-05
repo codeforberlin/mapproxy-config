@@ -2,7 +2,8 @@
   deprecated: true
   deprecation_note: Switch to `https://tiles.codefor.de/berlin-1928/{z}/{x}/{y}.png`. Example at https://luftbilder.berlin.codefor.de/.
 '1953':
-  no_comment:
+  deprecated: true
+  deprecation_note: Switch to `https://tiles.codefor.de/berlin-1953/{z}/{x}/{y}.png`. Example at https://maps.berlin.codefor.de/.
 '2013':
   no_comment:
 2015_cir:
