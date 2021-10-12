@@ -31,9 +31,9 @@ config['layers'].each do |layer|
 
     * TMS URL: ```#{tms_url}```
 
-    * <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=#{tms_url})">Preview layer</a>
+    * <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=#{tms_url}">Preview layer</a>
 
-    * <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:#{tms_url}&disable_features=boundaries&map=20.00/52.47241/13.44637)">Use layer to edit OSM</a>
+    * <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:#{tms_url}&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
       #{(note = comments[layer['name']]['osm_editing_note']) ? "> #{note}" : ''}
 
     <details>
