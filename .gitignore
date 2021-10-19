@@ -13,5 +13,6 @@ dist
 *.egg-info
 
 cache_data
+mapproxy_log
 
 wsgi.py
