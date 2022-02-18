@@ -78,3 +78,5 @@ Also https://fbinter.stadt-berlin.de/fb_daten/beschreibung/datenformatbeschreibu
 | `3` | Trinkwasserbrunnen und Wasserspender |
 | `2` | Touchpoint |
 | `1` | Verkehrszeichen |
+**Mind the order of layers!** The order of layers has to be 68...1. The higher layers are mostly areas which will hide the lower layers which are mostly points/lines/smaller areas.
+
