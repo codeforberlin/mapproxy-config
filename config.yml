@@ -1,106 +1,104 @@
 globals: {}
 grids:
-  mercator: {base: GLOBAL_MERCATOR}
+  mercator: { base: GLOBAL_MERCATOR }
 services:
   demo: {}
-  tms: {origin: nw, use_grid_names: true}
+  tms: { origin: nw, use_grid_names: true }
 
 layers:
+  - name: "1928"
+    sources: [1928_cache]
+    title: Berlin 1928
 
-- name: '1928'
-  sources: [1928_cache]
-  title: Berlin 1928
+  - name: "1953"
+    sources: [1953_cache]
+    title: Berlin 1953
 
-- name: '1953'
-  sources: [1953_cache]
-  title: Berlin 1953
+  - name: "2013"
+    sources: [2013_cache]
+    title: Digitale farbige Orthophotos 2013 (DOP20RGB)
 
-- name: '2013'
-  sources: [2013_cache]
-  title: Digitale farbige Orthophotos 2013 (DOP20RGB)
+  - name: 2015_cir
+    sources: [2015_cir_cache]
+    title: Digitale Color-Infrarot-Orthophotos 2015 (DOP20CIR)
 
-- name: 2015_cir
-  sources: [2015_cir_cache]
-  title: Digitale Color-Infrarot-Orthophotos 2015 (DOP20CIR)
+  - name: 2016_cir
+    sources: [2016_cir_cache]
+    title: Digitale Color-Infrarot-Orthophotos 2016 (DOP20CIR)
 
-- name: 2016_cir
-  sources: [2016_cir_cache]
-  title: Digitale Color-Infrarot-Orthophotos 2016 (DOP20CIR)
+  - name: "2018"
+    sources: [2018_cache]
+    title: Digitale farbige Orthophotos 2018 (DOP20RGB)
 
-- name: '2018'
-  sources: [2018_cache]
-  title: Digitale farbige Orthophotos 2018 (DOP20RGB)
+  - name: "2019"
+    sources: [2019_cache]
+    title: Digitale farbige Orthophotos 2019 (DOP20RGB)
 
-- name: '2019'
-  sources: [2019_cache]
-  title: Digitale farbige Orthophotos 2019 (DOP20RGB)
+  - name: "2020_true"
+    sources: [2020_true_cache]
+    title: Digitale farbige TrueOrthophotos 2020 (TrueDOP20RGB) - Sommerbefliegung
 
-- name: '2020_true'
-  sources: [2020_true_cache]
-  title: Digitale farbige TrueOrthophotos 2020 (TrueDOP20RGB) - Sommerbefliegung
+  - name: "2020"
+    sources: [2020_cache]
+    title: Digitale farbige Orthophotos 2020 (DOP20RGB)
 
-- name: '2020'
-  sources: [2020_cache]
-  title: Digitale farbige Orthophotos 2020 (DOP20RGB)
+  - name: "2021"
+    sources: [2021_cache]
+    title: Digitale farbige Orthophotos 2021 (DOP20RGBI)
 
-- name: '2021'
-  sources: [2021_cache]
-  title: Digitale farbige Orthophotos 2021 (DOP20RGBI)
+  - name: alkis_30
+    sources: [alkis_30_cache]
+    title: ALKIS Berlin (Amtliches Liegenschaftskatasterinformationssystem)
 
-- name: alkis_30
-  sources: [alkis_30_cache]
-  title: ALKIS Berlin (Amtliches Liegenschaftskatasterinformationssystem)
+  - name: atkis_dom
+    sources: [atkis_dom_cache]
+    title: "ATKIS\xAE DOM - Digitales Oberfl\xE4chenmodell"
 
-- name: atkis_dom
-  sources: [atkis_dom_cache]
-  title: "ATKIS\xAE DOM - Digitales Oberfl\xE4chenmodell"
+  - name: atkis_dgm_1
+    sources: [atkis_dgm_1_cache]
+    title: "ATKIS\xAE DGM - Digitales Gel\xE4ndemodell"
 
-- name: atkis_dgm_1
-  sources: [atkis_dgm_1_cache]
-  title: "ATKIS\xAE DGM - Digitales Gel\xE4ndemodell"
+  - name: strassenbefahrung
+    sources: [strassenbefahrung_cache]
+    title: "Stra\xDFenbefahrung 2014"
 
-- name: strassenbefahrung
-  sources: [strassenbefahrung_cache]
-  title: "Stra\xDFenbefahrung 2014"
+  - name: topplus_p5
+    sources: [topplus_p5_cache]
+    title: TopPlusOpen
 
-- name: topplus_p5
-  sources: [topplus_p5_cache]
-  title: TopPlusOpen
+  - name: topplus_web
+    sources: [topplus_web_cache]
+    title: TopPlusOpen web
 
-- name: topplus_web
-  sources: [topplus_web_cache]
-  title: TopPlusOpen web
+  - name: webatlas
+    sources: [webatlas_cache]
+    title: WebAtlas Berlin
 
-- name: webatlas
-  sources: [webatlas_cache]
-  title: WebAtlas Berlin
+  - name: zoom
+    sources: [zoom_cache]
+    title: Berlin Zoom
 
-- name: zoom
-  sources: [zoom_cache]
-  title: Berlin Zoom
+  - name: baumbestand_0
+    sources: [baumbestand_0_cache]
+    title: Baumbestand Berlin - Straßenbäume
 
-- name: baumbestand_0
-  sources: [baumbestand_0_cache]
-  title: Baumbestand Berlin - Straßenbäume
+  - name: baumbestand_1
+    sources: [baumbestand_1_cache]
+    title: Baumbestand Berlin - Anlagenbäume
 
-- name: baumbestand_1
-  sources: [baumbestand_1_cache]
-  title: Baumbestand Berlin - Anlagenbäume
+  - name: baumbestand_3
+    sources: [baumbestand_3_cache]
+    title: Baumbestand Berlin - Anlagenbäume ohne Datenbankeintrag
 
-- name: baumbestand_3
-  sources: [baumbestand_3_cache]
-  title: Baumbestand Berlin - Anlagenbäume ohne Datenbankeintrag
+  - name: baumbestand_4
+    sources: [baumbestand_4_cache]
+    title: Baumbestand Berlin - Straßenbäume ohne Datenbankeintrag
 
-- name: baumbestand_4
-  sources: [baumbestand_4_cache]
-  title: Baumbestand Berlin - Straßenbäume ohne Datenbankeintrag
-
-- name: baumbestand_0_1_3_4_merged
-  sources: [baumbestand_0_1_3_4_merged_cache]
-  title: Baumbestand Berlin - Straßenbäume und Anlagenbäume mit und ohne Datenbankeintrag
+  - name: baumbestand_0_1_3_4_merged
+    sources: [baumbestand_0_1_3_4_merged_cache]
+    title: Baumbestand Berlin - Straßenbäume und Anlagenbäume mit und ohne Datenbankeintrag
 
 caches:
-
   1928_cache:
     grids: [mercator]
     sources: [1928_source]
@@ -194,17 +192,16 @@ caches:
     sources: [baumbestand_0_1_3_4_merged_source]
 
 sources:
-
   1928_source:
     req:
       format: png
       layers: 0
       style: default
       transparent: false
-      url: 'https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild1928'
-    supported_srs: ['EPSG:25833']
+      url: "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild1928"
+    supported_srs: ["EPSG:25833"]
     type: wms
-    wms_opts: {version: 1.3.0}
+    wms_opts: { version: 1.3.0 }
 
   1953_source:
     req:
@@ -212,10 +209,10 @@ sources:
       layers: 0
       style: default
       transparent: false
-      url: 'https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild1953'
-    supported_srs: ['EPSG:25833']
+      url: "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild1953"
+    supported_srs: ["EPSG:25833"]
     type: wms
-    wms_opts: {version: 1.3.0}
+    wms_opts: { version: 1.3.0 }
 
   2013_source:
     req:
@@ -223,10 +220,10 @@ sources:
       layers: 0
       style: default
       transparent: false
-      url: 'https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2013'
-    supported_srs: ['EPSG:25833']
+      url: "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2013"
+    supported_srs: ["EPSG:25833"]
     type: wms
-    wms_opts: {version: 1.3.0}
+    wms_opts: { version: 1.3.0 }
 
   2015_cir_source:
     req:
@@ -234,10 +231,10 @@ sources:
       layers: 0
       style: default
       transparent: false
-      url: 'https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2015_cir'
-    supported_srs: ['EPSG:25833']
+      url: "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2015_cir"
+    supported_srs: ["EPSG:25833"]
     type: wms
-    wms_opts: {version: 1.3.0}
+    wms_opts: { version: 1.3.0 }
 
   2016_cir_source:
     req:
@@ -245,10 +242,10 @@ sources:
       layers: 0
       style: default
       transparent: false
-      url: 'https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2016_cir'
-    supported_srs: ['EPSG:25833']
+      url: "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2016_cir"
+    supported_srs: ["EPSG:25833"]
     type: wms
-    wms_opts: {version: 1.3.0}
+    wms_opts: { version: 1.3.0 }
 
   2018_source:
     req:
@@ -256,10 +253,10 @@ sources:
       layers: 0
       style: default
       transparent: false
-      url: 'https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2018_rgb'
-    supported_srs: ['EPSG:25833']
+      url: "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2018_rgb"
+    supported_srs: ["EPSG:25833"]
     type: wms
-    wms_opts: {version: 1.3.0}
+    wms_opts: { version: 1.3.0 }
 
   2019_source:
     req:
@@ -267,10 +264,10 @@ sources:
       layers: 0
       style: default
       transparent: false
-      url: 'https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2019_rgb'
-    supported_srs: ['EPSG:25833']
+      url: "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2019_rgb"
+    supported_srs: ["EPSG:25833"]
     type: wms
-    wms_opts: {version: 1.3.0}
+    wms_opts: { version: 1.3.0 }
 
   2020_true_source:
     req:
@@ -278,10 +275,10 @@ sources:
       layers: 0
       style: default
       transparent: false
-      url: 'https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2020_true_rgb'
-    supported_srs: ['EPSG:25833']
+      url: "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2020_true_rgb"
+    supported_srs: ["EPSG:25833"]
     type: wms
-    wms_opts: {version: 1.3.0}
+    wms_opts: { version: 1.3.0 }
 
   2020_source:
     req:
@@ -289,10 +286,10 @@ sources:
       layers: 0
       style: default
       transparent: false
-      url: 'https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2020_rgb'
-    supported_srs: ['EPSG:25833']
+      url: "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2020_rgb"
+    supported_srs: ["EPSG:25833"]
     type: wms
-    wms_opts: {version: 1.3.0}
+    wms_opts: { version: 1.3.0 }
 
   2021_source:
     req:
@@ -300,10 +297,10 @@ sources:
       layers: 0
       style: default
       transparent: false
-      url: 'https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2021_rgb'
-    supported_srs: ['EPSG:25833']
+      url: "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2021_rgb"
+    supported_srs: ["EPSG:25833"]
     type: wms
-    wms_opts: {version: 1.3.0}
+    wms_opts: { version: 1.3.0 }
 
   alkis_30_source:
     req:
@@ -311,10 +308,10 @@ sources:
       layers: 30,5,21,0,29,4,7,13,9,25,8,18,20,16,28,12,24,22,34,26,47,46,44,43
       style: default
       transparent: false
-      url: 'https://fbinter.stadt-berlin.de/fb/wms/senstadt/wmsk_alkis'
-    supported_srs: ['EPSG:25833']
+      url: "https://fbinter.stadt-berlin.de/fb/wms/senstadt/wmsk_alkis"
+    supported_srs: ["EPSG:25833"]
     type: wms
-    wms_opts: {version: 1.3.0}
+    wms_opts: { version: 1.3.0 }
 
   atkis_dgm_1_source:
     req:
@@ -322,10 +319,10 @@ sources:
       layers: 1
       style: default
       transparent: true
-      url: 'https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_dgm1'
-    supported_srs: ['EPSG:25833']
+      url: "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_dgm1"
+    supported_srs: ["EPSG:25833"]
     type: wms
-    wms_opts: {version: 1.3.0}
+    wms_opts: { version: 1.3.0 }
 
   atkis_dom_source:
     req:
@@ -333,10 +330,10 @@ sources:
       layers: 1
       style: default
       transparent: false
-      url: 'https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_dom'
-    supported_srs: ['EPSG:25833']
+      url: "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_dom"
+    supported_srs: ["EPSG:25833"]
     type: wms
-    wms_opts: {version: 1.3.0}
+    wms_opts: { version: 1.3.0 }
 
   strassenbefahrung_source:
     req:
@@ -344,10 +341,10 @@ sources:
       layers: 68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1
       style: default
       transparent: false
-      url: 'https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_StraDa'
-    supported_srs: ['EPSG:25833']
+      url: "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_StraDa"
+    supported_srs: ["EPSG:25833"]
     type: wms
-    wms_opts: {version: 1.3.0}
+    wms_opts: { version: 1.3.0 }
 
   topplus_p5_source:
     req:
@@ -355,10 +352,10 @@ sources:
       layers: p5
       style: default
       transparent: false
-      url: 'http://sgx.geodatenzentrum.de/wms_topplus_open'
-    supported_srs: ['EPSG:25833']
+      url: "http://sgx.geodatenzentrum.de/wms_topplus_open"
+    supported_srs: ["EPSG:25833"]
     type: wms
-    wms_opts: {version: 1.3.0}
+    wms_opts: { version: 1.3.0 }
 
   topplus_web_source:
     req:
@@ -366,10 +363,10 @@ sources:
       layers: web
       style: default
       transparent: false
-      url: 'http://sgx.geodatenzentrum.de/wms_topplus_open'
-    supported_srs: ['EPSG:25833']
+      url: "http://sgx.geodatenzentrum.de/wms_topplus_open"
+    supported_srs: ["EPSG:25833"]
     type: wms
-    wms_opts: {version: 1.3.0}
+    wms_opts: { version: 1.3.0 }
 
   webatlas_source:
     req:
@@ -377,10 +374,10 @@ sources:
       layers: 0
       style: default
       transparent: false
-      url: 'https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_webatlasberlin'
-    supported_srs: ['EPSG:25833']
+      url: "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_webatlasberlin"
+    supported_srs: ["EPSG:25833"]
     type: wms
-    wms_opts: {version: 1.3.0}
+    wms_opts: { version: 1.3.0 }
 
   zoom_source:
     req:
@@ -388,10 +385,10 @@ sources:
       layers: 0
       style: default
       transparent: false
-      url: 'https://fbinter.stadt-berlin.de/fb/wms/senstadt/berlinzoom'
-    supported_srs: ['EPSG:25833']
+      url: "https://fbinter.stadt-berlin.de/fb/wms/senstadt/berlinzoom"
+    supported_srs: ["EPSG:25833"]
     type: wms
-    wms_opts: {version: 1.3.0}
+    wms_opts: { version: 1.3.0 }
 
   baumbestand_0_source:
     req:
@@ -399,10 +396,10 @@ sources:
       layers: 0
       style: default
       transparent: false
-      url: 'https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_wfs_baumbestand'
-    supported_srs: ['EPSG:25833']
+      url: "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_wfs_baumbestand"
+    supported_srs: ["EPSG:25833"]
     type: wms
-    wms_opts: {version: 1.3.0}
+    wms_opts: { version: 1.3.0 }
 
   baumbestand_1_source:
     req:
@@ -410,10 +407,10 @@ sources:
       layers: 1
       style: default
       transparent: false
-      url: 'https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_wfs_baumbestand'
-    supported_srs: ['EPSG:25833']
+      url: "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_wfs_baumbestand"
+    supported_srs: ["EPSG:25833"]
     type: wms
-    wms_opts: {version: 1.3.0}
+    wms_opts: { version: 1.3.0 }
 
   baumbestand_3_source:
     req:
@@ -421,10 +418,10 @@ sources:
       layers: 3
       style: default
       transparent: false
-      url: 'https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_wfs_baumbestand'
-    supported_srs: ['EPSG:25833']
+      url: "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_wfs_baumbestand"
+    supported_srs: ["EPSG:25833"]
     type: wms
-    wms_opts: {version: 1.3.0}
+    wms_opts: { version: 1.3.0 }
 
   baumbestand_4_source:
     req:
@@ -432,10 +429,10 @@ sources:
       layers: 4
       style: default
       transparent: false
-      url: 'https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_wfs_baumbestand'
-    supported_srs: ['EPSG:25833']
+      url: "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_wfs_baumbestand"
+    supported_srs: ["EPSG:25833"]
     type: wms
-    wms_opts: {version: 1.3.0}
+    wms_opts: { version: 1.3.0 }
 
   baumbestand_0_1_3_4_merged_source:
     req:
@@ -443,7 +440,7 @@ sources:
       layers: 0,1,3,4
       style: default
       transparent: false
-      url: 'https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_wfs_baumbestand'
-    supported_srs: ['EPSG:25833']
+      url: "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_wfs_baumbestand"
+    supported_srs: ["EPSG:25833"]
     type: wms
-    wms_opts: {version: 1.3.0}
+    wms_opts: { version: 1.3.0 }
