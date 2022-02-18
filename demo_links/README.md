@@ -12,11 +12,12 @@ The list reads [config.yml](../config.yml) and [layer_comments.yml](../layer_com
 
 > ⚠️ DEPRECATED: Switch to `https://tiles.codefor.de/berlin-1928/{z}/{x}/{y}.png`. Example at https://luftbilder.berlin.codefor.de/.
 
-* TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/1928/mercator/{z}/{x}/{y}.png```
+- TMS URL:
+  ```https://mapproxy.codefor.de/tiles/1.0.0/1928/mercator/{z}/{x}/{y}.png```
 
-* <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/1928/mercator/{z}/{x}/{y}.png)">Preview layer</a>
+- <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/1928/mercator/{z}/{x}/{y}.png">Preview layer</a>
 
-* <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/1928/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637)">Use layer to edit OSM</a>
+- <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/1928/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
   
 
 <details>
@@ -30,17 +31,18 @@ The list reads [config.yml](../config.yml) and [layer_comments.yml](../layer_com
 
 ---
 
-##  Berlin 1953
+## ⚠️ Berlin 1953
 
 <img src="https://mapproxy.codefor.de/tiles/1.0.0/1953/mercator/16/35198/21494.png" width=200 alt="Demo image for Berlin 1953" />
 
+> ⚠️ DEPRECATED: Switch to `https://tiles.codefor.de/berlin-1953/{z}/{x}/{y}.png`. Example at https://maps.berlin.codefor.de/.
 
+- TMS URL:
+  ```https://mapproxy.codefor.de/tiles/1.0.0/1953/mercator/{z}/{x}/{y}.png```
 
-* TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/1953/mercator/{z}/{x}/{y}.png```
+- <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/1953/mercator/{z}/{x}/{y}.png">Preview layer</a>
 
-* <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/1953/mercator/{z}/{x}/{y}.png)">Preview layer</a>
-
-* <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/1953/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637)">Use layer to edit OSM</a>
+- <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/1953/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
   
 
 <details>
@@ -54,17 +56,18 @@ The list reads [config.yml](../config.yml) and [layer_comments.yml](../layer_com
 
 ---
 
-##  Digitale farbige Orthophotos 2013 (DOP20RGB)
+## Digitale farbige Orthophotos 2013 (DOP20RGB)
 
 <img src="https://mapproxy.codefor.de/tiles/1.0.0/2013/mercator/16/35198/21494.png" width=200 alt="Demo image for Digitale farbige Orthophotos 2013 (DOP20RGB)" />
 
 
 
-* TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/2013/mercator/{z}/{x}/{y}.png```
+- TMS URL:
+  ```https://mapproxy.codefor.de/tiles/1.0.0/2013/mercator/{z}/{x}/{y}.png```
 
-* <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/2013/mercator/{z}/{x}/{y}.png)">Preview layer</a>
+- <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/2013/mercator/{z}/{x}/{y}.png">Preview layer</a>
 
-* <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/2013/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637)">Use layer to edit OSM</a>
+- <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/2013/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
   
 
 <details>
@@ -78,17 +81,18 @@ The list reads [config.yml](../config.yml) and [layer_comments.yml](../layer_com
 
 ---
 
-##  Digitale Color-Infrarot-Orthophotos 2015 (DOP20CIR)
+## Digitale Color-Infrarot-Orthophotos 2015 (DOP20CIR)
 
 <img src="https://mapproxy.codefor.de/tiles/1.0.0/2015_cir/mercator/16/35198/21494.png" width=200 alt="Demo image for Digitale Color-Infrarot-Orthophotos 2015 (DOP20CIR)" />
 
 
 
-* TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/2015_cir/mercator/{z}/{x}/{y}.png```
+- TMS URL:
+  ```https://mapproxy.codefor.de/tiles/1.0.0/2015_cir/mercator/{z}/{x}/{y}.png```
 
-* <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/2015_cir/mercator/{z}/{x}/{y}.png)">Preview layer</a>
+- <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/2015_cir/mercator/{z}/{x}/{y}.png">Preview layer</a>
 
-* <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/2015_cir/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637)">Use layer to edit OSM</a>
+- <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/2015_cir/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
   
 
 <details>
@@ -102,17 +106,18 @@ The list reads [config.yml](../config.yml) and [layer_comments.yml](../layer_com
 
 ---
 
-##  Digitale Color-Infrarot-Orthophotos 2016 (DOP20CIR)
+## Digitale Color-Infrarot-Orthophotos 2016 (DOP20CIR)
 
 <img src="https://mapproxy.codefor.de/tiles/1.0.0/2016_cir/mercator/16/35198/21494.png" width=200 alt="Demo image for Digitale Color-Infrarot-Orthophotos 2016 (DOP20CIR)" />
 
 
 
-* TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/2016_cir/mercator/{z}/{x}/{y}.png```
+- TMS URL:
+  ```https://mapproxy.codefor.de/tiles/1.0.0/2016_cir/mercator/{z}/{x}/{y}.png```
 
-* <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/2016_cir/mercator/{z}/{x}/{y}.png)">Preview layer</a>
+- <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/2016_cir/mercator/{z}/{x}/{y}.png">Preview layer</a>
 
-* <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/2016_cir/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637)">Use layer to edit OSM</a>
+- <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/2016_cir/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
   
 
 <details>
@@ -132,11 +137,12 @@ The list reads [config.yml](../config.yml) and [layer_comments.yml](../layer_com
 
 > ⚠️ DEPRECATED: Switch to `https://tiles.codefor.de/berlin-2018-dop20rgb/{z}/{x}/{y}.png`. Example at https://luftbilder.berlin.codefor.de/.
 
-* TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/2018/mercator/{z}/{x}/{y}.png```
+- TMS URL:
+  ```https://mapproxy.codefor.de/tiles/1.0.0/2018/mercator/{z}/{x}/{y}.png```
 
-* <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/2018/mercator/{z}/{x}/{y}.png)">Preview layer</a>
+- <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/2018/mercator/{z}/{x}/{y}.png">Preview layer</a>
 
-* <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/2018/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637)">Use layer to edit OSM</a>
+- <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/2018/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
   
 
 <details>
@@ -156,11 +162,12 @@ The list reads [config.yml](../config.yml) and [layer_comments.yml](../layer_com
 
 > ⚠️ DEPRECATED: Switch to `https://tiles.codefor.de/berlin-2019-dop20rgb/{z}/{x}/{y}.png`. Example at https://luftbilder.berlin.codefor.de/.
 
-* TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/2019/mercator/{z}/{x}/{y}.png```
+- TMS URL:
+  ```https://mapproxy.codefor.de/tiles/1.0.0/2019/mercator/{z}/{x}/{y}.png```
 
-* <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/2019/mercator/{z}/{x}/{y}.png)">Preview layer</a>
+- <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/2019/mercator/{z}/{x}/{y}.png">Preview layer</a>
 
-* <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/2019/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637)">Use layer to edit OSM</a>
+- <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/2019/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
   
 
 <details>
@@ -174,17 +181,18 @@ The list reads [config.yml](../config.yml) and [layer_comments.yml](../layer_com
 
 ---
 
-##  Digitale farbige TrueOrthophotos 2020 (TrueDOP20RGB) - Sommerbefliegung
+## Digitale farbige TrueOrthophotos 2020 (TrueDOP20RGB) - Sommerbefliegung
 
 <img src="https://mapproxy.codefor.de/tiles/1.0.0/2020_true/mercator/16/35198/21494.png" width=200 alt="Demo image for Digitale farbige TrueOrthophotos 2020 (TrueDOP20RGB) - Sommerbefliegung" />
 
 
 
-* TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/2020_true/mercator/{z}/{x}/{y}.png```
+- TMS URL:
+  ```https://mapproxy.codefor.de/tiles/1.0.0/2020_true/mercator/{z}/{x}/{y}.png```
 
-* <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/2020_true/mercator/{z}/{x}/{y}.png)">Preview layer</a>
+- <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/2020_true/mercator/{z}/{x}/{y}.png">Preview layer</a>
 
-* <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/2020_true/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637)">Use layer to edit OSM</a>
+- <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/2020_true/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
   
 
 <details>
@@ -204,11 +212,12 @@ The list reads [config.yml](../config.yml) and [layer_comments.yml](../layer_com
 
 > ⚠️ DEPRECATED: Switch to `https://tiles.codefor.de/berlin-2020-dop20rgb/{z}/{x}/{y}.png`. Example at https://luftbilder.berlin.codefor.de/.
 
-* TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/2020/mercator/{z}/{x}/{y}.png```
+- TMS URL:
+  ```https://mapproxy.codefor.de/tiles/1.0.0/2020/mercator/{z}/{x}/{y}.png```
 
-* <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/2020/mercator/{z}/{x}/{y}.png)">Preview layer</a>
+- <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/2020/mercator/{z}/{x}/{y}.png">Preview layer</a>
 
-* <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/2020/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637)">Use layer to edit OSM</a>
+- <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/2020/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
   > Proxied data is blurred for some reason (the original data is not).
 
 <details>
@@ -228,11 +237,12 @@ The list reads [config.yml](../config.yml) and [layer_comments.yml](../layer_com
 
 > ⚠️ DEPRECATED: Switch to ` https://tiles.codefor.de/berlin-2021-dop20rgbi`. Example at https://luftbilder.berlin.codefor.de/.
 
-* TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/2021/mercator/{z}/{x}/{y}.png```
+- TMS URL:
+  ```https://mapproxy.codefor.de/tiles/1.0.0/2021/mercator/{z}/{x}/{y}.png```
 
-* <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/2021/mercator/{z}/{x}/{y}.png)">Preview layer</a>
+- <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/2021/mercator/{z}/{x}/{y}.png">Preview layer</a>
 
-* <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/2021/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637)">Use layer to edit OSM</a>
+- <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/2021/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
   
 
 <details>
@@ -246,17 +256,18 @@ The list reads [config.yml](../config.yml) and [layer_comments.yml](../layer_com
 
 ---
 
-##  ALKIS Berlin (Amtliches Liegenschaftskatasterinformationssystem)
+## ALKIS Berlin (Amtliches Liegenschaftskatasterinformationssystem)
 
 <img src="https://mapproxy.codefor.de/tiles/1.0.0/alkis_30/mercator/16/35198/21494.png" width=200 alt="Demo image for ALKIS Berlin (Amtliches Liegenschaftskatasterinformationssystem)" />
 
 
 
-* TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/alkis_30/mercator/{z}/{x}/{y}.png```
+- TMS URL:
+  ```https://mapproxy.codefor.de/tiles/1.0.0/alkis_30/mercator/{z}/{x}/{y}.png```
 
-* <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/alkis_30/mercator/{z}/{x}/{y}.png)">Preview layer</a>
+- <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/alkis_30/mercator/{z}/{x}/{y}.png">Preview layer</a>
 
-* <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/alkis_30/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637)">Use layer to edit OSM</a>
+- <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/alkis_30/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
   
 
 <details>
@@ -270,17 +281,18 @@ The list reads [config.yml](../config.yml) and [layer_comments.yml](../layer_com
 
 ---
 
-##  ATKIS® DOM - Digitales Oberflächenmodell
+## ATKIS® DOM - Digitales Oberflächenmodell
 
 <img src="https://mapproxy.codefor.de/tiles/1.0.0/atkis_dom/mercator/16/35198/21494.png" width=200 alt="Demo image for ATKIS® DOM - Digitales Oberflächenmodell" />
 
 
 
-* TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/atkis_dom/mercator/{z}/{x}/{y}.png```
+- TMS URL:
+  ```https://mapproxy.codefor.de/tiles/1.0.0/atkis_dom/mercator/{z}/{x}/{y}.png```
 
-* <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/atkis_dom/mercator/{z}/{x}/{y}.png)">Preview layer</a>
+- <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/atkis_dom/mercator/{z}/{x}/{y}.png">Preview layer</a>
 
-* <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/atkis_dom/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637)">Use layer to edit OSM</a>
+- <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/atkis_dom/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
   > OK for trees and houses, but otherwise pretty pixelated.
 
 <details>
@@ -294,17 +306,18 @@ The list reads [config.yml](../config.yml) and [layer_comments.yml](../layer_com
 
 ---
 
-##  ATKIS® DGM - Digitales Geländemodell
+## ATKIS® DGM - Digitales Geländemodell
 
 <img src="https://mapproxy.codefor.de/tiles/1.0.0/atkis_dgm_1/mercator/16/35198/21494.png" width=200 alt="Demo image for ATKIS® DGM - Digitales Geländemodell" />
 
 
 
-* TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/atkis_dgm_1/mercator/{z}/{x}/{y}.png```
+- TMS URL:
+  ```https://mapproxy.codefor.de/tiles/1.0.0/atkis_dgm_1/mercator/{z}/{x}/{y}.png```
 
-* <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/atkis_dgm_1/mercator/{z}/{x}/{y}.png)">Preview layer</a>
+- <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/atkis_dgm_1/mercator/{z}/{x}/{y}.png">Preview layer</a>
 
-* <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/atkis_dgm_1/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637)">Use layer to edit OSM</a>
+- <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/atkis_dgm_1/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
   > Don't use. Level of detail not feasable for mapping.
 
 <details>
@@ -318,65 +331,43 @@ The list reads [config.yml](../config.yml) and [layer_comments.yml](../layer_com
 
 ---
 
-##  ATKIS® DGM - Digitales Geländemodell
-
-<img src="https://mapproxy.codefor.de/tiles/1.0.0/atkis_dgm_3/mercator/16/35198/21494.png" width=200 alt="Demo image for ATKIS® DGM - Digitales Geländemodell" />
-
-
-
-* TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/atkis_dgm_3/mercator/{z}/{x}/{y}.png```
-
-* <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/atkis_dgm_3/mercator/{z}/{x}/{y}.png)">Preview layer</a>
-
-* <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/atkis_dgm_3/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637)">Use layer to edit OSM</a>
-  > TODO check; shows only house numbers?; maybe background needs to be white?
-
-<details>
-<summary>Show layer config options</summary>
-
-```
-{"req"=>{"format"=>"png", "layers"=>3, "style"=>"default", "transparent"=>true, "url"=>"https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_dgm1"}, "supported_srs"=>["EPSG:25833"], "type"=>"wms", "wms_opts"=>{"version"=>"1.3.0"}}
-```
-
-</details>
-
----
-
-##  Straßenbefahrung 2014
+## Straßenbefahrung 2014
 
 <img src="https://mapproxy.codefor.de/tiles/1.0.0/strassenbefahrung/mercator/16/35198/21494.png" width=200 alt="Demo image for Straßenbefahrung 2014" />
 
 
 
-* TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/strassenbefahrung/mercator/{z}/{x}/{y}.png```
+- TMS URL:
+  ```https://mapproxy.codefor.de/tiles/1.0.0/strassenbefahrung/mercator/{z}/{x}/{y}.png```
 
-* <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/strassenbefahrung/mercator/{z}/{x}/{y}.png)">Preview layer</a>
+- <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/strassenbefahrung/mercator/{z}/{x}/{y}.png">Preview layer</a>
 
-* <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/strassenbefahrung/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637)">Use layer to edit OSM</a>
+- <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/strassenbefahrung/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
   
 
 <details>
 <summary>Show layer config options</summary>
 
 ```
-{"req"=>{"format"=>"png", "layers"=>1101112131415161718192202122232425262728293303132333435363738394404142434445464748495505152535455565758596606162636465666768789, "style"=>"default", "transparent"=>false, "url"=>"https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_StraDa"}, "supported_srs"=>["EPSG:25833"], "type"=>"wms", "wms_opts"=>{"version"=>"1.3.0"}}
+{"req"=>{"format"=>"png", "layers"=>6867666564636261605958575655545352515049484746454443424140393837363534333231302928272625242322212019181716151413121110987654321, "style"=>"default", "transparent"=>false, "url"=>"https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_StraDa"}, "supported_srs"=>["EPSG:25833"], "type"=>"wms", "wms_opts"=>{"version"=>"1.3.0"}}
 ```
 
 </details>
 
 ---
 
-##  TopPlusOpen
+## TopPlusOpen
 
 <img src="https://mapproxy.codefor.de/tiles/1.0.0/topplus_p5/mercator/16/35198/21494.png" width=200 alt="Demo image for TopPlusOpen" />
 
 
 
-* TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/topplus_p5/mercator/{z}/{x}/{y}.png```
+- TMS URL:
+  ```https://mapproxy.codefor.de/tiles/1.0.0/topplus_p5/mercator/{z}/{x}/{y}.png```
 
-* <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/topplus_p5/mercator/{z}/{x}/{y}.png)">Preview layer</a>
+- <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/topplus_p5/mercator/{z}/{x}/{y}.png">Preview layer</a>
 
-* <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/topplus_p5/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637)">Use layer to edit OSM</a>
+- <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/topplus_p5/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
   > Don't use. Other data is better for mapping.
 
 <details>
@@ -390,17 +381,18 @@ The list reads [config.yml](../config.yml) and [layer_comments.yml](../layer_com
 
 ---
 
-##  TopPlusOpen web
+## TopPlusOpen web
 
 <img src="https://mapproxy.codefor.de/tiles/1.0.0/topplus_web/mercator/16/35198/21494.png" width=200 alt="Demo image for TopPlusOpen web" />
 
 
 
-* TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/topplus_web/mercator/{z}/{x}/{y}.png```
+- TMS URL:
+  ```https://mapproxy.codefor.de/tiles/1.0.0/topplus_web/mercator/{z}/{x}/{y}.png```
 
-* <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/topplus_web/mercator/{z}/{x}/{y}.png)">Preview layer</a>
+- <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/topplus_web/mercator/{z}/{x}/{y}.png">Preview layer</a>
 
-* <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/topplus_web/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637)">Use layer to edit OSM</a>
+- <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/topplus_web/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
   > Don't use. Other data is better for mapping.
 
 <details>
@@ -414,17 +406,18 @@ The list reads [config.yml](../config.yml) and [layer_comments.yml](../layer_com
 
 ---
 
-##  WebAtlas Berlin
+## WebAtlas Berlin
 
 <img src="https://mapproxy.codefor.de/tiles/1.0.0/webatlas/mercator/16/35198/21494.png" width=200 alt="Demo image for WebAtlas Berlin" />
 
 
 
-* TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/webatlas/mercator/{z}/{x}/{y}.png```
+- TMS URL:
+  ```https://mapproxy.codefor.de/tiles/1.0.0/webatlas/mercator/{z}/{x}/{y}.png```
 
-* <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/webatlas/mercator/{z}/{x}/{y}.png)">Preview layer</a>
+- <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/webatlas/mercator/{z}/{x}/{y}.png">Preview layer</a>
 
-* <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/webatlas/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637)">Use layer to edit OSM</a>
+- <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/webatlas/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
   > Don't use. Other data is better for mapping.
 
 <details>
@@ -438,17 +431,18 @@ The list reads [config.yml](../config.yml) and [layer_comments.yml](../layer_com
 
 ---
 
-##  Berlin Zoom
+## Berlin Zoom
 
 <img src="https://mapproxy.codefor.de/tiles/1.0.0/zoom/mercator/16/35198/21494.png" width=200 alt="Demo image for Berlin Zoom" />
 
 
 
-* TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/zoom/mercator/{z}/{x}/{y}.png```
+- TMS URL:
+  ```https://mapproxy.codefor.de/tiles/1.0.0/zoom/mercator/{z}/{x}/{y}.png```
 
-* <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/zoom/mercator/{z}/{x}/{y}.png)">Preview layer</a>
+- <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/zoom/mercator/{z}/{x}/{y}.png">Preview layer</a>
 
-* <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/zoom/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637)">Use layer to edit OSM</a>
+- <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/zoom/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
   
 
 <details>
@@ -462,17 +456,18 @@ The list reads [config.yml](../config.yml) and [layer_comments.yml](../layer_com
 
 ---
 
-##  Baumbestand Berlin - Straßenbäume
+## Baumbestand Berlin - Straßenbäume
 
 <img src="https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0/mercator/16/35198/21494.png" width=200 alt="Demo image for Baumbestand Berlin - Straßenbäume" />
 
 
 
-* TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0/mercator/{z}/{x}/{y}.png```
+- TMS URL:
+  ```https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0/mercator/{z}/{x}/{y}.png```
 
-* <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0/mercator/{z}/{x}/{y}.png)">Preview layer</a>
+- <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0/mercator/{z}/{x}/{y}.png">Preview layer</a>
 
-* <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637)">Use layer to edit OSM</a>
+- <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
   > Merged layer is recommended for mapping.
 
 <details>
@@ -486,17 +481,18 @@ The list reads [config.yml](../config.yml) and [layer_comments.yml](../layer_com
 
 ---
 
-##  Baumbestand Berlin - Anlagenbäume
+## Baumbestand Berlin - Anlagenbäume
 
 <img src="https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_1/mercator/16/35198/21494.png" width=200 alt="Demo image for Baumbestand Berlin - Anlagenbäume" />
 
 
 
-* TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_1/mercator/{z}/{x}/{y}.png```
+- TMS URL:
+  ```https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_1/mercator/{z}/{x}/{y}.png```
 
-* <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_1/mercator/{z}/{x}/{y}.png)">Preview layer</a>
+- <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_1/mercator/{z}/{x}/{y}.png">Preview layer</a>
 
-* <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_1/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637)">Use layer to edit OSM</a>
+- <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_1/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
   > Merged layer is recommended for mapping.
 
 <details>
@@ -510,17 +506,18 @@ The list reads [config.yml](../config.yml) and [layer_comments.yml](../layer_com
 
 ---
 
-##  Baumbestand Berlin - Anlagenbäume ohne Datenbankeintrag
+## Baumbestand Berlin - Anlagenbäume ohne Datenbankeintrag
 
 <img src="https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_3/mercator/16/35198/21494.png" width=200 alt="Demo image for Baumbestand Berlin - Anlagenbäume ohne Datenbankeintrag" />
 
 
 
-* TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_3/mercator/{z}/{x}/{y}.png```
+- TMS URL:
+  ```https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_3/mercator/{z}/{x}/{y}.png```
 
-* <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_3/mercator/{z}/{x}/{y}.png)">Preview layer</a>
+- <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_3/mercator/{z}/{x}/{y}.png">Preview layer</a>
 
-* <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_3/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637)">Use layer to edit OSM</a>
+- <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_3/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
   > Merged layer is recommended for mapping.
 
 <details>
@@ -534,17 +531,18 @@ The list reads [config.yml](../config.yml) and [layer_comments.yml](../layer_com
 
 ---
 
-##  Baumbestand Berlin - Straßenbäume ohne Datenbankeintrag
+## Baumbestand Berlin - Straßenbäume ohne Datenbankeintrag
 
 <img src="https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_4/mercator/16/35198/21494.png" width=200 alt="Demo image for Baumbestand Berlin - Straßenbäume ohne Datenbankeintrag" />
 
 
 
-* TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_4/mercator/{z}/{x}/{y}.png```
+- TMS URL:
+  ```https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_4/mercator/{z}/{x}/{y}.png```
 
-* <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_4/mercator/{z}/{x}/{y}.png)">Preview layer</a>
+- <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_4/mercator/{z}/{x}/{y}.png">Preview layer</a>
 
-* <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_4/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637)">Use layer to edit OSM</a>
+- <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_4/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
   > Merged layer is recommended for mapping.
 
 <details>
@@ -558,17 +556,18 @@ The list reads [config.yml](../config.yml) and [layer_comments.yml](../layer_com
 
 ---
 
-##  Baumbestand Berlin - Straßenbäume und Anlagenbäume mit und ohne Datenbankeintrag
+## Baumbestand Berlin - Straßenbäume und Anlagenbäume mit und ohne Datenbankeintrag
 
 <img src="https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0_1_3_4_merged/mercator/16/35198/21494.png" width=200 alt="Demo image for Baumbestand Berlin - Straßenbäume und Anlagenbäume mit und ohne Datenbankeintrag" />
 
 
 
-* TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0_1_3_4_merged/mercator/{z}/{x}/{y}.png```
+- TMS URL:
+  ```https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0_1_3_4_merged/mercator/{z}/{x}/{y}.png```
 
-* <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0_1_3_4_merged/mercator/{z}/{x}/{y}.png)">Preview layer</a>
+- <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map.html?url=https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0_1_3_4_merged/mercator/{z}/{x}/{y}.png">Preview layer</a>
 
-* <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0_1_3_4_merged/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637)">Use layer to edit OSM</a>
+- <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0_1_3_4_merged/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
   
 
 <details>
