@@ -72,32 +72,33 @@ systemctl start nginx
 Debugging
 ---------
 
-_Which config sources are recognized by Mapproxy?_
+### Which config sources are recognized by Mapproxy?
 
 Use the [Mapproxy Debug Page](https://mapproxy.codefor.de/demo/). It lists all layers that are avaliable based on the config.
 However, there is an issue with the projection, so the previews do not work.
 
-_Which URLs does the Mapproxy call?_
+### Which URLs does the Mapproxy call?
 
-Uncomment [log.ini](log.ini), restart and use `cat mapproxy-config/mapproxy_log/source-requests.log` to see the requested URLs.
+Check that [log.ini](log.ini) "active" (not commented out); if needed, change and restart.
+Use `cat mapproxy-config/mapproxy_log/source-requests.log` to see the requested URLs.
 
 Copy one of those URLs and fiddle with the URL params the browser until the right image is shown.
 
-_Remeber to delete the file system cache._
+### Remeber to delete the file system cache.
 
 `ls mapproxy-config/cache_data/` shows all layer that have cached images. Remove the folder to trigger a cache refresh, eg `rm -rf mapproxy-config/cache_data/alkis_30_cache_EPSG900913`
 
-_Remeber to refresh the browser cache._
+### Remeber to refresh the browser cache.
 
 Even with a fresh file system cache, images might still be cached in the browser. Unfortunately, iD Editor does not allow hard reloads to refresh this data. One workaround is, to zoom and pan the map so new images are requested.
 
-_Which layer are avaliable for a given WMS service?_
+### Which layer are avaliable for a given WMS service?
 
 Use URLs like `https://fbinter.stadt-berlin.de/fb/wms/senstadt/wmsk_alkis?service=WMS&request=GetCapabilities&version=1.3.0` to create a list of layer IDs with description. Examples are [layer_alkis_berlin.md] and [layer_strassenbefahrung_berlin.md].
 
 You can also try https://hub.gke2.mybinder.org/user/rbuffat-eli-helper-p2burc85/apps//create_wms_template_appmode.ipynb ([GitHub](https://github.com/rbuffat/eli-helper)) with the fbintern URL from above to get a list of avaliable layers.
 
-_Mapproxy documentation._
+### Mapproxy documentation.
 
 https://mapproxy.org/docs/latest/index.html
 
