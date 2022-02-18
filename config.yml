@@ -1,10 +1,6 @@
 globals: {}
 grids:
-  mercator:
-    base: GLOBAL_MERCATOR
-  mercator_22:
-    base: GLOBAL_MERCATOR
-    num_levels: 22
+  mercator: { base: GLOBAL_MERCATOR }
 services:
   demo: {}
   tms: { origin: nw, use_grid_names: true }
@@ -156,7 +152,7 @@ caches:
     sources: [atkis_dom_source]
 
   strassenbefahrung_cache:
-    grids: [mercator_22]
+    grids: [mercator]
     sources: [strassenbefahrung_source]
 
   topplus_p5_cache:
