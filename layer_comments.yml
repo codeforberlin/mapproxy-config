@@ -27,6 +27,8 @@
   deprecation_note: Switch to ` https://tiles.codefor.de/berlin-2021-dop20rgbi`. Example at https://luftbilder.berlin.codefor.de/.
 alkis_30:
   no_comment:
+alkis_30_sw:
+  no_comment:
 atkis_dom:
   osm_editing_note: OK for trees and houses, but otherwise pretty pixelated.
 atkis_dgm_1:
