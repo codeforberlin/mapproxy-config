@@ -1,6 +1,8 @@
 globals: {}
 grids:
-  mercator: { base: GLOBAL_MERCATOR }
+  mercator:
+    base: GLOBAL_MERCATOR
+    num_levels: 22
 services:
   demo: {}
   tms: { origin: nw, use_grid_names: true }
