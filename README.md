@@ -96,7 +96,7 @@ Even with a fresh file system cache, images might still be cached in the browser
 
 Use URLs like `https://fbinter.stadt-berlin.de/fb/wms/senstadt/wmsk_alkis?service=WMS&request=GetCapabilities&version=1.3.0` to create a list of layer IDs with description. Examples are [layer_alkis_berlin.md] and [layer_strassenbefahrung_berlin.md].
 
-You can also try https://hub.gke2.mybinder.org/user/rbuffat-eli-helper-p2burc85/apps//create_wms_template_appmode.ipynb ([GitHub](https://github.com/rbuffat/eli-helper)) with the fbintern URL from above to get a list of avaliable layers.
+You can also try https://mybinder.org/v2/gh/rbuffat/eli-helper/master ([GitHub](https://github.com/rbuffat/eli-helper)) with the fbintern URL from above to get a list of avaliable layers.
 
 ### Mapproxy documentation.
 
