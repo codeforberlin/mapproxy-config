@@ -115,35 +115,35 @@ caches:
 
   strassenbefahrung_cache:
     grids: [mercator]
-    sources: [strassenbefahrung_source]
+    sources: [alkis_30_cache, strassenbefahrung_source]
 
   baumbestand_0_cache:
     grids: [mercator]
-    sources: [baumbestand_0_source]
+    sources: [alkis_30_cache, baumbestand_0_source]
 
   baumbestand_1_cache:
     grids: [mercator]
-    sources: [baumbestand_1_source]
+    sources: [alkis_30_cache, baumbestand_1_source]
 
   baumbestand_3_cache:
     grids: [mercator]
-    sources: [baumbestand_3_source]
+    sources: [alkis_30_cache, baumbestand_3_source]
 
   baumbestand_4_cache:
     grids: [mercator]
-    sources: [baumbestand_4_source]
+    sources: [alkis_30_cache, baumbestand_4_source]
 
   baumbestand_0_1_3_4_merged_cache:
     grids: [mercator]
-    sources: [baumbestand_0_1_3_4_merged_source]
+    sources: [alkis_30_cache, baumbestand_0_1_3_4_merged_source]
 
   k_oeffbeleucht_cache:
     grids: [mercator]
-    sources: [k_oeffbeleucht_source]
+    sources: [alkis_30_cache, k_oeffbeleucht_source]
 
   tempolimits_cache:
     grids: [mercator]
-    sources: [tempolimits_source]
+    sources: [alkis_30_cache, tempolimits_source]
 
 sources:
   2013_source:
@@ -217,7 +217,7 @@ sources:
       format: png
       layers: cm_fahrbahn,cl_gehweg,ck_parkflaeche,cj_fussgaengerzone,ci_oeffentlicher_platz,ch_radweg,cg_baustelle,cf_trennstreifen,ce_gruenflaeche,cd_rampe,cc_treppe,cb_haltestellenwartebereich,ca_haltebereich_bus,bz_gleiskoerper_strab,by_gehwegueberfahrt,bx_fahrbahnschwelle,bw_aufmerksamkeitsfeld,bv_springbrunnen_zierbrunnen,bu_recycling_container,bu1_kleinbauten_sondernutzung,bt_kabelschacht,bs_induktionsschleife,br_fahrgastunterstand,bq_fahrradstaender,bp_fahrbahnmarkierung_flaeche,bo_denkmal,bn_baumscheibe,bm_zugangsbauwerk,bl_strassenentwaesserungsrinne,bk_strassenbegrenzung,bj_sitzbank,bi_schranke,bh_mauer,bg_leitplanke,bf_gelaender,be_fahrbahnmarkierunglinie,bd_bordstein,bc_aufmerksamkeitsstreifen,bb_verkehrsschutzgitter,ba_telefonzelle_telefonstele,az_taxirufsaeule,ay_streugutbehaelter,ax_strassensinkkasten,aw_spielgeraet,av_poller,au_parkscheinautomat,at_mast_lsa,as_mast,ar_kanaldeckel,ar1_kabelkasten,aq_hydrant,ap_handsteuergeraet_lsa,ao_gebaeudeeingang,an_fahrbahnmarkierung_piktogramm,am_fahnenmast,al_durchfahrtshoehe,ak_briefkasten,aj_anlegestelle,ai_anforderungstaster_radverkehr,ah_abfallbehaelter_muellbox,ag_werbesaeule,af_wasserpumpen_brunnen,ae_viz_infotafel,ad_uhr,ac_trinkwasserbrunnen_wasserspender,ab_touchpoint,aa_verkehrszeichen
       style: default
-      transparent: false
+      transparent: true
       url: https://gdi.berlin.de/services/wms/strassenbefahrung
     supported_srs: ['EPSG:25833']
     type: wms
@@ -228,7 +228,7 @@ sources:
       format: png
       layers: 0
       style: default
-      transparent: false
+      transparent: true
       url: https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_wfs_baumbestand
     supported_srs: ['EPSG:25833']
     type: wms
@@ -239,7 +239,7 @@ sources:
       format: png
       layers: 1
       style: default
-      transparent: false
+      transparent: true
       url: https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_wfs_baumbestand
     supported_srs: ['EPSG:25833']
     type: wms
@@ -250,7 +250,7 @@ sources:
       format: png
       layers: 3
       style: default
-      transparent: false
+      transparent: true
       url: https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_wfs_baumbestand
     supported_srs: ['EPSG:25833']
     type: wms
@@ -261,7 +261,7 @@ sources:
       format: png
       layers: 4
       style: default
-      transparent: false
+      transparent: true
       url: https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_wfs_baumbestand
     supported_srs: ['EPSG:25833']
     type: wms
@@ -272,7 +272,7 @@ sources:
       format: png
       layers: 0,1,3,4
       style: default
-      transparent: false
+      transparent: true
       url: https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_wfs_baumbestand
     supported_srs: ['EPSG:25833']
     type: wms
@@ -283,7 +283,7 @@ sources:
       format: png
       layers: 2,0,3
       style: default
-      transparent: false
+      transparent: true
       url: https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_oeffbeleucht
     supported_srs: ['EPSG:25833']
     type: wms
@@ -294,7 +294,7 @@ sources:
       format: png
       layers: hoechstgeschwindigkeit
       style: default
-      transparent: false
+      transparent: true
       url: https://gdi.berlin.de/services/wms/tempolimits
     supported_srs: ['EPSG:25833']
     type: wms

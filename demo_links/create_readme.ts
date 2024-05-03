@@ -60,8 +60,8 @@ markdownFile.write(intro)
 
 config.layers.forEach((layer) => {
   const cacheName = layer.sources[0]
-  const sourceName = config.caches[cacheName].sources[0]
-  const sourceData = config.sources[sourceName]
+  const sourceNames = config.caches[cacheName].sources
+  const sourceDatas = sourceNames.map((sourceName) => config.sources[sourceName])
   const tmsUrl = `https://mapproxy.codefor.de/tiles/1.0.0/${layer.name}/mercator/{z}/{x}/{y}.png`
   const comment = comments[layer.name]
 
@@ -90,7 +90,7 @@ ${comment.source_check_note ? `> [!NOTE]\n> ${comment.source_check_note}` : ''}
 <summary>Show layer config options</summary>
 
 \`\`\`
-${JSON.stringify(sourceData, undefined, 2)}
+${JSON.stringify(sourceDatas, undefined, 2)}
 \`\`\`
 
 </details>

@@ -29,22 +29,24 @@
 <summary>Show layer config options</summary>
 
 ```
-{
-  "req": {
-    "format": "png",
-    "layers": 0,
-    "style": "default",
-    "transparent": false,
-    "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2013"
-  },
-  "supported_srs": [
-    "EPSG:25833"
-  ],
-  "type": "wms",
-  "wms_opts": {
-    "version": "1.3.0"
+[
+  {
+    "req": {
+      "format": "png",
+      "layers": 0,
+      "style": "default",
+      "transparent": false,
+      "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2013"
+    },
+    "supported_srs": [
+      "EPSG:25833"
+    ],
+    "type": "wms",
+    "wms_opts": {
+      "version": "1.3.0"
+    }
   }
-}
+]
 ```
 
 </details>
@@ -70,22 +72,24 @@
 <summary>Show layer config options</summary>
 
 ```
-{
-  "req": {
-    "format": "png",
-    "layers": 0,
-    "style": "default",
-    "transparent": false,
-    "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2015_cir"
-  },
-  "supported_srs": [
-    "EPSG:25833"
-  ],
-  "type": "wms",
-  "wms_opts": {
-    "version": "1.3.0"
+[
+  {
+    "req": {
+      "format": "png",
+      "layers": 0,
+      "style": "default",
+      "transparent": false,
+      "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2015_cir"
+    },
+    "supported_srs": [
+      "EPSG:25833"
+    ],
+    "type": "wms",
+    "wms_opts": {
+      "version": "1.3.0"
+    }
   }
-}
+]
 ```
 
 </details>
@@ -111,22 +115,24 @@
 <summary>Show layer config options</summary>
 
 ```
-{
-  "req": {
-    "format": "png",
-    "layers": 0,
-    "style": "default",
-    "transparent": false,
-    "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2016_cir"
-  },
-  "supported_srs": [
-    "EPSG:25833"
-  ],
-  "type": "wms",
-  "wms_opts": {
-    "version": "1.3.0"
+[
+  {
+    "req": {
+      "format": "png",
+      "layers": 0,
+      "style": "default",
+      "transparent": false,
+      "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2016_cir"
+    },
+    "supported_srs": [
+      "EPSG:25833"
+    ],
+    "type": "wms",
+    "wms_opts": {
+      "version": "1.3.0"
+    }
   }
-}
+]
 ```
 
 </details>
@@ -152,22 +158,24 @@
 <summary>Show layer config options</summary>
 
 ```
-{
-  "req": {
-    "format": "png",
-    "layers": 0,
-    "style": "default",
-    "transparent": false,
-    "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2020_true_rgb"
-  },
-  "supported_srs": [
-    "EPSG:25833"
-  ],
-  "type": "wms",
-  "wms_opts": {
-    "version": "1.3.0"
+[
+  {
+    "req": {
+      "format": "png",
+      "layers": 0,
+      "style": "default",
+      "transparent": false,
+      "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2020_true_rgb"
+    },
+    "supported_srs": [
+      "EPSG:25833"
+    ],
+    "type": "wms",
+    "wms_opts": {
+      "version": "1.3.0"
+    }
   }
-}
+]
 ```
 
 </details>
@@ -193,22 +201,24 @@
 <summary>Show layer config options</summary>
 
 ```
-{
-  "req": {
-    "format": "png",
-    "layers": "30,5,21,0,29,4,7,13,9,25,8,18,20,16,28,12,24,22,34,26,47,46,44,43",
-    "style": "default",
-    "transparent": false,
-    "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/wmsk_alkis"
-  },
-  "supported_srs": [
-    "EPSG:25833"
-  ],
-  "type": "wms",
-  "wms_opts": {
-    "version": "1.3.0"
+[
+  {
+    "req": {
+      "format": "png",
+      "layers": "30,5,21,0,29,4,7,13,9,25,8,18,20,16,28,12,24,22,34,26,47,46,44,43",
+      "style": "default",
+      "transparent": false,
+      "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/wmsk_alkis"
+    },
+    "supported_srs": [
+      "EPSG:25833"
+    ],
+    "type": "wms",
+    "wms_opts": {
+      "version": "1.3.0"
+    }
   }
-}
+]
 ```
 
 </details>
@@ -234,22 +244,24 @@
 <summary>Show layer config options</summary>
 
 ```
-{
-  "req": {
-    "format": "png",
-    "layers": 1,
-    "style": "b_bdom,a_bdom_schummerung",
-    "transparent": true,
-    "url": "https://gdi.berlin.de/services/wms/bdom"
-  },
-  "supported_srs": [
-    "EPSG:25833"
-  ],
-  "type": "wms",
-  "wms_opts": {
-    "version": "1.3.0"
+[
+  {
+    "req": {
+      "format": "png",
+      "layers": "b_bdom,a_bdom_schummerung",
+      "style": "default",
+      "transparent": true,
+      "url": "https://gdi.berlin.de/services/wms/bdom"
+    },
+    "supported_srs": [
+      "EPSG:25833"
+    ],
+    "type": "wms",
+    "wms_opts": {
+      "version": "1.3.0"
+    }
   }
-}
+]
 ```
 
 </details>
@@ -275,22 +287,25 @@
 <summary>Show layer config options</summary>
 
 ```
-{
-  "req": {
-    "format": "png",
-    "layers": "cm_fahrbahn,cl_gehweg,ck_parkflaeche,cj_fussgaengerzone,ci_oeffentlicher_platz,ch_radweg,cg_baustelle,cf_trennstreifen,ce_gruenflaeche,cd_rampe,cc_treppe,cb_haltestellenwartebereich,ca_haltebereich_bus,bz_gleiskoerper_strab,by_gehwegueberfahrt,bx_fahrbahnschwelle,bw_aufmerksamkeitsfeld,bv_springbrunnen_zierbrunnen,bu_recycling_container,bu1_kleinbauten_sondernutzung,bt_kabelschacht,bs_induktionsschleife,br_fahrgastunterstand,bq_fahrradstaender,bp_fahrbahnmarkierung_flaeche,bo_denkmal,bn_baumscheibe,bm_zugangsbauwerk,bl_strassenentwaesserungsrinne,bk_strassenbegrenzung,bj_sitzbank,bi_schranke,bh_mauer,bg_leitplanke,bf_gelaender,be_fahrbahnmarkierunglinie,bd_bordstein,bc_aufmerksamkeitsstreifen,bb_verkehrsschutzgitter,ba_telefonzelle_telefonstele,az_taxirufsaeule,ay_streugutbehaelter,ax_strassensinkkasten,aw_spielgeraet,av_poller,au_parkscheinautomat,at_mast_lsa,as_mast,ar_kanaldeckel,ar1_kabelkasten,aq_hydrant,ap_handsteuergeraet_lsa,ao_gebaeudeeingang,an_fahrbahnmarkierung_piktogramm,am_fahnenmast,al_durchfahrtshoehe,ak_briefkasten,aj_anlegestelle,ai_anforderungstaster_radverkehr,ah_abfallbehaelter_muellbox,ag_werbesaeule,af_wasserpumpen_brunnen,ae_viz_infotafel,ad_uhr,ac_trinkwasserbrunnen_wasserspender,ab_touchpoint,aa_verkehrszeichen",
-    "style": "default",
-    "transparent": false,
-    "url": "https://gdi.berlin.de/services/wms/strassenbefahrung"
-  },
-  "supported_srs": [
-    "EPSG:25833"
-  ],
-  "type": "wms",
-  "wms_opts": {
-    "version": "1.3.0"
+[
+  null,
+  {
+    "req": {
+      "format": "png",
+      "layers": "cm_fahrbahn,cl_gehweg,ck_parkflaeche,cj_fussgaengerzone,ci_oeffentlicher_platz,ch_radweg,cg_baustelle,cf_trennstreifen,ce_gruenflaeche,cd_rampe,cc_treppe,cb_haltestellenwartebereich,ca_haltebereich_bus,bz_gleiskoerper_strab,by_gehwegueberfahrt,bx_fahrbahnschwelle,bw_aufmerksamkeitsfeld,bv_springbrunnen_zierbrunnen,bu_recycling_container,bu1_kleinbauten_sondernutzung,bt_kabelschacht,bs_induktionsschleife,br_fahrgastunterstand,bq_fahrradstaender,bp_fahrbahnmarkierung_flaeche,bo_denkmal,bn_baumscheibe,bm_zugangsbauwerk,bl_strassenentwaesserungsrinne,bk_strassenbegrenzung,bj_sitzbank,bi_schranke,bh_mauer,bg_leitplanke,bf_gelaender,be_fahrbahnmarkierunglinie,bd_bordstein,bc_aufmerksamkeitsstreifen,bb_verkehrsschutzgitter,ba_telefonzelle_telefonstele,az_taxirufsaeule,ay_streugutbehaelter,ax_strassensinkkasten,aw_spielgeraet,av_poller,au_parkscheinautomat,at_mast_lsa,as_mast,ar_kanaldeckel,ar1_kabelkasten,aq_hydrant,ap_handsteuergeraet_lsa,ao_gebaeudeeingang,an_fahrbahnmarkierung_piktogramm,am_fahnenmast,al_durchfahrtshoehe,ak_briefkasten,aj_anlegestelle,ai_anforderungstaster_radverkehr,ah_abfallbehaelter_muellbox,ag_werbesaeule,af_wasserpumpen_brunnen,ae_viz_infotafel,ad_uhr,ac_trinkwasserbrunnen_wasserspender,ab_touchpoint,aa_verkehrszeichen",
+      "style": "default",
+      "transparent": true,
+      "url": "https://gdi.berlin.de/services/wms/strassenbefahrung"
+    },
+    "supported_srs": [
+      "EPSG:25833"
+    ],
+    "type": "wms",
+    "wms_opts": {
+      "version": "1.3.0"
+    }
   }
-}
+]
 ```
 
 </details>
@@ -316,22 +331,25 @@
 <summary>Show layer config options</summary>
 
 ```
-{
-  "req": {
-    "format": "png",
-    "layers": 0,
-    "style": "default",
-    "transparent": false,
-    "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_wfs_baumbestand"
-  },
-  "supported_srs": [
-    "EPSG:25833"
-  ],
-  "type": "wms",
-  "wms_opts": {
-    "version": "1.3.0"
+[
+  null,
+  {
+    "req": {
+      "format": "png",
+      "layers": 0,
+      "style": "default",
+      "transparent": true,
+      "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_wfs_baumbestand"
+    },
+    "supported_srs": [
+      "EPSG:25833"
+    ],
+    "type": "wms",
+    "wms_opts": {
+      "version": "1.3.0"
+    }
   }
-}
+]
 ```
 
 </details>
@@ -357,22 +375,25 @@
 <summary>Show layer config options</summary>
 
 ```
-{
-  "req": {
-    "format": "png",
-    "layers": 1,
-    "style": "default",
-    "transparent": false,
-    "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_wfs_baumbestand"
-  },
-  "supported_srs": [
-    "EPSG:25833"
-  ],
-  "type": "wms",
-  "wms_opts": {
-    "version": "1.3.0"
+[
+  null,
+  {
+    "req": {
+      "format": "png",
+      "layers": 1,
+      "style": "default",
+      "transparent": true,
+      "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_wfs_baumbestand"
+    },
+    "supported_srs": [
+      "EPSG:25833"
+    ],
+    "type": "wms",
+    "wms_opts": {
+      "version": "1.3.0"
+    }
   }
-}
+]
 ```
 
 </details>
@@ -398,22 +419,25 @@
 <summary>Show layer config options</summary>
 
 ```
-{
-  "req": {
-    "format": "png",
-    "layers": 3,
-    "style": "default",
-    "transparent": false,
-    "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_wfs_baumbestand"
-  },
-  "supported_srs": [
-    "EPSG:25833"
-  ],
-  "type": "wms",
-  "wms_opts": {
-    "version": "1.3.0"
+[
+  null,
+  {
+    "req": {
+      "format": "png",
+      "layers": 3,
+      "style": "default",
+      "transparent": true,
+      "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_wfs_baumbestand"
+    },
+    "supported_srs": [
+      "EPSG:25833"
+    ],
+    "type": "wms",
+    "wms_opts": {
+      "version": "1.3.0"
+    }
   }
-}
+]
 ```
 
 </details>
@@ -439,22 +463,25 @@
 <summary>Show layer config options</summary>
 
 ```
-{
-  "req": {
-    "format": "png",
-    "layers": 4,
-    "style": "default",
-    "transparent": false,
-    "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_wfs_baumbestand"
-  },
-  "supported_srs": [
-    "EPSG:25833"
-  ],
-  "type": "wms",
-  "wms_opts": {
-    "version": "1.3.0"
+[
+  null,
+  {
+    "req": {
+      "format": "png",
+      "layers": 4,
+      "style": "default",
+      "transparent": true,
+      "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_wfs_baumbestand"
+    },
+    "supported_srs": [
+      "EPSG:25833"
+    ],
+    "type": "wms",
+    "wms_opts": {
+      "version": "1.3.0"
+    }
   }
-}
+]
 ```
 
 </details>
@@ -480,22 +507,25 @@
 <summary>Show layer config options</summary>
 
 ```
-{
-  "req": {
-    "format": "png",
-    "layers": "0,1,3,4",
-    "style": "default",
-    "transparent": false,
-    "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_wfs_baumbestand"
-  },
-  "supported_srs": [
-    "EPSG:25833"
-  ],
-  "type": "wms",
-  "wms_opts": {
-    "version": "1.3.0"
+[
+  null,
+  {
+    "req": {
+      "format": "png",
+      "layers": "0,1,3,4",
+      "style": "default",
+      "transparent": true,
+      "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_wfs_baumbestand"
+    },
+    "supported_srs": [
+      "EPSG:25833"
+    ],
+    "type": "wms",
+    "wms_opts": {
+      "version": "1.3.0"
+    }
   }
-}
+]
 ```
 
 </details>
@@ -522,22 +552,25 @@
 <summary>Show layer config options</summary>
 
 ```
-{
-  "req": {
-    "format": "png",
-    "layers": "2,0,3",
-    "style": "default",
-    "transparent": false,
-    "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_oeffbeleucht"
-  },
-  "supported_srs": [
-    "EPSG:25833"
-  ],
-  "type": "wms",
-  "wms_opts": {
-    "version": "1.3.0"
+[
+  null,
+  {
+    "req": {
+      "format": "png",
+      "layers": "2,0,3",
+      "style": "default",
+      "transparent": true,
+      "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_oeffbeleucht"
+    },
+    "supported_srs": [
+      "EPSG:25833"
+    ],
+    "type": "wms",
+    "wms_opts": {
+      "version": "1.3.0"
+    }
   }
-}
+]
 ```
 
 </details>
@@ -561,22 +594,25 @@
 <summary>Show layer config options</summary>
 
 ```
-{
-  "req": {
-    "format": "png",
-    "layers": "hoechstgeschwindigkeit",
-    "style": "default",
-    "transparent": false,
-    "url": "https://gdi.berlin.de/services/wms/tempolimits"
-  },
-  "supported_srs": [
-    "EPSG:25833"
-  ],
-  "type": "wms",
-  "wms_opts": {
-    "version": "1.3.0"
+[
+  null,
+  {
+    "req": {
+      "format": "png",
+      "layers": "hoechstgeschwindigkeit",
+      "style": "default",
+      "transparent": true,
+      "url": "https://gdi.berlin.de/services/wms/tempolimits"
+    },
+    "supported_srs": [
+      "EPSG:25833"
+    ],
+    "type": "wms",
+    "wms_opts": {
+      "version": "1.3.0"
+    }
   }
-}
+]
 ```
 
 </details>
