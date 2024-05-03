@@ -48,7 +48,7 @@ const markdownFile = fs.createWriteStream('./README.md')
 const intro = `
   # A list of all available maps with demo and editing urls
 
-  Generate list from project root running \`node ./demo_links/create_list_of_demo_links.js\`
+  See [UPDATE.md](https://github.com/codeforberlin/mapproxy-config/blob/master/demo_links/UPDATE.md) for how instructions on how to update this file.
 
   The list reads [config.yml](../config.yml) and [layer_comments.yml](../layer_comments.yml).
 
