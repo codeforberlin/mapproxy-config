@@ -100,7 +100,7 @@ You can also try https://mybinder.org/v2/gh/rbuffat/eli-helper/master ([GitHub](
 
 ### Mapproxy documentation.
 
-https://mapproxy.org/docs/latest/index.html
+https://mapproxy.github.io/mapproxy/latest/index.html
 
 To see the installed version of mapproxy:
 ```
