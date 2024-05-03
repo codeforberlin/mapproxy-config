@@ -28,6 +28,10 @@ layers:
     sources: [alkis_30_cache]
     title: ALKIS Berlin (Amtliches Liegenschaftskatasterinformationssystem)
 
+  - name: alkis_sw
+    sources: [alkis_sw_cache]
+    title: ALKIS Berlin s/w (Amtliches Liegenschaftskatasterinformationssystem)
+
   - name: atkis_dom
     sources: [atkis_dom_cache]
     title: "ATKIS\xAE DOM - Digitales Oberfl\xE4chenmodell"
@@ -109,41 +113,45 @@ caches:
     grids: [mercator]
     sources: [alkis_30_source]
 
+  alkis_sw_cache:
+    grids: [mercator]
+    sources: [alkis_sw_source]
+
   atkis_dom_cache:
     grids: [mercator]
     sources: [atkis_dom_source]
 
   strassenbefahrung_cache:
     grids: [mercator]
-    sources: [alkis_30_cache, strassenbefahrung_source]
+    sources: [alkis_sw_cache, strassenbefahrung_source]
 
   baumbestand_0_cache:
     grids: [mercator]
-    sources: [alkis_30_cache, baumbestand_0_source]
+    sources: [alkis_sw_cache, baumbestand_0_source]
 
   baumbestand_1_cache:
     grids: [mercator]
-    sources: [alkis_30_cache, baumbestand_1_source]
+    sources: [alkis_sw_cache, baumbestand_1_source]
 
   baumbestand_3_cache:
     grids: [mercator]
-    sources: [alkis_30_cache, baumbestand_3_source]
+    sources: [alkis_sw_cache, baumbestand_3_source]
 
   baumbestand_4_cache:
     grids: [mercator]
-    sources: [alkis_30_cache, baumbestand_4_source]
+    sources: [alkis_sw_cache, baumbestand_4_source]
 
   baumbestand_0_1_3_4_merged_cache:
     grids: [mercator]
-    sources: [alkis_30_cache, baumbestand_0_1_3_4_merged_source]
+    sources: [alkis_sw_cache, baumbestand_0_1_3_4_merged_source]
 
   k_oeffbeleucht_cache:
     grids: [mercator]
-    sources: [alkis_30_cache, k_oeffbeleucht_source]
+    sources: [alkis_sw_cache, k_oeffbeleucht_source]
 
   tempolimits_cache:
     grids: [mercator]
-    sources: [alkis_30_cache, tempolimits_source]
+    sources: [alkis_sw_cache, tempolimits_source]
 
 sources:
   2013_source:
@@ -197,6 +205,17 @@ sources:
       style: default
       transparent: false
       url: https://fbinter.stadt-berlin.de/fb/wms/senstadt/wmsk_alkis
+    supported_srs: ['EPSG:25833']
+    type: wms
+    wms_opts: { version: 1.3.0 }
+
+  alkis_sw_source:
+    req:
+      format: png
+      layers: 30,5,21,0,29,4,7,13,9,25,8,18,20,16,28,12,24,22,34,26,47,46,44,43
+      style: default
+      transparent: false
+      url: https://fbinter.stadt-berlin.de/fb/wms/senstadt/wmsk_alkis_sw
     supported_srs: ['EPSG:25833']
     type: wms
     wms_opts: { version: 1.3.0 }
