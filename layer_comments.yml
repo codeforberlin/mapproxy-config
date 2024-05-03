@@ -28,6 +28,12 @@ alkis_30:
   source_check_note: |
     2024-05-03: https://gdi.berlin.de/viewer/main/ verwendet noch fbinter.stadt-berlin.de.
   osm_editing_note: Used in https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/de/BerlinAlkis.geojson?short_path=b7406a2
+alkis_sw:
+  deprecated: false
+  deprecation_note:
+  source_check_note: |
+    2024-05-03: https://gdi.berlin.de/viewer/main/ verwendet noch fbinter.stadt-berlin.de.
+  osm_editing_note:
 atkis_dom:
   deprecated: false
   deprecation_note:
