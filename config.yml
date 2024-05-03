@@ -212,7 +212,7 @@ sources:
   alkis_sw_source:
     req:
       format: png
-      layers: 30,5,21,0,29,4,7,13,9,25,8,18,20,16,28,12,24,22,34,26,47,46,44,43
+      layers: 30,21,0,29,4,13,9,25,8,18,20,28,12,24,22,34,26,47,46,44
       style: default
       transparent: false
       url: https://fbinter.stadt-berlin.de/fb/wms/senstadt/wmsk_alkis_sw
