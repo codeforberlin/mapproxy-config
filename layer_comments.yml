@@ -53,3 +53,8 @@ baumbestand_4:
   osm_editing_note: Merged layer is recommended for mapping.
 baumbestand_0_1_3_4_merged:
   no_comment:
+k_oeffbeleucht_source:
+  deprecated: false
+  deprecation_note:
+  source_check_note: '2024-05-03 Added from https://daten.berlin.de/datensaetze/%C3%B6ffentliche-beleuchtung-wms'
+  osm_editing_note: I did not check if the OSM licences waifer applies to this dataset as well.

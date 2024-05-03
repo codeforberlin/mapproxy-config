@@ -76,6 +76,10 @@ layers:
     sources: [baumbestand_0_1_3_4_merged_cache]
     title: Baumbestand Berlin - Straßenbäume und Anlagenbäume mit und ohne Datenbankeintrag
 
+  - name: k_oeffbeleucht
+    sources: [k_oeffbeleucht_cache]
+    title: Öffentliche Beleuchtung
+
 caches:
   1928_cache:
     grids: [mercator]
@@ -168,6 +172,10 @@ caches:
   baumbestand_0_1_3_4_merged_cache:
     grids: [mercator]
     sources: [baumbestand_0_1_3_4_merged_source]
+
+  k_oeffbeleucht:
+    grids: [mercator]
+    sources: [k_oeffbeleucht]
 
 sources:
   2013_source:
@@ -353,6 +361,17 @@ sources:
       style: default
       transparent: false
       url: "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_wfs_baumbestand"
+    supported_srs: ["EPSG:25833"]
+    type: wms
+    wms_opts: { version: 1.3.0 }
+
+  k_oeffbeleucht_source:
+    req:
+      format: png
+      layers: 0
+      style: default
+      transparent: false
+      url: "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_oeffbeleucht"
     supported_srs: ["EPSG:25833"]
     type: wms
     wms_opts: { version: 1.3.0 }
