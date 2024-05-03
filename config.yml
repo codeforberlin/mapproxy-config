@@ -204,8 +204,8 @@ sources:
   atkis_dom_source:
     req:
       format: png
-      layers: 1
-      style: b_bdom,a_bdom_schummerung
+      layers: b_bdom,a_bdom_schummerung
+      style: default
       transparent: true
       url: https://gdi.berlin.de/services/wms/bdom
     supported_srs: ['EPSG:25833']
