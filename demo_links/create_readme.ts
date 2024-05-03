@@ -65,6 +65,8 @@ config.layers.forEach((layer) => {
   const tmsUrl = `https://mapproxy.codefor.de/tiles/1.0.0/${layer.name}/mercator/{z}/{x}/{y}.png`
   const comment = comments[layer.name]
 
+  console.log('Handling', layer.name)
+
   const listItem = `
 ## ${comment.deprecated ? '⚠️ ' : ''}${layer.title}
 

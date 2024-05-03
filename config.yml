@@ -80,6 +80,10 @@ layers:
     sources: [k_oeffbeleucht_cache]
     title: Öffentliche Beleuchtung
 
+  - name: tempolimits
+    sources: [tempolimits_cache]
+    title: Tempolimits
+
 caches:
   1928_cache:
     grids: [mercator]
@@ -176,6 +180,10 @@ caches:
   k_oeffbeleucht_cache:
     grids: [mercator]
     sources: [k_oeffbeleucht_source]
+
+  tempolimits_cache:
+    grids: [mercator]
+    sources: [tempolimits_source]
 
 sources:
   2013_source:
@@ -372,6 +380,17 @@ sources:
       style: default
       transparent: false
       url: 'https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_oeffbeleucht'
+    supported_srs: ['EPSG:25833']
+    type: wms
+    wms_opts: { version: 1.3.0 }
+
+  tempolimits_source:
+    req:
+      format: png
+      layers: hoechstgeschwindigkeit
+      style: default
+      transparent: false
+      url: 'https://gdi.berlin.de/services/wms/tempolimits'
     supported_srs: ['EPSG:25833']
     type: wms
     wms_opts: { version: 1.3.0 }
