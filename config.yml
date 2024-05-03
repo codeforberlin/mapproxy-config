@@ -8,14 +8,6 @@ services:
   tms: { origin: nw, use_grid_names: true }
 
 layers:
-  - name: "1928"
-    sources: [1928_cache]
-    title: Berlin 1928
-
-  - name: "1953"
-    sources: [1953_cache]
-    title: Berlin 1953
-
   - name: "2013"
     sources: [2013_cache]
     title: Digitale farbige Orthophotos 2013 (DOP20RGB)
@@ -28,25 +20,9 @@ layers:
     sources: [2016_cir_cache]
     title: Digitale Color-Infrarot-Orthophotos 2016 (DOP20CIR)
 
-  - name: "2018"
-    sources: [2018_cache]
-    title: Digitale farbige Orthophotos 2018 (DOP20RGB)
-
-  - name: "2019"
-    sources: [2019_cache]
-    title: Digitale farbige Orthophotos 2019 (DOP20RGB)
-
   - name: "2020_true"
     sources: [2020_true_cache]
     title: Digitale farbige TrueOrthophotos 2020 (TrueDOP20RGB) - Sommerbefliegung
-
-  - name: "2020"
-    sources: [2020_cache]
-    title: Digitale farbige Orthophotos 2020 (DOP20RGB)
-
-  - name: "2021"
-    sources: [2021_cache]
-    title: Digitale farbige Orthophotos 2021 (DOP20RGBI)
 
   - name: alkis_30
     sources: [alkis_30_cache]
@@ -194,28 +170,6 @@ caches:
     sources: [baumbestand_0_1_3_4_merged_source]
 
 sources:
-  1928_source:
-    req:
-      format: png
-      layers: 0
-      style: default
-      transparent: false
-      url: "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild1928"
-    supported_srs: ["EPSG:25833"]
-    type: wms
-    wms_opts: { version: 1.3.0 }
-
-  1953_source:
-    req:
-      format: png
-      layers: 0
-      style: default
-      transparent: false
-      url: "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild1953"
-    supported_srs: ["EPSG:25833"]
-    type: wms
-    wms_opts: { version: 1.3.0 }
-
   2013_source:
     req:
       format: png
@@ -249,28 +203,6 @@ sources:
     type: wms
     wms_opts: { version: 1.3.0 }
 
-  2018_source:
-    req:
-      format: png
-      layers: 0
-      style: default
-      transparent: false
-      url: "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2018_rgb"
-    supported_srs: ["EPSG:25833"]
-    type: wms
-    wms_opts: { version: 1.3.0 }
-
-  2019_source:
-    req:
-      format: png
-      layers: 0
-      style: default
-      transparent: false
-      url: "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2019_rgb"
-    supported_srs: ["EPSG:25833"]
-    type: wms
-    wms_opts: { version: 1.3.0 }
-
   2020_true_source:
     req:
       format: png
@@ -278,28 +210,6 @@ sources:
       style: default
       transparent: false
       url: "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2020_true_rgb"
-    supported_srs: ["EPSG:25833"]
-    type: wms
-    wms_opts: { version: 1.3.0 }
-
-  2020_source:
-    req:
-      format: png
-      layers: 0
-      style: default
-      transparent: false
-      url: "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2020_rgb"
-    supported_srs: ["EPSG:25833"]
-    type: wms
-    wms_opts: { version: 1.3.0 }
-
-  2021_source:
-    req:
-      format: png
-      layers: 0
-      style: default
-      transparent: false
-      url: "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2021_rgb"
     supported_srs: ["EPSG:25833"]
     type: wms
     wms_opts: { version: 1.3.0 }
