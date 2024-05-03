@@ -1,13 +1,10 @@
-mapproxy-config
-===============
+# mapproxy-config
 
-Avaliable maps
--------
+## Avaliable maps
 
 [🗺 A list of all avaliable maps with demo and editing urls …](./demo_links)
 
-Install
--------
+## Install
 
 ```
 python3 -m venv env
@@ -15,15 +12,13 @@ source env/bin/activate
 pip install -r requirements.txt
 ```
 
-Run local
----------
+## Run local
 
 ```
 mapproxy-util serve-develop config.yml
 ```
 
-Deployment
-----------
+## Deployment
 
 ```
 # creates the wsgi.py script
@@ -69,8 +64,7 @@ nginx -t
 systemctl start nginx
 ```
 
-Debugging
----------
+## Debugging
 
 ### Which config sources are recognized by Mapproxy?
 
@@ -103,6 +97,7 @@ You can also try https://mybinder.org/v2/gh/rbuffat/eli-helper/master ([GitHub](
 https://mapproxy.github.io/mapproxy/latest/index.html
 
 To see the installed version of mapproxy:
+
 ```
 cd mapproxy-config
 source env/bin/activate
@@ -110,8 +105,7 @@ mapproxy-util --version
 # MapProxy 1.13.2
 ```
 
-Useful WMS query params
------------------------
+## Useful WMS query params
 
 ```
 ?service=WMS&request=GetCapabilities&version=1.3.0
