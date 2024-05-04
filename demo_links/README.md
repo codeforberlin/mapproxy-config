@@ -138,49 +138,6 @@
 
 </details>
 
-## Digitale farbige TrueOrthophotos 2020 (TrueDOP20RGB) - Sommerbefliegung
-
-<img src="https://mapproxy.codefor.de/tiles/1.0.0/2020_true/mercator/16/35198/21494.png" width=200 alt="Demo image for Digitale farbige TrueOrthophotos 2020 (TrueDOP20RGB) - Sommerbefliegung" />
-
-
-
-> [!NOTE]
-> 2024-05-03: https://gdi.berlin.de/viewer/main/ verwendet noch fbinter.stadt-berlin.de.
-
-
-- TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/2020_true/mercator/{z}/{x}/{y}.png```
-
-- <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map/?url=https://mapproxy.codefor.de/tiles/1.0.0/2020_true/mercator/{z}/{x}/{y}.png">Preview layer</a>
-
-- <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/2020_true/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
-  
-
-<details>
-<summary>Show layer config options</summary>
-
-```
-[
-  {
-    "req": {
-      "format": "png",
-      "layers": 0,
-      "style": "default",
-      "transparent": false,
-      "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2020_true_rgb"
-    },
-    "supported_srs": [
-      "EPSG:25833"
-    ],
-    "type": "wms",
-    "wms_opts": {
-      "version": "1.3.0"
-    }
-  }
-]
-```
-
-</details>
-
 ## ALKIS Berlin (Amtliches Liegenschaftskatasterinformationssystem)
 
 <img src="https://mapproxy.codefor.de/tiles/1.0.0/alkis_30/mercator/16/35198/21494.png" width=200 alt="Demo image for ALKIS Berlin (Amtliches Liegenschaftskatasterinformationssystem)" />

@@ -20,10 +20,6 @@ layers:
     sources: [2016_cir_cache]
     title: Digitale Color-Infrarot-Orthophotos 2016 (DOP20CIR)
 
-  - name: 2020_true
-    sources: [2020_true_cache]
-    title: Digitale farbige TrueOrthophotos 2020 (TrueDOP20RGB) - Sommerbefliegung
-
   - name: alkis_30
     sources: [alkis_30_cache]
     title: ALKIS Berlin (Amtliches Liegenschaftskatasterinformationssystem)
@@ -108,10 +104,6 @@ caches:
   2020_true_cache:
     grids: [mercator]
     sources: [2020_true_source]
-
-  2020_cache:
-    grids: [mercator]
-    sources: [2020_source]
 
   2021_cache:
     grids: [mercator]
@@ -199,17 +191,6 @@ sources:
       style: default
       transparent: false
       url: https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2016_cir
-    supported_srs: ['EPSG:25833']
-    type: wms
-    wms_opts: { version: 1.3.0 }
-
-  2020_true_source:
-    req:
-      format: png
-      layers: 0
-      style: default
-      transparent: false
-      url: https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2020_true_rgb
     supported_srs: ['EPSG:25833']
     type: wms
     wms_opts: { version: 1.3.0 }
