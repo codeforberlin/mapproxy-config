@@ -40,6 +40,10 @@ layers:
     sources: [strassenbefahrung_cache]
     title: "Stra\xDFenbefahrung 2014"
 
+  - name: strassenbefahrung_alkis
+    sources: [strassenbefahrung_alkis_cache]
+    title: "Stra\xDFenbefahrung 2014, ALKIS Berlin s/w"
+
   - name: baumbestand_0
     sources: [baumbestand_0_cache]
     title: Baumbestand Berlin - Straßenbäume
@@ -60,13 +64,17 @@ layers:
     sources: [baumbestand_0_1_3_4_merged_cache]
     title: Baumbestand Berlin - Straßenbäume und Anlagenbäume mit und ohne Datenbankeintrag
 
-  - name: k_oeffbeleucht
-    sources: [k_oeffbeleucht_cache]
-    title: Öffentliche Beleuchtung
+  - name: baumbestand_0_1_3_4_alkis
+    sources: [baumbestand_0_1_3_4_alkis_cache]
+    title: Baumbestand Berlin - Straßenbäume und Anlagenbäume mit und ohne Datenbankeintrag, ALKIS Berlin s/w
 
-  - name: tempolimits
-    sources: [tempolimits_cache]
-    title: Tempolimits
+  - name: k_oeffbeleucht_alkis
+    sources: [k_oeffbeleucht_alkis_cache]
+    title: Öffentliche Beleuchtung, ALKIS Berlin s/w
+
+  - name: tempolimits_alkis
+    sources: [tempolimits_alkis_cache]
+    title: Tempolimits, ALKIS Berlin s/w
 
 caches:
   1928_cache:
@@ -123,33 +131,41 @@ caches:
 
   strassenbefahrung_cache:
     grids: [mercator]
-    sources: [alkis_sw_cache, strassenbefahrung_source]
+    sources: [strassenbefahrung_source]
+
+  strassenbefahrung_alkis_cache:
+    grids: [mercator]
+    sources: [alkis_sw_cache, strassenbefahrung_cache]
 
   baumbestand_0_cache:
     grids: [mercator]
-    sources: [alkis_sw_cache, baumbestand_0_source]
+    sources: [baumbestand_0_source]
 
   baumbestand_1_cache:
     grids: [mercator]
-    sources: [alkis_sw_cache, baumbestand_1_source]
+    sources: [baumbestand_1_source]
 
   baumbestand_3_cache:
     grids: [mercator]
-    sources: [alkis_sw_cache, baumbestand_3_source]
+    sources: [baumbestand_3_source]
 
   baumbestand_4_cache:
     grids: [mercator]
-    sources: [alkis_sw_cache, baumbestand_4_source]
+    sources: [baumbestand_4_source]
 
   baumbestand_0_1_3_4_merged_cache:
     grids: [mercator]
-    sources: [alkis_sw_cache, baumbestand_0_1_3_4_merged_source]
+    sources: [baumbestand_0_1_3_4_merged_source]
 
-  k_oeffbeleucht_cache:
+  baumbestand_0_1_3_4_alkis_cache:
+    grids: [mercator]
+    sources: [alkis_sw_cache, baumbestand_0_1_3_4_merged_cache]
+
+  k_oeffbeleucht_alkis_cache:
     grids: [mercator]
     sources: [alkis_sw_cache, k_oeffbeleucht_source]
 
-  tempolimits_cache:
+  tempolimits_alkis_cache:
     grids: [mercator]
     sources: [alkis_sw_cache, tempolimits_source]
 

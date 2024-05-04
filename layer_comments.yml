@@ -45,45 +45,63 @@ strassenbefahrung:
   deprecation_note:
   source_check_note: |
     2024-05-03: Updated to use gdi.berlin.de.
-  osm_editing_note: Remember that this data is from 2014. Used in https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/de/BerlinStrassenbefahrung.geojson?short_path=10b5602
+  osm_editing_note: |
+    Remember that this data is from 2014.
+    2024-05: Used in https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/de/BerlinStrassenbefahrung.geojson?short_path=10b5602
+strassenbefahrung_alkis:
+  deprecated: false
+  deprecation_note:
+  source_check_note: |
+    2024-05-03: Updated to use gdi.berlin.de.
+  osm_editing_note: |
+    Remember that this data is from 2014.
+    2024-05: Used in https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/de/BerlinStrassenbefahrungAlkis.geojson?short_path=10b5602
 baumbestand_0:
   deprecated: false
   deprecation_note:
   source_check_note: |
     2024-05-03: https://gdi.berlin.de/viewer/main/ verwendet noch fbinter.stadt-berlin.de.
-  osm_editing_note: Merged layer `baumbestand_0_1_3_4_merged` is recommended for mapping.
+  osm_editing_note: Merged layer `baumbestand_0_1_3_4_alkis` is recommended for mapping.
 baumbestand_1:
   deprecated: false
   deprecation_note:
   source_check_note: |
     2024-05-03: https://gdi.berlin.de/viewer/main/ verwendet noch fbinter.stadt-berlin.de.
-  osm_editing_note: Merged layer `baumbestand_0_1_3_4_merged` is recommended for mapping.
+  osm_editing_note: Merged layer `baumbestand_0_1_3_4_alkis` is recommended for mapping.
 baumbestand_3:
   deprecated: false
   deprecation_note:
   source_check_note: |
     2024-05-03: https://gdi.berlin.de/viewer/main/ verwendet noch fbinter.stadt-berlin.de.
-  osm_editing_note: Merged layer `baumbestand_0_1_3_4_merged` is recommended for mapping.
+  osm_editing_note: Merged layer `baumbestand_0_1_3_4_alkis` is recommended for mapping.
 baumbestand_4:
   deprecated: false
   deprecation_note:
   source_check_note: |
     2024-05-03: https://gdi.berlin.de/viewer/main/ verwendet noch fbinter.stadt-berlin.de.
-  osm_editing_note: Merged layer `baumbestand_0_1_3_4_merged` is recommended for mapping.
+  osm_editing_note: Merged layer `baumbestand_0_1_3_4_alkis` is recommended for mapping.
 baumbestand_0_1_3_4_merged:
   deprecated: false
   deprecation_note:
   source_check_note: |
     2024-05-03: https://gdi.berlin.de/viewer/main/ verwendet noch fbinter.stadt-berlin.de.
-  osm_editing_note: Used in https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/de/BerlinBaeume.geojson?short_path=d14f28e
-k_oeffbeleucht:
+  osm_editing_note: |
+    2024-05: Was used in https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/de/BerlinBaeume.geojson?short_path=d14f28e
+baumbestand_0_1_3_4_alkis:
+  deprecated: false
+  deprecation_note:
+  source_check_note: |
+    2024-05-03: https://gdi.berlin.de/viewer/main/ verwendet noch fbinter.stadt-berlin.de.
+  osm_editing_note: |
+    2024-05: Used in https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/de/BerlinBaeumeAlkis.geojson?short_path=d14f28e
+k_oeffbeleucht_alkis:
   deprecated: false
   deprecation_note:
   source_check_note: |
     2024-05-03: https://gdi.berlin.de/viewer/main/ verwendet noch fbinter.stadt-berlin.de.
     2024-05-03 Added from https://daten.berlin.de/datensaetze/%C3%B6ffentliche-beleuchtung-wms
   osm_editing_note: I did not check if the OSM licences waifer applies to this dataset as well.
-tempolimits:
+tempolimits_alkis:
   deprecated: false
   deprecation_note:
   source_check_note:
