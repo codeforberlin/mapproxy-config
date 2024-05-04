@@ -73,14 +73,6 @@ layers:
     title: Tempolimits, ALKIS Berlin s/w
 
 caches:
-  1928_cache:
-    grids: [mercator]
-    sources: [1928_source]
-
-  1953_cache:
-    grids: [mercator]
-    sources: [1953_source]
-
   2013_cache:
     grids: [mercator]
     sources: [2013_source]
@@ -92,22 +84,6 @@ caches:
   2016_cir_cache:
     grids: [mercator]
     sources: [2016_cir_source]
-
-  2018_cache:
-    grids: [mercator]
-    sources: [2018_source]
-
-  2019_cache:
-    grids: [mercator]
-    sources: [2019_source]
-
-  2020_true_cache:
-    grids: [mercator]
-    sources: [2020_true_source]
-
-  2021_cache:
-    grids: [mercator]
-    sources: [2021_source]
 
   alkis_30_cache:
     grids: [mercator]
