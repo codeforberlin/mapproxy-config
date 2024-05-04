@@ -72,6 +72,10 @@ layers:
     sources: [tempolimits_alkis_cache]
     title: Tempolimits, ALKIS Berlin s/w
 
+  - name: fussgaengernetz_alkis
+    sources: [fussgaengernetz_alkis_cache]
+    title: Fußgängernetz, ALKIS Berlin s/w
+
 caches:
   2013_cache:
     grids: [mercator]
@@ -136,6 +140,10 @@ caches:
   tempolimits_alkis_cache:
     grids: [mercator]
     sources: [alkis_sw_cache, tempolimits_source]
+
+  fussgaengernetz_alkis_cache:
+    grids: [mercator]
+    sources: [alkis_sw_cache, fussgaengernetz_source]
 
 sources:
   2013_source:
@@ -288,6 +296,17 @@ sources:
       style: default
       transparent: true
       url: https://gdi.berlin.de/services/wms/tempolimits
+    supported_srs: ['EPSG:25833']
+    type: wms
+    wms_opts: { version: 1.3.0 }
+
+  fussgaengernetz_source:
+    req:
+      format: png
+      layers: 0
+      style: default
+      transparent: true
+      url: https://gdi.berlin.de/services/wms/fussgaengernetz
     supported_srs: ['EPSG:25833']
     type: wms
     wms_opts: { version: 1.3.0 }

@@ -675,3 +675,45 @@
 ```
 
 </details>
+
+## Fußgängernetz, ALKIS Berlin s/w
+
+<img src="https://mapproxy.codefor.de/tiles/1.0.0/fussgaengernetz_alkis/mercator/16/35198/21494.png" width=200 alt="Demo image for Fußgängernetz, ALKIS Berlin s/w" />
+
+
+
+
+
+- TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/fussgaengernetz_alkis/mercator/{z}/{x}/{y}.png```
+
+- <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map/?url=https://mapproxy.codefor.de/tiles/1.0.0/fussgaengernetz_alkis/mercator/{z}/{x}/{y}.png">Preview layer</a>
+
+- <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/fussgaengernetz_alkis/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
+  > I did not check if the OSM license waiver applies to this dataset as well.
+
+<details>
+<summary>Show layer config options</summary>
+
+```
+[
+  null,
+  {
+    "req": {
+      "format": "png",
+      "layers": 0,
+      "style": "default",
+      "transparent": true,
+      "url": "https://gdi.berlin.de/services/wms/fussgaengernetz"
+    },
+    "supported_srs": [
+      "EPSG:25833"
+    ],
+    "type": "wms",
+    "wms_opts": {
+      "version": "1.3.0"
+    }
+  }
+]
+```
+
+</details>

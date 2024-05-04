@@ -100,3 +100,8 @@ tempolimits_alkis:
   deprecation_note:
   source_check_note:
   osm_editing_note: I did not check if the OSM license waiver applies to this dataset as well.
+fussgaengernetz_alkis:
+  deprecated: false
+  deprecation_note:
+  source_check_note:
+  osm_editing_note: I did not check if the OSM license waiver applies to this dataset as well.
