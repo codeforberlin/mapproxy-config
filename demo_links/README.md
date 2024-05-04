@@ -8,11 +8,12 @@
   ---
 
 
-## Digitale farbige Orthophotos 2013 (DOP20RGB)
+## ⚠️ Digitale farbige Orthophotos 2013 (DOP20RGB)
 
 <img src="https://mapproxy.codefor.de/tiles/1.0.0/2013/mercator/16/35198/21494.png" width=200 alt="Demo image for Digitale farbige Orthophotos 2013 (DOP20RGB)" />
 
-
+> [!CAUTION]
+> This should move to https://github.com/codeforberlin/tilestache-config/issues/4 and not be part of the proxy.
 
 > [!NOTE]
 > 2024-05-03: https://gdi.berlin.de/viewer/main/ verwendet noch fbinter.stadt-berlin.de.
