@@ -303,7 +303,7 @@ sources:
   fussgaengernetz_source:
     req:
       format: png
-      layers: a_verbindungspunkte,b_strassenelemente
+      layers: b_strassenelemente,a_verbindungspunkte
       style: default
       transparent: true
       url: https://gdi.berlin.de/services/wms/fussgaengernetz
