@@ -2,9 +2,11 @@
 
 Source https://gdi.berlin.de/services/wms/tempolimits?service=WMS&request=GetCapabilities&version=1.3.0
 
-Sachdaten https://gdi.berlin.de/geonetwork/srv/ger/catalog.search#/metadata/609fb162-892d-301c-9aa6-331dd44f5a7a
+Sachdaten https://gdi.berlin.de/geonetwork/srv/ger/catalog.search#/metadata/e7b13688-63c8-3537-8f98-f1d6b807e62d
 
 Dokumentation https://fbinter.stadt-berlin.de/fb_daten/beschreibung/datenformatbeschreibung/Datenformatbeschreibung_Tempolimits.pdf
+
+Legende https://fbinter.stadt-berlin.de/fb_daten/legenden/leg_tempolimits.png
 
 > Tempolimits
 >
