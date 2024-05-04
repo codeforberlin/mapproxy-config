@@ -4,6 +4,13 @@
 
 [🗺 A list of all avaliable maps with demo and editing urls …](./demo_links)
 
+## Other projects
+
+- [luftbilder.berlin.codefor.de](https://luftbilder.berlin.codefor.de) showcases areal images from differnt years [Github](https://github.com/codeforberlin/luftbilder.berlin.codefor.de)
+- [maps.berlin.codefor.de](https://maps.berlin.codefor.de) showcases all kind of maps [Github](https://github.com/codeforberlin/maps.berlin.codefor.de)
+- [github.com/codeforberlin/tilestache-config](https://github.com/codeforberlin/tilestache-config) is the config for serving areal imagery from file ([config](https://github.com/codeforberlin/tilestache-config/blob/master/config.json))
+<!-- * [github.com/codeforberlin/mapproxy-config](https://github.com/codeforberlin/mapproxy-config) is a map proxy for some imagery layers by the City of Berlin -->
+
 ## Install
 
 ```
