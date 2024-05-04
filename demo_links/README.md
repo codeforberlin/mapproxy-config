@@ -605,7 +605,7 @@
 - <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map/?url=https://mapproxy.codefor.de/tiles/1.0.0/k_oeffbeleucht_alkis/mercator/{z}/{x}/{y}.png">Preview layer</a>
 
 - <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/k_oeffbeleucht_alkis/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
-  > I did not check if the OSM licences waifer applies to this dataset as well.
+  > I did not check if the OSM license waiver applies to this dataset as well.
 
 <details>
 <summary>Show layer config options</summary>
@@ -647,7 +647,7 @@
 - <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map/?url=https://mapproxy.codefor.de/tiles/1.0.0/tempolimits_alkis/mercator/{z}/{x}/{y}.png">Preview layer</a>
 
 - <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/tempolimits_alkis/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
-  > I did not check if the OSM licences waifer applies to this dataset as well.
+  > I did not check if the OSM license waiver applies to this dataset as well.
 
 <details>
 <summary>Show layer config options</summary>
