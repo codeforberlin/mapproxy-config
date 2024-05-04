@@ -94,7 +94,8 @@ You can also try https://mybinder.org/v2/gh/rbuffat/eli-helper/master ([GitHub](
 
 ### Mapproxy documentation.
 
-https://mapproxy.github.io/mapproxy/latest/index.html
+- https://mapproxy.github.io/mapproxy/latest/index.html
+- https://mapproxy.github.io/mapproxy/latest/configuration_examples.html#merge-multiple-layers how to merge layers
 
 To see the installed version of mapproxy:
 
@@ -109,8 +110,12 @@ mapproxy-util --version
 
 ```
 ?service=WMS&request=GetCapabilities&version=1.3.0
+```
 
+```
 ?format=image%2Fpng&height=512&bbox=388800.010065,5818137.195276,393794.488433,5821374.047744&layers=0&srs=ESPG:25833&style=default&service=WMS&request=GetMap&width=512&version=1.3.0
+```
 
+```
 ?width=512&height=512&bbox=388800,5818137,393794,5821374&layers=0&srs=EPSG:4326&styles=default&format=image/png&service=WMS&request=GetMap&version=1.3.0
 ```
