@@ -11,6 +11,13 @@
 - [github.com/codeforberlin/tilestache-config](https://github.com/codeforberlin/tilestache-config) is the config for serving areal imagery from file ([config](https://github.com/codeforberlin/tilestache-config/blob/master/config.json))
 <!-- * [github.com/codeforberlin/mapproxy-config](https://github.com/codeforberlin/mapproxy-config) is a map proxy for some imagery layers by the City of Berlin -->
 
+## Add new layer
+
+- Use https://gdi.berlin.de/viewer/main/ as the main source
+- Inspect the network request of layers
+- Craft the config from there
+- Add coumentation in `layer_docs` if helpful
+
 ## Install
 
 ```
