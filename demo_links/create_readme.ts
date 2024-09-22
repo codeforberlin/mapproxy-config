@@ -81,7 +81,7 @@ ${comment.source_check_note ? `> [!NOTE]\n> ${comment.source_check_note}` : ''}
 
 - TMS URL: \`\`\`${tmsUrl}\`\`\`
 
-- <a href="https://supaplexosm.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map/?url=${tmsUrl}">Preview layer</a>
+- <a href="https://strassenraumkarte.osm-berlin.org/mapproxy_demo_map?url=${tmsUrl}">Preview layer</a>
 
 - <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:${tmsUrl}&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
   ${comment.osm_editing_note ? `> ${comment.osm_editing_note}` : ''}
