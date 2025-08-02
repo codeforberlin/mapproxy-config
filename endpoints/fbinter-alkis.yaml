@@ -14,7 +14,7 @@ caches:
 
   alkis_sw_cache:
     grids: [mercator]
-    sources: [alkis_sw_source]
+    sources: [alkis_sw_source, alkis_bezirke_source]
 
 sources:
   alkis_30_source:
@@ -35,6 +35,17 @@ sources:
       style: default
       transparent: false
       url: https://fbinter.stadt-berlin.de/fb/wms/senstadt/wmsk_alkis_sw
+    supported_srs: ['EPSG:25833']
+    type: wms
+    wms_opts: { version: 1.3.0 }
+
+  alkis_bezirke_source:
+    req:
+      format: png
+      layers: bezirksgrenzen
+      style: default
+      transparent: true
+      url: https://gdi.berlin.de/services/wms/alkis_bezirke
     supported_srs: ['EPSG:25833']
     type: wms
     wms_opts: { version: 1.3.0 }
