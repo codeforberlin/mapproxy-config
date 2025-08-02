@@ -3,8 +3,8 @@
 
 # Base configurations to include
 base:
-  - endpoints/fbinter-senstadt.yaml
   - endpoints/fbinter-alkis.yaml
+  - endpoints/fbinter-senstadt.yaml
   - endpoints/fbinter-oeffbeleucht.yaml
   - endpoints/gdi-bdom.yaml
   - endpoints/gdi-strassenbefahrung.yaml
