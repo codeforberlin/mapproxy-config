@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  mapproxy:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      # Mount configuration files for live editing
+      - ./config.yml:/mapproxy/config.yml:ro
+      - ./log.ini:/mapproxy/log.ini:ro
+      - ./endpoints:/mapproxy/endpoints:ro
+    environment:
+      - MAPPROXY_PROCESSES=1
+      - MAPPROXY_THREADS=4
+    restart: unless-stopped
+
+  # Optional: Add a simple web server to serve the demo links
+  demo:
+    image: nginx:alpine
+    ports:
+      - "3001:80"
+    volumes:
+      - ./demo_links:/usr/share/nginx/html:ro
+    depends_on:
+      - mapproxy
+    restart: unless-stopped
