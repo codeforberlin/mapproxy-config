@@ -8,52 +8,6 @@
   ---
 
 
-## ⚠️ Digitale farbige Orthophotos 2013 (DOP20RGB)
-
-<img src="https://mapproxy.codefor.de/tiles/1.0.0/2013/mercator/16/35198/21494.png" width=200 alt="Demo image for Digitale farbige Orthophotos 2013 (DOP20RGB)" />
-
-> [!CAUTION]
-> This should move to https://github.com/codeforberlin/tilestache-config/issues/4 and not be part of the proxy.
-
-> [!NOTE]
-> 2024-05-03: https://gdi.berlin.de/viewer/main/ verwendet noch fbinter.stadt-berlin.de.
-
-
-- TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/2013/mercator/{z}/{x}/{y}.png```
-
-- <a href="https://strassenraumkarte.osm-berlin.org/mapproxy_demo_map?url=https://mapproxy.codefor.de/tiles/1.0.0/2013/mercator/{z}/{x}/{y}.png">Preview layer</a>
-
-- <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/2013/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
-  
-
-- <a href="https://wfsexplorer.netlify.app/?wfs=https%3A%2F%2Ffbinter.stadt-berlin.de%2Ffb%2Fwms%2Fsenstadt%2Fk_luftbild2013">WFSExplorer</a> for https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2013
-
-<details>
-<summary>Show layer config options</summary>
-
-```
-[
-  {
-    "req": {
-      "format": "png",
-      "layers": 0,
-      "style": "default",
-      "transparent": false,
-      "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2013"
-    },
-    "supported_srs": [
-      "EPSG:25833"
-    ],
-    "type": "wms",
-    "wms_opts": {
-      "version": "1.3.0"
-    }
-  }
-]
-```
-
-</details>
-
 ## Digitale Color-Infrarot-Orthophotos 2015 (DOP20CIR)
 
 <img src="https://mapproxy.codefor.de/tiles/1.0.0/2015_cir/mercator/16/35198/21494.png" width=200 alt="Demo image for Digitale Color-Infrarot-Orthophotos 2015 (DOP20CIR)" />
