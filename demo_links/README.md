@@ -1,9 +1,9 @@
 
   # A list of all available maps with demo and editing urls
 
-  See [UPDATE.md](https://github.com/codeforberlin/mapproxy-config/blob/master/demo_links/UPDATE.md) for how instructions on how to update this file.
+  See [UPDATE.md](https://github.com/codeforberlin/mapproxy-config/blob/master/demo_links/UPDATE.md) for instructions on how to update this file.
 
-  The list reads [config.yml](../config.yml) and [layer_comments.yml](../layer_comments.yml).
+  The list reads [config.yml](../config.yml) and endpoint comment files from [endpoints/](../endpoints/).
 
   ---
 
@@ -21,7 +21,7 @@
 
 - TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/2013/mercator/{z}/{x}/{y}.png```
 
-- <a href="https://osmberlin.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map/?url=https://mapproxy.codefor.de/tiles/1.0.0/2013/mercator/{z}/{x}/{y}.png">Preview layer</a>
+- <a href="https://strassenraumkarte.osm-berlin.org/mapproxy_demo_map?url=https://mapproxy.codefor.de/tiles/1.0.0/2013/mercator/{z}/{x}/{y}.png">Preview layer</a>
 
 - <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/2013/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
   
@@ -64,7 +64,7 @@
 
 - TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/2015_cir/mercator/{z}/{x}/{y}.png```
 
-- <a href="https://osmberlin.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map/?url=https://mapproxy.codefor.de/tiles/1.0.0/2015_cir/mercator/{z}/{x}/{y}.png">Preview layer</a>
+- <a href="https://strassenraumkarte.osm-berlin.org/mapproxy_demo_map?url=https://mapproxy.codefor.de/tiles/1.0.0/2015_cir/mercator/{z}/{x}/{y}.png">Preview layer</a>
 
 - <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/2015_cir/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
   
@@ -107,7 +107,7 @@
 
 - TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/2016_cir/mercator/{z}/{x}/{y}.png```
 
-- <a href="https://osmberlin.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map/?url=https://mapproxy.codefor.de/tiles/1.0.0/2016_cir/mercator/{z}/{x}/{y}.png">Preview layer</a>
+- <a href="https://strassenraumkarte.osm-berlin.org/mapproxy_demo_map?url=https://mapproxy.codefor.de/tiles/1.0.0/2016_cir/mercator/{z}/{x}/{y}.png">Preview layer</a>
 
 - <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/2016_cir/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
   
@@ -150,7 +150,7 @@
 
 - TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/alkis_30/mercator/{z}/{x}/{y}.png```
 
-- <a href="https://osmberlin.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map/?url=https://mapproxy.codefor.de/tiles/1.0.0/alkis_30/mercator/{z}/{x}/{y}.png">Preview layer</a>
+- <a href="https://strassenraumkarte.osm-berlin.org/mapproxy_demo_map?url=https://mapproxy.codefor.de/tiles/1.0.0/alkis_30/mercator/{z}/{x}/{y}.png">Preview layer</a>
 
 - <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/alkis_30/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
   > Used in https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/de/BerlinAlkis.geojson?short_path=b7406a2
@@ -193,7 +193,7 @@
 
 - TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/alkis_sw/mercator/{z}/{x}/{y}.png```
 
-- <a href="https://osmberlin.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map/?url=https://mapproxy.codefor.de/tiles/1.0.0/alkis_sw/mercator/{z}/{x}/{y}.png">Preview layer</a>
+- <a href="https://strassenraumkarte.osm-berlin.org/mapproxy_demo_map?url=https://mapproxy.codefor.de/tiles/1.0.0/alkis_sw/mercator/{z}/{x}/{y}.png">Preview layer</a>
 
 - <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/alkis_sw/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
   
@@ -224,6 +224,51 @@
 
 </details>
 
+## Öffentliche Beleuchtung, ALKIS Berlin s/w
+
+<img src="https://mapproxy.codefor.de/tiles/1.0.0/k_oeffbeleucht_alkis/mercator/16/35198/21494.png" width=200 alt="Demo image for Öffentliche Beleuchtung, ALKIS Berlin s/w" />
+
+
+
+> [!NOTE]
+> 2024-05-03: https://gdi.berlin.de/viewer/main/ verwendet noch fbinter.stadt-berlin.de.
+2024-05-03 Added from https://daten.berlin.de/datensaetze/%C3%B6ffentliche-beleuchtung-wms
+
+
+- TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/k_oeffbeleucht_alkis/mercator/{z}/{x}/{y}.png```
+
+- <a href="https://strassenraumkarte.osm-berlin.org/mapproxy_demo_map?url=https://mapproxy.codefor.de/tiles/1.0.0/k_oeffbeleucht_alkis/mercator/{z}/{x}/{y}.png">Preview layer</a>
+
+- <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/k_oeffbeleucht_alkis/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
+  > I did not check if the OSM license waiver applies to this dataset as well.
+
+<details>
+<summary>Show layer config options</summary>
+
+```
+[
+  null,
+  {
+    "req": {
+      "format": "png",
+      "layers": "2,0,3",
+      "style": "default",
+      "transparent": true,
+      "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_oeffbeleucht"
+    },
+    "supported_srs": [
+      "EPSG:25833"
+    ],
+    "type": "wms",
+    "wms_opts": {
+      "version": "1.3.0"
+    }
+  }
+]
+```
+
+</details>
+
 ## ATKIS® DOM - Digitales Oberflächenmodell
 
 <img src="https://mapproxy.codefor.de/tiles/1.0.0/atkis_dom/mercator/16/35198/21494.png" width=200 alt="Demo image for ATKIS® DOM - Digitales Oberflächenmodell" />
@@ -236,7 +281,7 @@
 
 - TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/atkis_dom/mercator/{z}/{x}/{y}.png```
 
-- <a href="https://osmberlin.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map/?url=https://mapproxy.codefor.de/tiles/1.0.0/atkis_dom/mercator/{z}/{x}/{y}.png">Preview layer</a>
+- <a href="https://strassenraumkarte.osm-berlin.org/mapproxy_demo_map?url=https://mapproxy.codefor.de/tiles/1.0.0/atkis_dom/mercator/{z}/{x}/{y}.png">Preview layer</a>
 
 - <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/atkis_dom/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
   > OK for trees and houses, but otherwise pretty pixelated.
@@ -279,7 +324,7 @@
 
 - TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/strassenbefahrung/mercator/{z}/{x}/{y}.png```
 
-- <a href="https://osmberlin.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map/?url=https://mapproxy.codefor.de/tiles/1.0.0/strassenbefahrung/mercator/{z}/{x}/{y}.png">Preview layer</a>
+- <a href="https://strassenraumkarte.osm-berlin.org/mapproxy_demo_map?url=https://mapproxy.codefor.de/tiles/1.0.0/strassenbefahrung/mercator/{z}/{x}/{y}.png">Preview layer</a>
 
 - <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/strassenbefahrung/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
   > Remember that this data is from 2014.
@@ -324,7 +369,7 @@
 
 - TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/strassenbefahrung_alkis/mercator/{z}/{x}/{y}.png```
 
-- <a href="https://osmberlin.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map/?url=https://mapproxy.codefor.de/tiles/1.0.0/strassenbefahrung_alkis/mercator/{z}/{x}/{y}.png">Preview layer</a>
+- <a href="https://strassenraumkarte.osm-berlin.org/mapproxy_demo_map?url=https://mapproxy.codefor.de/tiles/1.0.0/strassenbefahrung_alkis/mercator/{z}/{x}/{y}.png">Preview layer</a>
 
 - <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/strassenbefahrung_alkis/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
   > Remember that this data is from 2014.
@@ -355,10 +400,10 @@
 
 - TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0/mercator/{z}/{x}/{y}.png```
 
-- <a href="https://osmberlin.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map/?url=https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0/mercator/{z}/{x}/{y}.png">Preview layer</a>
+- <a href="https://strassenraumkarte.osm-berlin.org/mapproxy_demo_map?url=https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0/mercator/{z}/{x}/{y}.png">Preview layer</a>
 
 - <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
-  > Merged layer `baumbestand_0_1_3_4_alkis` is recommended for mapping.
+  > Merged layer `baumbestand_0_1_merged` is recommended for mapping.
 
 <details>
 <summary>Show layer config options</summary>
@@ -368,10 +413,10 @@
   {
     "req": {
       "format": "png",
-      "layers": 0,
-      "style": "default",
+      "layers": "anlagenbaeume",
+      "style": "anlagenbaeume",
       "transparent": true,
-      "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_wfs_baumbestand"
+      "url": "https://gdi.berlin.de/services/wms/baumbestand"
     },
     "supported_srs": [
       "EPSG:25833"
@@ -398,10 +443,10 @@
 
 - TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_1/mercator/{z}/{x}/{y}.png```
 
-- <a href="https://osmberlin.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map/?url=https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_1/mercator/{z}/{x}/{y}.png">Preview layer</a>
+- <a href="https://strassenraumkarte.osm-berlin.org/mapproxy_demo_map?url=https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_1/mercator/{z}/{x}/{y}.png">Preview layer</a>
 
 - <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_1/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
-  > Merged layer `baumbestand_0_1_3_4_alkis` is recommended for mapping.
+  > Merged layer `baumbestand_0_1_merged` is recommended for mapping.
 
 <details>
 <summary>Show layer config options</summary>
@@ -411,96 +456,10 @@
   {
     "req": {
       "format": "png",
-      "layers": 1,
-      "style": "default",
+      "layers": "strassenbaeume",
+      "style": "strassenbaeume",
       "transparent": true,
-      "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_wfs_baumbestand"
-    },
-    "supported_srs": [
-      "EPSG:25833"
-    ],
-    "type": "wms",
-    "wms_opts": {
-      "version": "1.3.0"
-    }
-  }
-]
-```
-
-</details>
-
-## Baumbestand Berlin - Anlagenbäume ohne Datenbankeintrag
-
-<img src="https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_3/mercator/16/35198/21494.png" width=200 alt="Demo image for Baumbestand Berlin - Anlagenbäume ohne Datenbankeintrag" />
-
-
-
-> [!NOTE]
-> 2024-05-03: https://gdi.berlin.de/viewer/main/ verwendet noch fbinter.stadt-berlin.de.
-
-
-- TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_3/mercator/{z}/{x}/{y}.png```
-
-- <a href="https://osmberlin.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map/?url=https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_3/mercator/{z}/{x}/{y}.png">Preview layer</a>
-
-- <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_3/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
-  > Merged layer `baumbestand_0_1_3_4_alkis` is recommended for mapping.
-
-<details>
-<summary>Show layer config options</summary>
-
-```
-[
-  {
-    "req": {
-      "format": "png",
-      "layers": 3,
-      "style": "default",
-      "transparent": true,
-      "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_wfs_baumbestand"
-    },
-    "supported_srs": [
-      "EPSG:25833"
-    ],
-    "type": "wms",
-    "wms_opts": {
-      "version": "1.3.0"
-    }
-  }
-]
-```
-
-</details>
-
-## Baumbestand Berlin - Straßenbäume ohne Datenbankeintrag
-
-<img src="https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_4/mercator/16/35198/21494.png" width=200 alt="Demo image for Baumbestand Berlin - Straßenbäume ohne Datenbankeintrag" />
-
-
-
-> [!NOTE]
-> 2024-05-03: https://gdi.berlin.de/viewer/main/ verwendet noch fbinter.stadt-berlin.de.
-
-
-- TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_4/mercator/{z}/{x}/{y}.png```
-
-- <a href="https://osmberlin.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map/?url=https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_4/mercator/{z}/{x}/{y}.png">Preview layer</a>
-
-- <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_4/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
-  > Merged layer `baumbestand_0_1_3_4_alkis` is recommended for mapping.
-
-<details>
-<summary>Show layer config options</summary>
-
-```
-[
-  {
-    "req": {
-      "format": "png",
-      "layers": 4,
-      "style": "default",
-      "transparent": true,
-      "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_wfs_baumbestand"
+      "url": "https://gdi.berlin.de/services/wms/baumbestand"
     },
     "supported_srs": [
       "EPSG:25833"
@@ -517,7 +476,7 @@
 
 ## Baumbestand Berlin - Straßenbäume und Anlagenbäume mit und ohne Datenbankeintrag
 
-<img src="https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0_1_3_4_merged/mercator/16/35198/21494.png" width=200 alt="Demo image for Baumbestand Berlin - Straßenbäume und Anlagenbäume mit und ohne Datenbankeintrag" />
+<img src="https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0_1_merged/mercator/16/35198/21494.png" width=200 alt="Demo image for Baumbestand Berlin - Straßenbäume und Anlagenbäume mit und ohne Datenbankeintrag" />
 
 
 
@@ -525,11 +484,11 @@
 > 2024-05-03: https://gdi.berlin.de/viewer/main/ verwendet noch fbinter.stadt-berlin.de.
 
 
-- TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0_1_3_4_merged/mercator/{z}/{x}/{y}.png```
+- TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0_1_merged/mercator/{z}/{x}/{y}.png```
 
-- <a href="https://osmberlin.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map/?url=https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0_1_3_4_merged/mercator/{z}/{x}/{y}.png">Preview layer</a>
+- <a href="https://strassenraumkarte.osm-berlin.org/mapproxy_demo_map?url=https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0_1_merged/mercator/{z}/{x}/{y}.png">Preview layer</a>
 
-- <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0_1_3_4_merged/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
+- <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0_1_merged/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
   > 2024-05: Was used in https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/de/BerlinBaeume.geojson?short_path=d14f28e
 
 
@@ -541,10 +500,10 @@
   {
     "req": {
       "format": "png",
-      "layers": "0,1,3,4",
-      "style": "default",
+      "layers": "anlagenbaeume,strassenbaeume",
+      "style": "anlagenbaeume,strassenbaeume",
       "transparent": true,
-      "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_wfs_baumbestand"
+      "url": "https://gdi.berlin.de/services/wms/baumbestand"
     },
     "supported_srs": [
       "EPSG:25833"
@@ -561,7 +520,7 @@
 
 ## Baumbestand Berlin - Straßenbäume und Anlagenbäume mit und ohne Datenbankeintrag, ALKIS Berlin s/w
 
-<img src="https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0_1_3_4_alkis/mercator/16/35198/21494.png" width=200 alt="Demo image for Baumbestand Berlin - Straßenbäume und Anlagenbäume mit und ohne Datenbankeintrag, ALKIS Berlin s/w" />
+<img src="https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0_1_alkis/mercator/16/35198/21494.png" width=200 alt="Demo image for Baumbestand Berlin - Straßenbäume und Anlagenbäume mit und ohne Datenbankeintrag, ALKIS Berlin s/w" />
 
 
 
@@ -569,11 +528,11 @@
 > 2024-05-03: https://gdi.berlin.de/viewer/main/ verwendet noch fbinter.stadt-berlin.de.
 
 
-- TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0_1_3_4_alkis/mercator/{z}/{x}/{y}.png```
+- TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0_1_alkis/mercator/{z}/{x}/{y}.png```
 
-- <a href="https://osmberlin.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map/?url=https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0_1_3_4_alkis/mercator/{z}/{x}/{y}.png">Preview layer</a>
+- <a href="https://strassenraumkarte.osm-berlin.org/mapproxy_demo_map?url=https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0_1_alkis/mercator/{z}/{x}/{y}.png">Preview layer</a>
 
-- <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0_1_3_4_alkis/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
+- <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0_1_alkis/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
   > 2024-05: Used in https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/de/BerlinBaeumeAlkis.geojson?short_path=d14f28e
 
 
@@ -589,51 +548,6 @@
 
 </details>
 
-## Öffentliche Beleuchtung, ALKIS Berlin s/w
-
-<img src="https://mapproxy.codefor.de/tiles/1.0.0/k_oeffbeleucht_alkis/mercator/16/35198/21494.png" width=200 alt="Demo image for Öffentliche Beleuchtung, ALKIS Berlin s/w" />
-
-
-
-> [!NOTE]
-> 2024-05-03: https://gdi.berlin.de/viewer/main/ verwendet noch fbinter.stadt-berlin.de.
-2024-05-03 Added from https://daten.berlin.de/datensaetze/%C3%B6ffentliche-beleuchtung-wms
-
-
-- TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/k_oeffbeleucht_alkis/mercator/{z}/{x}/{y}.png```
-
-- <a href="https://osmberlin.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map/?url=https://mapproxy.codefor.de/tiles/1.0.0/k_oeffbeleucht_alkis/mercator/{z}/{x}/{y}.png">Preview layer</a>
-
-- <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/k_oeffbeleucht_alkis/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
-  > I did not check if the OSM license waiver applies to this dataset as well.
-
-<details>
-<summary>Show layer config options</summary>
-
-```
-[
-  null,
-  {
-    "req": {
-      "format": "png",
-      "layers": "2,0,3",
-      "style": "default",
-      "transparent": true,
-      "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_oeffbeleucht"
-    },
-    "supported_srs": [
-      "EPSG:25833"
-    ],
-    "type": "wms",
-    "wms_opts": {
-      "version": "1.3.0"
-    }
-  }
-]
-```
-
-</details>
-
 ## Tempolimits, ALKIS Berlin s/w
 
 <img src="https://mapproxy.codefor.de/tiles/1.0.0/tempolimits_alkis/mercator/16/35198/21494.png" width=200 alt="Demo image for Tempolimits, ALKIS Berlin s/w" />
@@ -644,7 +558,7 @@
 
 - TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/tempolimits_alkis/mercator/{z}/{x}/{y}.png```
 
-- <a href="https://osmberlin.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map/?url=https://mapproxy.codefor.de/tiles/1.0.0/tempolimits_alkis/mercator/{z}/{x}/{y}.png">Preview layer</a>
+- <a href="https://strassenraumkarte.osm-berlin.org/mapproxy_demo_map?url=https://mapproxy.codefor.de/tiles/1.0.0/tempolimits_alkis/mercator/{z}/{x}/{y}.png">Preview layer</a>
 
 - <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/tempolimits_alkis/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
   > I did not check if the OSM license waiver applies to this dataset as well.
@@ -686,7 +600,7 @@
 
 - TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/fussgaengernetz_alkis/mercator/{z}/{x}/{y}.png```
 
-- <a href="https://osmberlin.github.io/strassenraumkarte-neukoelln/mapproxy_demo_map/?url=https://mapproxy.codefor.de/tiles/1.0.0/fussgaengernetz_alkis/mercator/{z}/{x}/{y}.png">Preview layer</a>
+- <a href="https://strassenraumkarte.osm-berlin.org/mapproxy_demo_map?url=https://mapproxy.codefor.de/tiles/1.0.0/fussgaengernetz_alkis/mercator/{z}/{x}/{y}.png">Preview layer</a>
 
 - <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/fussgaengernetz_alkis/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
   > I did not check if the OSM license waiver applies to this dataset as well.
@@ -700,7 +614,7 @@
   {
     "req": {
       "format": "png",
-      "layers": 0,
+      "layers": "b_strassenelemente,a_verbindungspunkte",
       "style": "default",
       "transparent": true,
       "url": "https://gdi.berlin.de/services/wms/fussgaengernetz"

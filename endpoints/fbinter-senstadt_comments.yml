@@ -1,0 +1,20 @@
+'2013':
+  deprecated: true
+  deprecation_note: This should move to https://github.com/codeforberlin/tilestache-config/issues/4 and not be part of the proxy.
+  source_check_note: |
+    2024-05-03: https://gdi.berlin.de/viewer/main/ verwendet noch fbinter.stadt-berlin.de.
+  osm_editing_note:
+
+2015_cir:
+  deprecated: false
+  deprecation_note:
+  source_check_note: |
+    2024-05-03: https://gdi.berlin.de/viewer/main/ verwendet noch fbinter.stadt-berlin.de.
+  osm_editing_note:
+
+2016_cir:
+  deprecated: false
+  deprecation_note:
+  source_check_note: |
+    2024-05-03: https://gdi.berlin.de/viewer/main/ verwendet noch fbinter.stadt-berlin.de.
+  osm_editing_note:

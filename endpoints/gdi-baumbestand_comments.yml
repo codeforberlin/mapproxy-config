@@ -1,0 +1,29 @@
+baumbestand_0:
+  deprecated: false
+  deprecation_note:
+  source_check_note: |
+    2025-08-02: Updated to https://gdi.berlin.de/viewer/main/, Source and layer where renamed.
+  osm_editing_note: Merged layer `baumbestand_0_1_alkis` is recommended for mapping.
+
+baumbestand_1:
+  deprecated: false
+  deprecation_note:
+  source_check_note: |
+    2025-08-02: Updated to https://gdi.berlin.de/viewer/main/, Source and layer where renamed.
+  osm_editing_note: Merged layer `baumbestand_0_1_alkis` is recommended for mapping.
+
+baumbestand_0_1_merged:
+  deprecated: false
+  deprecation_note:
+  source_check_note: |
+    2025-08-02: Updated to https://gdi.berlin.de/viewer/main/, Source and layer where renamed.
+  osm_editing_note: |
+    2024-05: Was used in https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/de/BerlinBaeume.geojson?short_path=d14f28e
+
+baumbestand_0_1_alkis:
+  deprecated: false
+  deprecation_note:
+  source_check_note: |
+    2025-08-02: Updated to https://gdi.berlin.de/viewer/main/, Source and layer where renamed.
+  osm_editing_note: |
+    2024-05: Used in https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/de/BerlinBaeumeAlkis.geojson?short_path=d14f28e

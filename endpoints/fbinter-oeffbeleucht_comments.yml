@@ -1,0 +1,7 @@
+k_oeffbeleucht_alkis:
+  deprecated: false
+  deprecation_note:
+  source_check_note: |
+    2024-05-03: https://gdi.berlin.de/viewer/main/ verwendet noch fbinter.stadt-berlin.de.
+    2024-05-03 Added from https://daten.berlin.de/datensaetze/%C3%B6ffentliche-beleuchtung-wms
+  osm_editing_note: I did not check if the OSM license waiver applies to this dataset as well.

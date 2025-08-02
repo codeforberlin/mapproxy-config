@@ -1,0 +1,6 @@
+atkis_dom:
+  deprecated: false
+  deprecation_note:
+  source_check_note: |
+    2024-05-03: Updated to use gdi.berlin.de.
+  osm_editing_note: OK for trees and houses, but otherwise pretty pixelated.
