@@ -12,12 +12,15 @@ type Config = {
   }
 }
 
-type EndpointConfig = {
-  layers?: {
+type LayersConfig = {
+  layers: {
     name: string
     sources: string[]
     title: string
   }[]
+}
+
+type SourceConfig = {
   caches?: Record<string, { grids: ['mercator']; sources: [string] }>
   sources?: Record<
     string,
@@ -49,24 +52,26 @@ type Comment = Record<
 // Load main config
 const config = yaml.load(fs.readFileSync('../config.yml', 'utf8')) as Config
 
-// Merge all endpoint configurations
-const allLayers: EndpointConfig['layers'] = []
-const allCaches: EndpointConfig['caches'] = {}
-const allSources: EndpointConfig['sources'] = {}
+// Load layers from config_layers.yml (first file in base array)
+const layersConfig = yaml.load(fs.readFileSync('../config_layers.yml', 'utf8')) as LayersConfig
+const allLayers = layersConfig.layers
+
+// Merge all source configurations from sources/ directory
+const allCaches: SourceConfig['caches'] = {}
+const allSources: SourceConfig['sources'] = {}
 const allComments: Comment = {}
 
-// Load each endpoint file and its corresponding comments
-config.base.forEach((endpointPath) => {
-  const endpointFile = path.join('..', endpointPath)
-  const endpointConfig = yaml.load(fs.readFileSync(endpointFile, 'utf8')) as EndpointConfig
+// Load each source file (skip the first one which is config_layers.yml)
+config.base.slice(1).forEach((sourcePath) => {
+  const sourceFile = path.join('..', sourcePath)
+  const sourceConfig = yaml.load(fs.readFileSync(sourceFile, 'utf8')) as SourceConfig
   
-  // Merge layers, caches, and sources
-  if (endpointConfig.layers) allLayers.push(...endpointConfig.layers)
-  if (endpointConfig.caches) Object.assign(allCaches, endpointConfig.caches)
-  if (endpointConfig.sources) Object.assign(allSources, endpointConfig.sources)
+  // Merge caches and sources
+  if (sourceConfig.caches) Object.assign(allCaches, sourceConfig.caches)
+  if (sourceConfig.sources) Object.assign(allSources, sourceConfig.sources)
   
-  // Load corresponding comment file
-  const commentFile = endpointFile.replace('.yaml', '_comments.yml')
+  // Load corresponding comment file (if exists)
+  const commentFile = sourceFile.replace('.yaml', '_comments.yml')
   if (fs.existsSync(commentFile)) {
     const comments = yaml.load(fs.readFileSync(commentFile, 'utf8')) as Comment
     Object.assign(allComments, comments)
@@ -80,7 +85,7 @@ const intro = `
 
   See [UPDATE.md](https://github.com/codeforberlin/mapproxy-config/blob/master/demo_links/UPDATE.md) for instructions on how to update this file.
 
-  The list reads [config.yml](../config.yml) and endpoint comment files from [endpoints/](../endpoints/).
+  The list reads [config.yml](../config.yml), [config_layers.yml](../config_layers.yml) and source files from [sources/](../sources/).
 
   ---
 
