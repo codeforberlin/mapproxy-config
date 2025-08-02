@@ -195,8 +195,8 @@
 
 
 > [!NOTE]
-> 2024-05-03: https://gdi.berlin.de/viewer/main/ verwendet noch fbinter.stadt-berlin.de.
-2024-05-03 Added from https://daten.berlin.de/datensaetze/%C3%B6ffentliche-beleuchtung-wms
+> 2025-08-02: Updated to use gdi.berlin.de/services/wms/beleuchtung.
+2024-05-03: Added from https://daten.berlin.de/datensaetze/%C3%B6ffentliche-beleuchtung-wms
 
 
 - TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/k_oeffbeleucht_alkis/mercator/{z}/{x}/{y}.png```
@@ -207,7 +207,7 @@
   > I did not check if the OSM license waiver applies to this dataset as well.
 
 - <a href="https://wfsexplorer.netlify.app/?wfs=https%3A%2F%2Ffbinter.stadt-berlin.de%2Ffb%2Fwms%2Fsenstadt%2Fwmsk_alkis_sw">WFSExplorer</a> for https://fbinter.stadt-berlin.de/fb/wms/senstadt/wmsk_alkis_sw
-- <a href="https://wfsexplorer.netlify.app/?wfs=https%3A%2F%2Ffbinter.stadt-berlin.de%2Ffb%2Fwms%2Fsenstadt%2Fk_oeffbeleucht">WFSExplorer</a> for https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_oeffbeleucht
+- <a href="https://wfsexplorer.netlify.app/?wfs=https%3A%2F%2Fgdi.berlin.de%2Fservices%2Fwms%2Fbeleuchtung">WFSExplorer</a> for https://gdi.berlin.de/services/wms/beleuchtung
 
 <details>
 <summary>Show layer config options</summary>
@@ -233,10 +233,10 @@
   {
     "req": {
       "format": "png",
-      "layers": "2,0,3",
+      "layers": "beleuchtung",
       "style": "default",
       "transparent": true,
-      "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_oeffbeleucht"
+      "url": "https://gdi.berlin.de/services/wms/beleuchtung"
     },
     "supported_srs": [
       "EPSG:25833"
