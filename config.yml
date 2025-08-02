@@ -13,6 +13,7 @@ base:
   - endpoints/gdi-fussgaengernetz.yaml
   - endpoints/gdi-postleitzahlen.yaml
   - endpoints/gdi-abstell-mikromob.yaml
+  - endpoints/gdi-fahrradreparatur.yaml
 
 # Global configuration
 globals: {}

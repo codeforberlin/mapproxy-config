@@ -1,0 +1,9 @@
+fahrradreparatur_alkis:
+  deprecated: false
+  deprecation_note:
+  source_check_note: |
+    2025-08-02: Added bicycle repair stations from gdi.berlin.de.
+    Part of the extended environmental traffic management system (eUVM) research project.
+    Stations are placed at locations with high bicycle traffic or where cycling should be promoted.
+    Includes both official "Fahrrad Berlin Design" stations and other known repair stations.
+  osm_editing_note: Useful for mapping bicycle repair stations. Consider adding amenity=bicycle_repair_station with appropriate tags.
