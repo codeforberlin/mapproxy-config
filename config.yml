@@ -1,23 +1,8 @@
-## Base configurations to include
-# config_layers.yml MUST be first - MapProxy only processes the first file with 'layers' section
-base:
-  - config_layers.yml
-  - sources/fbinter-alkis.yaml
-  - sources/fbinter-oeffbeleucht.yaml
-  - sources/fbinter-senstadt.yaml
-  - sources/gdi-baumbestand.yaml
-  - sources/gdi-bdom.yaml
-  - sources/gdi-fussgaengernetz.yaml
-  - sources/gdi-strassenbefahrung.yaml
-  - sources/gdi-tempolimits.yaml
-  - sources/gdi-postleitzahlen.yaml
-  - sources/gdi-abstell-mikromob.yaml
-  - sources/gdi-fahrradreparatur.yamluration
+# MapProxy Configuration
 # Uses modular approach with separate sources files
 # config_layers.yml MUST be first - MapProxy only processes the first file with 'layers' section
 base:
   - config_layers.yml
-  - sources/shared-alkis.yaml
   - sources/fbinter-alkis.yaml
   - sources/fbinter-oeffbeleucht.yaml
   - sources/fbinter-senstadt.yaml
