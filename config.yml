@@ -48,20 +48,12 @@ layers:
     sources: [baumbestand_1_cache]
     title: Baumbestand Berlin - Anlagenbäume
 
-  - name: baumbestand_3
-    sources: [baumbestand_3_cache]
-    title: Baumbestand Berlin - Anlagenbäume ohne Datenbankeintrag
-
-  - name: baumbestand_4
-    sources: [baumbestand_4_cache]
-    title: Baumbestand Berlin - Straßenbäume ohne Datenbankeintrag
-
-  - name: baumbestand_0_1_3_4_merged
-    sources: [baumbestand_0_1_3_4_merged_cache]
+  - name: baumbestand_0_1_merged
+    sources: [baumbestand_0_1_merged_cache]
     title: Baumbestand Berlin - Straßenbäume und Anlagenbäume mit und ohne Datenbankeintrag
 
-  - name: baumbestand_0_1_3_4_alkis
-    sources: [baumbestand_0_1_3_4_alkis_cache]
+  - name: baumbestand_0_1_alkis
+    sources: [baumbestand_0_1_alkis_cache]
     title: Baumbestand Berlin - Straßenbäume und Anlagenbäume mit und ohne Datenbankeintrag, ALKIS Berlin s/w
 
   - name: k_oeffbeleucht_alkis
@@ -117,21 +109,13 @@ caches:
     grids: [mercator]
     sources: [baumbestand_1_source]
 
-  baumbestand_3_cache:
+  baumbestand_0_1_merged_cache:
     grids: [mercator]
-    sources: [baumbestand_3_source]
+    sources: [baumbestand_0_1_merged_source]
 
-  baumbestand_4_cache:
+  baumbestand_0_1_alkis_cache:
     grids: [mercator]
-    sources: [baumbestand_4_source]
-
-  baumbestand_0_1_3_4_merged_cache:
-    grids: [mercator]
-    sources: [baumbestand_0_1_3_4_merged_source]
-
-  baumbestand_0_1_3_4_alkis_cache:
-    grids: [mercator]
-    sources: [alkis_sw_cache, baumbestand_0_1_3_4_merged_cache]
+    sources: [alkis_sw_cache, baumbestand_0_1_merged_cache]
 
   k_oeffbeleucht_alkis_cache:
     grids: [mercator]
@@ -226,10 +210,10 @@ sources:
   baumbestand_0_source:
     req:
       format: png
-      layers: 0
-      style: default
+      layers: anlagenbaeume
+      style: anlagenbaeume
       transparent: true
-      url: https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_wfs_baumbestand
+      url: https://gdi.berlin.de/services/wms/baumbestand
     supported_srs: ['EPSG:25833']
     type: wms
     wms_opts: { version: 1.3.0 }
@@ -237,43 +221,21 @@ sources:
   baumbestand_1_source:
     req:
       format: png
-      layers: 1
-      style: default
+      layers: strassenbaeume
+      style: strassenbaeume
       transparent: true
-      url: https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_wfs_baumbestand
+      url: https://gdi.berlin.de/services/wms/baumbestand
     supported_srs: ['EPSG:25833']
     type: wms
     wms_opts: { version: 1.3.0 }
 
-  baumbestand_3_source:
+  baumbestand_0_1_merged_source:
     req:
       format: png
-      layers: 3
-      style: default
+      layers: anlagenbaeume,strassenbaeume
+      style: anlagenbaeume,strassenbaeume
       transparent: true
-      url: https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_wfs_baumbestand
-    supported_srs: ['EPSG:25833']
-    type: wms
-    wms_opts: { version: 1.3.0 }
-
-  baumbestand_4_source:
-    req:
-      format: png
-      layers: 4
-      style: default
-      transparent: true
-      url: https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_wfs_baumbestand
-    supported_srs: ['EPSG:25833']
-    type: wms
-    wms_opts: { version: 1.3.0 }
-
-  baumbestand_0_1_3_4_merged_source:
-    req:
-      format: png
-      layers: 0,1,3,4
-      style: default
-      transparent: true
-      url: https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_wfs_baumbestand
+      url: https://gdi.berlin.de/services/wms/baumbestand
     supported_srs: ['EPSG:25833']
     type: wms
     wms_opts: { version: 1.3.0 }
