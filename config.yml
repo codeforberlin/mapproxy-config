@@ -12,6 +12,7 @@ base:
   - endpoints/gdi-tempolimits.yaml
   - endpoints/gdi-fussgaengernetz.yaml
   - endpoints/gdi-postleitzahlen.yaml
+  - endpoints/gdi-abstell-mikromob.yaml
 
 # Global configuration
 globals: {}
