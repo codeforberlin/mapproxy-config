@@ -1,274 +1,29 @@
+# MapProxy Configuration
+# Uses modular approach with separate endpoint files
+
+# Base configurations to include
+base:
+  - endpoints/fbinter-senstadt.yaml
+  - endpoints/fbinter-alkis.yaml
+  - endpoints/fbinter-oeffbeleucht.yaml
+  - endpoints/gdi-bdom.yaml
+  - endpoints/gdi-strassenbefahrung.yaml
+  - endpoints/gdi-baumbestand.yaml
+  - endpoints/gdi-tempolimits.yaml
+  - endpoints/gdi-fussgaengernetz.yaml
+
+# Global configuration
 globals: {}
+
+# Grid definitions
 grids:
   mercator:
     base: GLOBAL_MERCATOR
     num_levels: 22
+
+# Service configuration
 services:
   demo: {}
-  tms: { origin: nw, use_grid_names: true }
-
-layers:
-  - name: '2013'
-    sources: [2013_cache]
-    title: Digitale farbige Orthophotos 2013 (DOP20RGB)
-
-  - name: 2015_cir
-    sources: [2015_cir_cache]
-    title: Digitale Color-Infrarot-Orthophotos 2015 (DOP20CIR)
-
-  - name: 2016_cir
-    sources: [2016_cir_cache]
-    title: Digitale Color-Infrarot-Orthophotos 2016 (DOP20CIR)
-
-  - name: alkis_30
-    sources: [alkis_30_cache]
-    title: ALKIS Berlin (Amtliches Liegenschaftskatasterinformationssystem)
-
-  - name: alkis_sw
-    sources: [alkis_sw_cache]
-    title: ALKIS Berlin s/w (Amtliches Liegenschaftskatasterinformationssystem)
-
-  - name: atkis_dom
-    sources: [atkis_dom_cache]
-    title: "ATKIS\xAE DOM - Digitales Oberfl\xE4chenmodell"
-
-  - name: strassenbefahrung
-    sources: [strassenbefahrung_cache]
-    title: "Stra\xDFenbefahrung 2014"
-
-  - name: strassenbefahrung_alkis
-    sources: [strassenbefahrung_alkis_cache]
-    title: "Stra\xDFenbefahrung 2014, ALKIS Berlin s/w"
-
-  - name: baumbestand_0
-    sources: [baumbestand_0_cache]
-    title: Baumbestand Berlin - Straßenbäume
-
-  - name: baumbestand_1
-    sources: [baumbestand_1_cache]
-    title: Baumbestand Berlin - Anlagenbäume
-
-  - name: baumbestand_0_1_merged
-    sources: [baumbestand_0_1_merged_cache]
-    title: Baumbestand Berlin - Straßenbäume und Anlagenbäume mit und ohne Datenbankeintrag
-
-  - name: baumbestand_0_1_alkis
-    sources: [baumbestand_0_1_alkis_cache]
-    title: Baumbestand Berlin - Straßenbäume und Anlagenbäume mit und ohne Datenbankeintrag, ALKIS Berlin s/w
-
-  - name: k_oeffbeleucht_alkis
-    sources: [k_oeffbeleucht_alkis_cache]
-    title: Öffentliche Beleuchtung, ALKIS Berlin s/w
-
-  - name: tempolimits_alkis
-    sources: [tempolimits_alkis_cache]
-    title: Tempolimits, ALKIS Berlin s/w
-
-  - name: fussgaengernetz_alkis
-    sources: [fussgaengernetz_alkis_cache]
-    title: Fußgängernetz, ALKIS Berlin s/w
-
-caches:
-  2013_cache:
-    grids: [mercator]
-    sources: [2013_source]
-
-  2015_cir_cache:
-    grids: [mercator]
-    sources: [2015_cir_source]
-
-  2016_cir_cache:
-    grids: [mercator]
-    sources: [2016_cir_source]
-
-  alkis_30_cache:
-    grids: [mercator]
-    sources: [alkis_30_source]
-
-  alkis_sw_cache:
-    grids: [mercator]
-    sources: [alkis_sw_source]
-
-  atkis_dom_cache:
-    grids: [mercator]
-    sources: [atkis_dom_source]
-
-  strassenbefahrung_cache:
-    grids: [mercator]
-    sources: [strassenbefahrung_source]
-
-  strassenbefahrung_alkis_cache:
-    grids: [mercator]
-    sources: [alkis_sw_cache, strassenbefahrung_cache]
-
-  baumbestand_0_cache:
-    grids: [mercator]
-    sources: [baumbestand_0_source]
-
-  baumbestand_1_cache:
-    grids: [mercator]
-    sources: [baumbestand_1_source]
-
-  baumbestand_0_1_merged_cache:
-    grids: [mercator]
-    sources: [baumbestand_0_1_merged_source]
-
-  baumbestand_0_1_alkis_cache:
-    grids: [mercator]
-    sources: [alkis_sw_cache, baumbestand_0_1_merged_cache]
-
-  k_oeffbeleucht_alkis_cache:
-    grids: [mercator]
-    sources: [alkis_sw_cache, k_oeffbeleucht_source]
-
-  tempolimits_alkis_cache:
-    grids: [mercator]
-    sources: [alkis_sw_cache, tempolimits_source]
-
-  fussgaengernetz_alkis_cache:
-    grids: [mercator]
-    sources: [alkis_sw_cache, fussgaengernetz_source]
-
-sources:
-  2013_source:
-    req:
-      format: png
-      layers: 0
-      style: default
-      transparent: false
-      url: https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2013
-    supported_srs: ['EPSG:25833']
-    type: wms
-    wms_opts: { version: 1.3.0 }
-
-  2015_cir_source:
-    req:
-      format: png
-      layers: 0
-      style: default
-      transparent: false
-      url: https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2015_cir
-    supported_srs: ['EPSG:25833']
-    type: wms
-    wms_opts: { version: 1.3.0 }
-
-  2016_cir_source:
-    req:
-      format: png
-      layers: 0
-      style: default
-      transparent: false
-      url: https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2016_cir
-    supported_srs: ['EPSG:25833']
-    type: wms
-    wms_opts: { version: 1.3.0 }
-
-  alkis_30_source:
-    req:
-      format: png
-      layers: 30,5,21,0,29,4,7,13,9,25,8,18,20,16,28,12,24,22,34,26,47,46,44,43
-      style: default
-      transparent: false
-      url: https://fbinter.stadt-berlin.de/fb/wms/senstadt/wmsk_alkis
-    supported_srs: ['EPSG:25833']
-    type: wms
-    wms_opts: { version: 1.3.0 }
-
-  alkis_sw_source:
-    req:
-      format: png
-      layers: 30,21,0,29,4,13,9,25,8,18,20,28,12,24,22,34,26,47,46,44
-      style: default
-      transparent: false
-      url: https://fbinter.stadt-berlin.de/fb/wms/senstadt/wmsk_alkis_sw
-    supported_srs: ['EPSG:25833']
-    type: wms
-    wms_opts: { version: 1.3.0 }
-
-  atkis_dom_source:
-    req:
-      format: png
-      layers: b_bdom,a_bdom_schummerung
-      style: default
-      transparent: true
-      url: https://gdi.berlin.de/services/wms/bdom
-    supported_srs: ['EPSG:25833']
-    type: wms
-    wms_opts: { version: 1.3.0 }
-
-  strassenbefahrung_source:
-    req:
-      format: png
-      layers: cm_fahrbahn,cl_gehweg,ck_parkflaeche,cj_fussgaengerzone,ci_oeffentlicher_platz,ch_radweg,cg_baustelle,cf_trennstreifen,ce_gruenflaeche,cd_rampe,cc_treppe,cb_haltestellenwartebereich,ca_haltebereich_bus,bz_gleiskoerper_strab,by_gehwegueberfahrt,bx_fahrbahnschwelle,bw_aufmerksamkeitsfeld,bv_springbrunnen_zierbrunnen,bu_recycling_container,bu1_kleinbauten_sondernutzung,bt_kabelschacht,bs_induktionsschleife,br_fahrgastunterstand,bq_fahrradstaender,bp_fahrbahnmarkierung_flaeche,bo_denkmal,bn_baumscheibe,bm_zugangsbauwerk,bl_strassenentwaesserungsrinne,bk_strassenbegrenzung,bj_sitzbank,bi_schranke,bh_mauer,bg_leitplanke,bf_gelaender,be_fahrbahnmarkierunglinie,bd_bordstein,bc_aufmerksamkeitsstreifen,bb_verkehrsschutzgitter,ba_telefonzelle_telefonstele,az_taxirufsaeule,ay_streugutbehaelter,ax_strassensinkkasten,aw_spielgeraet,av_poller,au_parkscheinautomat,at_mast_lsa,as_mast,ar_kanaldeckel,ar1_kabelkasten,aq_hydrant,ap_handsteuergeraet_lsa,ao_gebaeudeeingang,an_fahrbahnmarkierung_piktogramm,am_fahnenmast,al_durchfahrtshoehe,ak_briefkasten,aj_anlegestelle,ai_anforderungstaster_radverkehr,ah_abfallbehaelter_muellbox,ag_werbesaeule,af_wasserpumpen_brunnen,ae_viz_infotafel,ad_uhr,ac_trinkwasserbrunnen_wasserspender,ab_touchpoint,aa_verkehrszeichen
-      style: default
-      transparent: true
-      url: https://gdi.berlin.de/services/wms/strassenbefahrung
-    supported_srs: ['EPSG:25833']
-    type: wms
-    wms_opts: { version: 1.3.0 }
-
-  baumbestand_0_source:
-    req:
-      format: png
-      layers: anlagenbaeume
-      style: anlagenbaeume
-      transparent: true
-      url: https://gdi.berlin.de/services/wms/baumbestand
-    supported_srs: ['EPSG:25833']
-    type: wms
-    wms_opts: { version: 1.3.0 }
-
-  baumbestand_1_source:
-    req:
-      format: png
-      layers: strassenbaeume
-      style: strassenbaeume
-      transparent: true
-      url: https://gdi.berlin.de/services/wms/baumbestand
-    supported_srs: ['EPSG:25833']
-    type: wms
-    wms_opts: { version: 1.3.0 }
-
-  baumbestand_0_1_merged_source:
-    req:
-      format: png
-      layers: anlagenbaeume,strassenbaeume
-      style: anlagenbaeume,strassenbaeume
-      transparent: true
-      url: https://gdi.berlin.de/services/wms/baumbestand
-    supported_srs: ['EPSG:25833']
-    type: wms
-    wms_opts: { version: 1.3.0 }
-
-  k_oeffbeleucht_source:
-    req:
-      format: png
-      layers: 2,0,3
-      style: default
-      transparent: true
-      url: https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_oeffbeleucht
-    supported_srs: ['EPSG:25833']
-    type: wms
-    wms_opts: { version: 1.3.0 }
-
-  tempolimits_source:
-    req:
-      format: png
-      layers: hoechstgeschwindigkeit
-      style: default
-      transparent: true
-      url: https://gdi.berlin.de/services/wms/tempolimits
-    supported_srs: ['EPSG:25833']
-    type: wms
-    wms_opts: { version: 1.3.0 }
-
-  fussgaengernetz_source:
-    req:
-      format: png
-      layers: b_strassenelemente,a_verbindungspunkte
-      style: default
-      transparent: true
-      url: https://gdi.berlin.de/services/wms/fussgaengernetz
-    supported_srs: ['EPSG:25833']
-    type: wms
-    wms_opts: { version: 1.3.0 }
+  tms: 
+    origin: nw
+    use_grid_names: true

@@ -1,22 +1,53 @@
 # mapproxy-config
 
-## Avaliable maps
+A MapProxy configuration that groups layers **by WMS endpoint/service URL** for better organization and maintainability.
 
-[🗺 A list of all avaliable maps with demo and editing urls …](./demo_links)
+```
+mapproxy-config/
+├── config.yml                # Main configuration (loads all endpoint modules)
+├── endpoints/                # One file per WMS endpoint
+│   ├── fbinter-senstadt.yaml      # 🛰️  Aerial imagery (2013, 2015, 2016)
+│   ├── fbinter-alkis.yaml          # 🗺️  ALKIS cadastral data
+│   ├── fbinter-oeffbeleucht.yaml   # 💡 Public lighting
+│   ├── gdi-bdom.yaml               # 🏔️  Digital elevation model
+│   ├── gdi-strassenbefahrung.yaml  # 🛣️  Street survey 2014
+│   ├── gdi-baumbestand.yaml        # 🌳 Tree inventory (all variants)
+│   ├── gdi-tempolimits.yaml        # 🚦 Speed limits
+│   └── gdi-fussgaengernetz.yaml    # 🚶 Pedestrian network
+└── demo_links/               # Demo URLs for all available layers
+```
+
+## Available maps
+
+[🗺 A list of all available maps with demo and editing urls …](./demo_links)
 
 ## Other projects
 
-- [luftbilder.berlin.codefor.de](https://luftbilder.berlin.codefor.de) showcases areal images from differnt years [Github](https://github.com/codeforberlin/luftbilder.berlin.codefor.de)
+- [luftbilder.berlin.codefor.de](https://luftbilder.berlin.codefor.de) showcases aerial images from different years [Github](https://github.com/codeforberlin/luftbilder.berlin.codefor.de)
 - [maps.berlin.codefor.de](https://maps.berlin.codefor.de) showcases all kind of maps [Github](https://github.com/codeforberlin/maps.berlin.codefor.de)
-- [github.com/codeforberlin/tilestache-config](https://github.com/codeforberlin/tilestache-config) is the config for serving areal imagery from file ([config](https://github.com/codeforberlin/tilestache-config/blob/master/config.json))
+- [github.com/codeforberlin/tilestache-config](https://github.com/codeforberlin/tilestache-config) is the config for serving aerial imagery from file ([config](https://github.com/codeforberlin/tilestache-config/blob/master/config.json))
 <!-- * [github.com/codeforberlin/mapproxy-config](https://github.com/codeforberlin/mapproxy-config) is a map proxy for some imagery layers by the City of Berlin -->
 
 ## Add new layer
 
-- Use https://gdi.berlin.de/viewer/main/ as the main source
-- Inspect the network request of layers
-- Craft the config from there
-- Add coumentation in `layer_docs` if helpful
+### For Existing Endpoints
+
+1. Open the corresponding `endpoints/xxx.yaml` file
+2. Add your layer, cache, and source definitions
+3. Use https://gdi.berlin.de/viewer/main/ as the main source
+4. Inspect the network request of layers
+5. Craft the config from there
+6. Add documentation in `layer_docs` if helpful
+
+### For New Endpoints
+
+1. Create `endpoints/new-service.yaml` with complete layer definitions
+2. Add the file to `config.yml` base section:
+   ```yaml
+   base:
+     # ... existing files
+     - endpoints/new-service.yaml
+   ```
 
 ## Install
 

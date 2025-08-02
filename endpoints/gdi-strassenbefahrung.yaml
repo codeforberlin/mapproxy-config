@@ -1,0 +1,34 @@
+# gdi.berlin.de/services/wms/strassenbefahrung - Street Survey
+# Street survey 2014 with detailed infrastructure mapping
+
+layers:
+  - name: strassenbefahrung
+    sources: [strassenbefahrung_cache]
+    title: "Straßenbefahrung 2014"
+
+  - name: strassenbefahrung_alkis
+    sources: [strassenbefahrung_alkis_cache]
+    title: "Straßenbefahrung 2014, ALKIS Berlin s/w"
+
+caches:
+  strassenbefahrung_cache:
+    grids: [mercator]
+    sources: [strassenbefahrung_source]
+
+  strassenbefahrung_alkis_cache:
+    grids: [mercator]
+    sources: [alkis_sw_cache, strassenbefahrung_cache]
+
+sources:
+  strassenbefahrung_source:
+    req:
+      format: png
+      layers: cm_fahrbahn,cl_gehweg,ck_parkflaeche,cj_fussgaengerzone,ci_oeffentlicher_platz,ch_radweg,cg_baustelle,cf_trennstreifen,ce_gruenflaeche,cd_rampe,cc_treppe,cb_haltestellenwartebereich,ca_haltebereich_bus,bz_gleiskoerper_strab,by_gehwegueberfahrt,bx_fahrbahnschwelle,bw_aufmerksamkeitsfeld,bv_springbrunnen_zierbrunnen,bu_recycling_container,bu1_kleinbauten_sondernutzung,bt_kabelschacht,bs_induktionsschleife,br_fahrgastunterstand,bq_fahrradstaender,bp_fahrbahnmarkierung_flaeche,bo_denkmal,bn_baumscheibe,bm_zugangsbauwerk,bl_strassenentwaesserungsrinne,bk_strassenbegrenzung,bj_sitzbank,bi_schranke,bh_mauer,bg_leitplanke,bf_gelaender,be_fahrbahnmarkierunglinie,bd_bordstein,bc_aufmerksamkeitsstreifen,bb_verkehrsschutzgitter,ba_telefonzelle_telefonstele,az_taxirufsaeule,ay_streugutbehaelter,ax_strassensinkkasten,aw_spielgeraet,av_poller,au_parkscheinautomat,at_mast_lsa,as_mast,ar_kanaldeckel,ar1_kabelkasten,aq_hydrant,ap_handsteuergeraet_lsa,ao_gebaeudeeingang,an_fahrbahnmarkierung_piktogramm,am_fahnenmast,al_durchfahrtshoehe,ak_briefkasten,aj_anlegestelle,ai_anforderungstaster_radverkehr,ah_abfallbehaelter_muellbox,ag_werbesaeule,af_wasserpumpen_brunnen,ae_viz_infotafel,ad_uhr,ac_trinkwasserbrunnen_wasserspender,ab_touchpoint,aa_verkehrszeichen
+      style: default
+      transparent: true
+      url: https://gdi.berlin.de/services/wms/strassenbefahrung
+    supported_srs: ['EPSG:25833']
+    type: wms
+    wms_opts: { version: 1.3.0 }
+
+# Note: strassenbefahrung_alkis depends on alkis_sw_cache from fbinter-alkis.yaml

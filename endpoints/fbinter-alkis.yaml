@@ -1,0 +1,40 @@
+layers:
+  - name: alkis_30
+    sources: [alkis_30_cache]
+    title: ALKIS Berlin (Amtliches Liegenschaftskatasterinformationssystem)
+
+  - name: alkis_sw
+    sources: [alkis_sw_cache]
+    title: ALKIS Berlin s/w (Amtliches Liegenschaftskatasterinformationssystem)
+
+caches:
+  alkis_30_cache:
+    grids: [mercator]
+    sources: [alkis_30_source]
+
+  alkis_sw_cache:
+    grids: [mercator]
+    sources: [alkis_sw_source]
+
+sources:
+  alkis_30_source:
+    req:
+      format: png
+      layers: 30,5,21,0,29,4,7,13,9,25,8,18,20,16,28,12,24,22,34,26,47,46,44,43
+      style: default
+      transparent: false
+      url: https://fbinter.stadt-berlin.de/fb/wms/senstadt/wmsk_alkis
+    supported_srs: ['EPSG:25833']
+    type: wms
+    wms_opts: { version: 1.3.0 }
+
+  alkis_sw_source:
+    req:
+      format: png
+      layers: 30,21,0,29,4,13,9,25,8,18,20,28,12,24,22,34,26,47,46,44
+      style: default
+      transparent: false
+      url: https://fbinter.stadt-berlin.de/fb/wms/senstadt/wmsk_alkis_sw
+    supported_srs: ['EPSG:25833']
+    type: wms
+    wms_opts: { version: 1.3.0 }

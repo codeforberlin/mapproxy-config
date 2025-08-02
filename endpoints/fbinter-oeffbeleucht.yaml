@@ -1,0 +1,21 @@
+layers:
+  - name: k_oeffbeleucht_alkis
+    sources: [k_oeffbeleucht_alkis_cache]
+    title: Öffentliche Beleuchtung, ALKIS Berlin s/w
+
+caches:
+  k_oeffbeleucht_alkis_cache:
+    grids: [mercator]
+    sources: [alkis_sw_cache, k_oeffbeleucht_source]
+
+sources:
+  k_oeffbeleucht_source:
+    req:
+      format: png
+      layers: 2,0,3
+      style: default
+      transparent: true
+      url: https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_oeffbeleucht
+    supported_srs: ['EPSG:25833']
+    type: wms
+    wms_opts: { version: 1.3.0 }
