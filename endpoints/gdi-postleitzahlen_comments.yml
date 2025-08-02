@@ -1,0 +1,6 @@
+postleitzahlen_alkis:
+  deprecated: false
+  deprecation_note:
+  source_check_note: |
+    2025-08-02: Added postal code boundaries from gdi.berlin.de.
+  osm_editing_note: Useful for understanding postal code boundaries when mapping addresses.

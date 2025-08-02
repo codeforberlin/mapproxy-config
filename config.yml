@@ -11,6 +11,7 @@ base:
   - endpoints/gdi-baumbestand.yaml
   - endpoints/gdi-tempolimits.yaml
   - endpoints/gdi-fussgaengernetz.yaml
+  - endpoints/gdi-postleitzahlen.yaml
 
 # Global configuration
 globals: {}
