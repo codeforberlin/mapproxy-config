@@ -150,7 +150,8 @@
 
 
 > [!NOTE]
-> 2024-05-03: https://gdi.berlin.de/viewer/main/ verwendet noch fbinter.stadt-berlin.de.
+> 2025-08-02: Added district boundaries (bezirksgrenzen) overlay from gdi.berlin.de/services/wms/alkis_bezirke.
+2024-05-03: https://gdi.berlin.de/viewer/main/ verwendet noch fbinter.stadt-berlin.de.
 
 
 - TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/alkis_sw/mercator/{z}/{x}/{y}.png```
@@ -161,6 +162,7 @@
   
 
 - <a href="https://wfsexplorer.netlify.app/?wfs=https%3A%2F%2Ffbinter.stadt-berlin.de%2Ffb%2Fwms%2Fsenstadt%2Fwmsk_alkis_sw">WFSExplorer</a> for https://fbinter.stadt-berlin.de/fb/wms/senstadt/wmsk_alkis_sw
+- <a href="https://wfsexplorer.netlify.app/?wfs=https%3A%2F%2Fgdi.berlin.de%2Fservices%2Fwms%2Falkis_bezirke">WFSExplorer</a> for https://gdi.berlin.de/services/wms/alkis_bezirke
 
 <details>
 <summary>Show layer config options</summary>
@@ -174,6 +176,22 @@
       "style": "default",
       "transparent": false,
       "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/wmsk_alkis_sw"
+    },
+    "supported_srs": [
+      "EPSG:25833"
+    ],
+    "type": "wms",
+    "wms_opts": {
+      "version": "1.3.0"
+    }
+  },
+  {
+    "req": {
+      "format": "png",
+      "layers": "bezirksgrenzen",
+      "style": "default",
+      "transparent": true,
+      "url": "https://gdi.berlin.de/services/wms/alkis_bezirke"
     },
     "supported_srs": [
       "EPSG:25833"
@@ -207,6 +225,7 @@
   > I did not check if the OSM license waiver applies to this dataset as well.
 
 - <a href="https://wfsexplorer.netlify.app/?wfs=https%3A%2F%2Ffbinter.stadt-berlin.de%2Ffb%2Fwms%2Fsenstadt%2Fwmsk_alkis_sw">WFSExplorer</a> for https://fbinter.stadt-berlin.de/fb/wms/senstadt/wmsk_alkis_sw
+- <a href="https://wfsexplorer.netlify.app/?wfs=https%3A%2F%2Fgdi.berlin.de%2Fservices%2Fwms%2Falkis_bezirke">WFSExplorer</a> for https://gdi.berlin.de/services/wms/alkis_bezirke
 - <a href="https://wfsexplorer.netlify.app/?wfs=https%3A%2F%2Fgdi.berlin.de%2Fservices%2Fwms%2Fbeleuchtung">WFSExplorer</a> for https://gdi.berlin.de/services/wms/beleuchtung
 
 <details>
@@ -221,6 +240,22 @@
       "style": "default",
       "transparent": false,
       "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/wmsk_alkis_sw"
+    },
+    "supported_srs": [
+      "EPSG:25833"
+    ],
+    "type": "wms",
+    "wms_opts": {
+      "version": "1.3.0"
+    }
+  },
+  {
+    "req": {
+      "format": "png",
+      "layers": "bezirksgrenzen",
+      "style": "default",
+      "transparent": true,
+      "url": "https://gdi.berlin.de/services/wms/alkis_bezirke"
     },
     "supported_srs": [
       "EPSG:25833"
@@ -363,6 +398,7 @@
 
 
 - <a href="https://wfsexplorer.netlify.app/?wfs=https%3A%2F%2Ffbinter.stadt-berlin.de%2Ffb%2Fwms%2Fsenstadt%2Fwmsk_alkis_sw">WFSExplorer</a> for https://fbinter.stadt-berlin.de/fb/wms/senstadt/wmsk_alkis_sw
+- <a href="https://wfsexplorer.netlify.app/?wfs=https%3A%2F%2Fgdi.berlin.de%2Fservices%2Fwms%2Falkis_bezirke">WFSExplorer</a> for https://gdi.berlin.de/services/wms/alkis_bezirke
 - <a href="https://wfsexplorer.netlify.app/?wfs=https%3A%2F%2Fgdi.berlin.de%2Fservices%2Fwms%2Fstrassenbefahrung">WFSExplorer</a> for https://gdi.berlin.de/services/wms/strassenbefahrung
 
 <details>
@@ -377,6 +413,22 @@
       "style": "default",
       "transparent": false,
       "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/wmsk_alkis_sw"
+    },
+    "supported_srs": [
+      "EPSG:25833"
+    ],
+    "type": "wms",
+    "wms_opts": {
+      "version": "1.3.0"
+    }
+  },
+  {
+    "req": {
+      "format": "png",
+      "layers": "bezirksgrenzen",
+      "style": "default",
+      "transparent": true,
+      "url": "https://gdi.berlin.de/services/wms/alkis_bezirke"
     },
     "supported_srs": [
       "EPSG:25833"
@@ -488,6 +540,7 @@
 
 
 - <a href="https://wfsexplorer.netlify.app/?wfs=https%3A%2F%2Ffbinter.stadt-berlin.de%2Ffb%2Fwms%2Fsenstadt%2Fwmsk_alkis_sw">WFSExplorer</a> for https://fbinter.stadt-berlin.de/fb/wms/senstadt/wmsk_alkis_sw
+- <a href="https://wfsexplorer.netlify.app/?wfs=https%3A%2F%2Fgdi.berlin.de%2Fservices%2Fwms%2Falkis_bezirke">WFSExplorer</a> for https://gdi.berlin.de/services/wms/alkis_bezirke
 - <a href="https://wfsexplorer.netlify.app/?wfs=https%3A%2F%2Fgdi.berlin.de%2Fservices%2Fwms%2Fbaumbestand">WFSExplorer</a> for https://gdi.berlin.de/services/wms/baumbestand
 - <a href="https://wfsexplorer.netlify.app/?wfs=https%3A%2F%2Fgdi.berlin.de%2Fservices%2Fwms%2Fbaumbestand_gruen_berlin">WFSExplorer</a> for https://gdi.berlin.de/services/wms/baumbestand_gruen_berlin
 
@@ -503,6 +556,22 @@
       "style": "default",
       "transparent": false,
       "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/wmsk_alkis_sw"
+    },
+    "supported_srs": [
+      "EPSG:25833"
+    ],
+    "type": "wms",
+    "wms_opts": {
+      "version": "1.3.0"
+    }
+  },
+  {
+    "req": {
+      "format": "png",
+      "layers": "bezirksgrenzen",
+      "style": "default",
+      "transparent": true,
+      "url": "https://gdi.berlin.de/services/wms/alkis_bezirke"
     },
     "supported_srs": [
       "EPSG:25833"
@@ -565,6 +634,7 @@
   > I did not check if the OSM license waiver applies to this dataset as well.
 
 - <a href="https://wfsexplorer.netlify.app/?wfs=https%3A%2F%2Ffbinter.stadt-berlin.de%2Ffb%2Fwms%2Fsenstadt%2Fwmsk_alkis_sw">WFSExplorer</a> for https://fbinter.stadt-berlin.de/fb/wms/senstadt/wmsk_alkis_sw
+- <a href="https://wfsexplorer.netlify.app/?wfs=https%3A%2F%2Fgdi.berlin.de%2Fservices%2Fwms%2Falkis_bezirke">WFSExplorer</a> for https://gdi.berlin.de/services/wms/alkis_bezirke
 - <a href="https://wfsexplorer.netlify.app/?wfs=https%3A%2F%2Fgdi.berlin.de%2Fservices%2Fwms%2Ftempolimits">WFSExplorer</a> for https://gdi.berlin.de/services/wms/tempolimits
 
 <details>
@@ -579,6 +649,22 @@
       "style": "default",
       "transparent": false,
       "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/wmsk_alkis_sw"
+    },
+    "supported_srs": [
+      "EPSG:25833"
+    ],
+    "type": "wms",
+    "wms_opts": {
+      "version": "1.3.0"
+    }
+  },
+  {
+    "req": {
+      "format": "png",
+      "layers": "bezirksgrenzen",
+      "style": "default",
+      "transparent": true,
+      "url": "https://gdi.berlin.de/services/wms/alkis_bezirke"
     },
     "supported_srs": [
       "EPSG:25833"
@@ -625,6 +711,7 @@
   > I did not check if the OSM license waiver applies to this dataset as well.
 
 - <a href="https://wfsexplorer.netlify.app/?wfs=https%3A%2F%2Ffbinter.stadt-berlin.de%2Ffb%2Fwms%2Fsenstadt%2Fwmsk_alkis_sw">WFSExplorer</a> for https://fbinter.stadt-berlin.de/fb/wms/senstadt/wmsk_alkis_sw
+- <a href="https://wfsexplorer.netlify.app/?wfs=https%3A%2F%2Fgdi.berlin.de%2Fservices%2Fwms%2Falkis_bezirke">WFSExplorer</a> for https://gdi.berlin.de/services/wms/alkis_bezirke
 - <a href="https://wfsexplorer.netlify.app/?wfs=https%3A%2F%2Fgdi.berlin.de%2Fservices%2Fwms%2Ffussgaengernetz">WFSExplorer</a> for https://gdi.berlin.de/services/wms/fussgaengernetz
 
 <details>
@@ -651,10 +738,267 @@
   {
     "req": {
       "format": "png",
+      "layers": "bezirksgrenzen",
+      "style": "default",
+      "transparent": true,
+      "url": "https://gdi.berlin.de/services/wms/alkis_bezirke"
+    },
+    "supported_srs": [
+      "EPSG:25833"
+    ],
+    "type": "wms",
+    "wms_opts": {
+      "version": "1.3.0"
+    }
+  },
+  {
+    "req": {
+      "format": "png",
       "layers": "b_strassenelemente,a_verbindungspunkte",
       "style": "default",
       "transparent": true,
       "url": "https://gdi.berlin.de/services/wms/fussgaengernetz"
+    },
+    "supported_srs": [
+      "EPSG:25833"
+    ],
+    "type": "wms",
+    "wms_opts": {
+      "version": "1.3.0"
+    }
+  }
+]
+```
+
+</details>
+
+## Postleitzahlen, ALKIS Berlin s/w
+
+<img src="https://mapproxy.codefor.de/tiles/1.0.0/postleitzahlen_alkis/mercator/16/35198/21494.png" width=200 alt="Demo image for Postleitzahlen, ALKIS Berlin s/w" />
+
+
+
+> [!NOTE]
+> 2025-08-02: Added postal code boundaries from gdi.berlin.de.
+
+
+- TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/postleitzahlen_alkis/mercator/{z}/{x}/{y}.png```
+
+- <a href="https://strassenraumkarte.osm-berlin.org/mapproxy_demo_map?url=https://mapproxy.codefor.de/tiles/1.0.0/postleitzahlen_alkis/mercator/{z}/{x}/{y}.png">Preview layer</a>
+
+- <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/postleitzahlen_alkis/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
+  > Useful for understanding postal code boundaries when mapping addresses.
+
+- <a href="https://wfsexplorer.netlify.app/?wfs=https%3A%2F%2Ffbinter.stadt-berlin.de%2Ffb%2Fwms%2Fsenstadt%2Fwmsk_alkis_sw">WFSExplorer</a> for https://fbinter.stadt-berlin.de/fb/wms/senstadt/wmsk_alkis_sw
+- <a href="https://wfsexplorer.netlify.app/?wfs=https%3A%2F%2Fgdi.berlin.de%2Fservices%2Fwms%2Falkis_bezirke">WFSExplorer</a> for https://gdi.berlin.de/services/wms/alkis_bezirke
+- <a href="https://wfsexplorer.netlify.app/?wfs=https%3A%2F%2Fgdi.berlin.de%2Fservices%2Fwms%2Fpostleitzahlen">WFSExplorer</a> for https://gdi.berlin.de/services/wms/postleitzahlen
+
+<details>
+<summary>Show layer config options</summary>
+
+```
+[
+  {
+    "req": {
+      "format": "png",
+      "layers": "30,21,0,29,4,13,9,25,8,18,20,28,12,24,22,34,26,47,46,44",
+      "style": "default",
+      "transparent": false,
+      "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/wmsk_alkis_sw"
+    },
+    "supported_srs": [
+      "EPSG:25833"
+    ],
+    "type": "wms",
+    "wms_opts": {
+      "version": "1.3.0"
+    }
+  },
+  {
+    "req": {
+      "format": "png",
+      "layers": "bezirksgrenzen",
+      "style": "default",
+      "transparent": true,
+      "url": "https://gdi.berlin.de/services/wms/alkis_bezirke"
+    },
+    "supported_srs": [
+      "EPSG:25833"
+    ],
+    "type": "wms",
+    "wms_opts": {
+      "version": "1.3.0"
+    }
+  },
+  {
+    "req": {
+      "format": "png",
+      "layers": "postleitzahlen",
+      "style": "default",
+      "transparent": true,
+      "url": "https://gdi.berlin.de/services/wms/postleitzahlen"
+    },
+    "supported_srs": [
+      "EPSG:25833"
+    ],
+    "type": "wms",
+    "wms_opts": {
+      "version": "1.3.0"
+    }
+  }
+]
+```
+
+</details>
+
+## Abstellflächen für Mikromobilitätsangebote, ALKIS Berlin s/w
+
+<img src="https://mapproxy.codefor.de/tiles/1.0.0/abstell_mikromob_alkis/mercator/16/35198/21494.png" width=200 alt="Demo image for Abstellflächen für Mikromobilitätsangebote, ALKIS Berlin s/w" />
+
+
+
+> [!NOTE]
+> 2025-08-02: Added micromobility parking areas from gdi.berlin.de.
+Shows designated parking areas for rental bikes, e-scooters and other micromobility vehicles.
+
+
+- TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/abstell_mikromob_alkis/mercator/{z}/{x}/{y}.png```
+
+- <a href="https://strassenraumkarte.osm-berlin.org/mapproxy_demo_map?url=https://mapproxy.codefor.de/tiles/1.0.0/abstell_mikromob_alkis/mercator/{z}/{x}/{y}.png">Preview layer</a>
+
+- <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/abstell_mikromob_alkis/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
+  > Useful for mapping designated parking areas for shared mobility services. Consider adding amenity=bicycle_parking with appropriate tags.
+
+- <a href="https://wfsexplorer.netlify.app/?wfs=https%3A%2F%2Ffbinter.stadt-berlin.de%2Ffb%2Fwms%2Fsenstadt%2Fwmsk_alkis_sw">WFSExplorer</a> for https://fbinter.stadt-berlin.de/fb/wms/senstadt/wmsk_alkis_sw
+- <a href="https://wfsexplorer.netlify.app/?wfs=https%3A%2F%2Fgdi.berlin.de%2Fservices%2Fwms%2Falkis_bezirke">WFSExplorer</a> for https://gdi.berlin.de/services/wms/alkis_bezirke
+- <a href="https://wfsexplorer.netlify.app/?wfs=https%3A%2F%2Fgdi.berlin.de%2Fservices%2Fwms%2Fabstell_mikromob">WFSExplorer</a> for https://gdi.berlin.de/services/wms/abstell_mikromob
+
+<details>
+<summary>Show layer config options</summary>
+
+```
+[
+  {
+    "req": {
+      "format": "png",
+      "layers": "30,21,0,29,4,13,9,25,8,18,20,28,12,24,22,34,26,47,46,44",
+      "style": "default",
+      "transparent": false,
+      "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/wmsk_alkis_sw"
+    },
+    "supported_srs": [
+      "EPSG:25833"
+    ],
+    "type": "wms",
+    "wms_opts": {
+      "version": "1.3.0"
+    }
+  },
+  {
+    "req": {
+      "format": "png",
+      "layers": "bezirksgrenzen",
+      "style": "default",
+      "transparent": true,
+      "url": "https://gdi.berlin.de/services/wms/alkis_bezirke"
+    },
+    "supported_srs": [
+      "EPSG:25833"
+    ],
+    "type": "wms",
+    "wms_opts": {
+      "version": "1.3.0"
+    }
+  },
+  {
+    "req": {
+      "format": "png",
+      "layers": "abstell_mikromob",
+      "style": "default",
+      "transparent": true,
+      "url": "https://gdi.berlin.de/services/wms/abstell_mikromob"
+    },
+    "supported_srs": [
+      "EPSG:25833"
+    ],
+    "type": "wms",
+    "wms_opts": {
+      "version": "1.3.0"
+    }
+  }
+]
+```
+
+</details>
+
+## Fahrradreparaturstationen, ALKIS Berlin s/w
+
+<img src="https://mapproxy.codefor.de/tiles/1.0.0/fahrradreparatur_alkis/mercator/16/35198/21494.png" width=200 alt="Demo image for Fahrradreparaturstationen, ALKIS Berlin s/w" />
+
+
+
+> [!NOTE]
+> 2025-08-02: Added bicycle repair stations from gdi.berlin.de.
+Part of the extended environmental traffic management system (eUVM) research project.
+Stations are placed at locations with high bicycle traffic or where cycling should be promoted.
+Includes both official "Fahrrad Berlin Design" stations and other known repair stations.
+
+
+- TMS URL: ```https://mapproxy.codefor.de/tiles/1.0.0/fahrradreparatur_alkis/mercator/{z}/{x}/{y}.png```
+
+- <a href="https://strassenraumkarte.osm-berlin.org/mapproxy_demo_map?url=https://mapproxy.codefor.de/tiles/1.0.0/fahrradreparatur_alkis/mercator/{z}/{x}/{y}.png">Preview layer</a>
+
+- <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:https://mapproxy.codefor.de/tiles/1.0.0/fahrradreparatur_alkis/mercator/{z}/{x}/{y}.png&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
+  > Useful for mapping bicycle repair stations. Consider adding amenity=bicycle_repair_station with appropriate tags.
+
+- <a href="https://wfsexplorer.netlify.app/?wfs=https%3A%2F%2Ffbinter.stadt-berlin.de%2Ffb%2Fwms%2Fsenstadt%2Fwmsk_alkis_sw">WFSExplorer</a> for https://fbinter.stadt-berlin.de/fb/wms/senstadt/wmsk_alkis_sw
+- <a href="https://wfsexplorer.netlify.app/?wfs=https%3A%2F%2Fgdi.berlin.de%2Fservices%2Fwms%2Falkis_bezirke">WFSExplorer</a> for https://gdi.berlin.de/services/wms/alkis_bezirke
+- <a href="https://wfsexplorer.netlify.app/?wfs=https%3A%2F%2Fgdi.berlin.de%2Fservices%2Fwms%2Ffahrradreparatur">WFSExplorer</a> for https://gdi.berlin.de/services/wms/fahrradreparatur
+
+<details>
+<summary>Show layer config options</summary>
+
+```
+[
+  {
+    "req": {
+      "format": "png",
+      "layers": "30,21,0,29,4,13,9,25,8,18,20,28,12,24,22,34,26,47,46,44",
+      "style": "default",
+      "transparent": false,
+      "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/wmsk_alkis_sw"
+    },
+    "supported_srs": [
+      "EPSG:25833"
+    ],
+    "type": "wms",
+    "wms_opts": {
+      "version": "1.3.0"
+    }
+  },
+  {
+    "req": {
+      "format": "png",
+      "layers": "bezirksgrenzen",
+      "style": "default",
+      "transparent": true,
+      "url": "https://gdi.berlin.de/services/wms/alkis_bezirke"
+    },
+    "supported_srs": [
+      "EPSG:25833"
+    ],
+    "type": "wms",
+    "wms_opts": {
+      "version": "1.3.0"
+    }
+  },
+  {
+    "req": {
+      "format": "png",
+      "layers": "fahrradreparatur",
+      "style": "default",
+      "transparent": true,
+      "url": "https://gdi.berlin.de/services/wms/fahrradreparatur"
     },
     "supported_srs": [
       "EPSG:25833"
