@@ -1,11 +1,6 @@
 # gdi.berlin.de/services/wms/fahrradreparatur - Bicycle Repair Stations
 # Bicycle repair stations with ALKIS background
 
-layers:
-  - name: fahrradreparatur_alkis
-    sources: [fahrradreparatur_alkis_cache]
-    title: Fahrradreparaturstationen, ALKIS Berlin s/w
-
 caches:
   fahrradreparatur_alkis_cache:
     grids: [mercator]

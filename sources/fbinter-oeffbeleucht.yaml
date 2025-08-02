@@ -1,7 +1,5 @@
-layers:
-  - name: k_oeffbeleucht_alkis
-    sources: [k_oeffbeleucht_alkis_cache]
-    title: Öffentliche Beleuchtung, ALKIS Berlin s/w
+# Public lighting data with ALKIS background
+# Layers are now defined in config_layers.yml
 
 caches:
   k_oeffbeleucht_alkis_cache:

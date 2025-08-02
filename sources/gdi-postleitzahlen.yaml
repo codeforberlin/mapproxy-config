@@ -1,11 +1,6 @@
 # gdi.berlin.de/services/wms/postleitzahlen - Postal Codes
 # Postal code boundaries with ALKIS background
 
-layers:
-  - name: postleitzahlen_alkis
-    sources: [postleitzahlen_alkis_cache]
-    title: Postleitzahlen, ALKIS Berlin s/w
-
 caches:
   postleitzahlen_alkis_cache:
     grids: [mercator]

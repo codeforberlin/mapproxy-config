@@ -1,11 +1,4 @@
-layers:
-  - name: baumbestand_0_1_3_4_merged
-    sources: [baumbestand_0_1_gruen_cache]
-    title: Baumbestand Berlin - Straßenbäume, Anlagenbäume und Grün Berlin
-
-  - name: baumbestand_0_1_3_4_alkis
-    sources: [baumbestand_0_1_gruen_alkis_cache]
-    title: Baumbestand Berlin - Straßenbäume, Anlagenbäume und Grün Berlin, ALKIS Berlin s/w
+# Tree data layers are now defined in config_layers.yml
 
 caches:
   baumbestand_gruen_berlin_cache:

@@ -1,15 +1,6 @@
 # gdi.berlin.de/services/wms/strassenbefahrung - Street Survey
 # Street survey 2014 with detailed infrastructure mapping
 
-layers:
-  - name: strassenbefahrung
-    sources: [strassenbefahrung_cache]
-    title: "Straßenbefahrung 2014"
-
-  - name: strassenbefahrung_alkis
-    sources: [strassenbefahrung_alkis_cache]
-    title: "Straßenbefahrung 2014, ALKIS Berlin s/w"
-
 caches:
   strassenbefahrung_cache:
     grids: [mercator]

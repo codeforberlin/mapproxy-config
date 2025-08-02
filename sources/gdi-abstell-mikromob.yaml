@@ -1,11 +1,6 @@
 # gdi.berlin.de/services/wms/abstell_mikromob - Micromobility Parking Areas
 # Parking areas for micromobility services with ALKIS background
 
-layers:
-  - name: abstell_mikromob_alkis
-    sources: [abstell_mikromob_alkis_cache]
-    title: Abstellflächen für Mikromobilitätsangebote, ALKIS Berlin s/w
-
 caches:
   abstell_mikromob_alkis_cache:
     grids: [mercator]

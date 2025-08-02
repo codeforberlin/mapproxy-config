@@ -4,17 +4,36 @@ A MapProxy configuration that groups layers **by WMS endpoint/service URL** for 
 
 ```
 mapproxy-config/
-├── config.yml                # Main configuration (loads all endpoint modules)
-├── endpoints/                # One file per WMS endpoint
-│   ├── fbinter-senstadt.yaml      # 🛰️  Aerial imagery (2013, 2015, 2016)
+├── config.yml                # Main configuration (loads all source modules)
+├── config_layers.yml         # All layer definitions (loaded first)
+├── sources/                  # One file per WMS endpoint (caches & sources only)
+│   ├── shared-alkis.yaml          # �️  Shared ALKIS background cache
 │   ├── fbinter-alkis.yaml          # 🗺️  ALKIS cadastral data
+│   ├── fbinter-senstadt.yaml       # 🛰️  Aerial imagery (2015, 2016 CIR)
 │   ├── fbinter-oeffbeleucht.yaml   # 💡 Public lighting
 │   ├── gdi-bdom.yaml               # 🏔️  Digital elevation model
 │   ├── gdi-strassenbefahrung.yaml  # 🛣️  Street survey 2014
 │   ├── gdi-baumbestand.yaml        # 🌳 Tree inventory (all variants)
 │   ├── gdi-tempolimits.yaml        # 🚦 Speed limits
-│   └── gdi-fussgaengernetz.yaml    # 🚶 Pedestrian network
-└── demo_links/               # Demo URLs for all available layers
+│   ├── gdi-fussgaengernetz.yaml    # 🚶 Pedestrian network
+│   ├── gdi-postleitzahlen.yaml     # 📮 Postal codes
+│   ├── gdi-abstell-mikromob.yaml   # 🛴 Micromobility parking
+│   └── gdi-fahrradreparatur.yaml   # 🔧 Bicycle repair stations
+├── demo_links/               # Demo URLs for all available layers
+└── docker-compose.yml        # Local development environment
+```
+
+## Quick Start (Local Development)
+
+```bash
+# Start MapProxy locally with Docker
+docker-compose up -d
+
+# View demo with all layers
+open http://localhost:8080/demo/
+
+# View generated demo links
+open http://localhost:3001/
 ```
 
 ## Available maps
@@ -28,25 +47,56 @@ mapproxy-config/
 - [github.com/codeforberlin/tilestache-config](https://github.com/codeforberlin/tilestache-config) is the config for serving aerial imagery from file ([config](https://github.com/codeforberlin/tilestache-config/blob/master/config.json))
 <!-- * [github.com/codeforberlin/mapproxy-config](https://github.com/codeforberlin/mapproxy-config) is a map proxy for some imagery layers by the City of Berlin -->
 
+## Configuration Architecture
+
+This MapProxy setup uses a **modular architecture** that separates concerns:
+
+- **`config_layers.yml`**: Contains ALL layer definitions (must be first in base array)
+- **`sources/`**: Individual files per data source containing only caches & sources
+- **`config.yml`**: Main config that includes all modules via `base` directive
+
+⚠️ **Important**: MapProxy only processes the first file with a `layers:` section, so all layers must be defined in `config_layers.yml`.
+
 ## Add new layer
 
-### For Existing Endpoints
+### For Existing Data Sources
 
-1. Open the corresponding `endpoints/xxx.yaml` file
-2. Add your layer, cache, and source definitions
-3. Use https://gdi.berlin.de/viewer/main/ as the main source
-4. Inspect the network request of layers
-5. Craft the config from there
-6. Add documentation in `layer_docs` if helpful
+1. **Add layer definition** to `config_layers.yml`:
+   ```yaml
+   layers:
+     - name: my_new_layer
+       sources: [my_new_cache]
+       title: "My New Layer"
+   ```
 
-### For New Endpoints
+2. **Add cache and source** to the appropriate `sources/xxx.yaml` file:
+   ```yaml
+   caches:
+     my_new_cache:
+       grids: [mercator]
+       sources: [my_new_source]
+   
+   sources:
+     my_new_source:
+       type: wms
+       req:
+         url: https://gdi.berlin.de/services/wms/my_service
+         layers: my_layer
+   ```
 
-1. Create `endpoints/new-service.yaml` with complete layer definitions
-2. Add the file to `config.yml` base section:
+3. Use https://gdi.berlin.de/viewer/main/ to inspect network requests
+4. Add documentation in `layer_docs/` if helpful
+
+### For New Data Sources
+
+1. **Create** `sources/new-service.yaml` with caches and sources
+2. **Add layer definitions** to `config_layers.yml` 
+3. **Include the new file** in `config.yml` base section:
    ```yaml
    base:
+     - config_layers.yml  # Must be first!
      # ... existing files
-     - endpoints/new-service.yaml
+     - sources/new-service.yaml
    ```
 
 ## Install

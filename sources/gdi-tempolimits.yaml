@@ -1,10 +1,6 @@
 # gdi.berlin.de/services/wms/tempolimits - Speed Limits
 # Speed limit data with ALKIS background
-
-layers:
-  - name: tempolimits_alkis
-    sources: [tempolimits_alkis_cache]
-    title: Tempolimits, ALKIS Berlin s/w
+# Layers are now defined in config_layers.yml
 
 caches:
   tempolimits_alkis_cache:

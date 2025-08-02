@@ -1,11 +1,6 @@
 # gdi.berlin.de/services/wms/bdom - Digital Elevation Model
 # ATKIS Digital Oberflächenmodell (Digital Surface Model)
 
-layers:
-  - name: atkis_dom
-    sources: [atkis_dom_cache]
-    title: "ATKIS® DOM - Digitales Oberflächenmodell"
-
 caches:
   atkis_dom_cache:
     grids: [mercator]

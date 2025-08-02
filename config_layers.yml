@@ -1,0 +1,75 @@
+# Consolidated layer definitions
+# This file contains ALL layer definitions to work with MapProxy's base directive
+# The base directive only processes the first file with a 'layers' section
+
+layers:
+  # ALKIS Cadastral Layers
+  - name: alkis_30
+    sources: [alkis_30_cache]
+    title: ALKIS Berlin (Amtliches Liegenschaftskatasterinformationssystem)
+
+  - name: alkis_sw
+    sources: [alkis_sw_cache]
+    title: ALKIS Berlin s/w (Amtliches Liegenschaftskatasterinformationssystem)
+
+  # Tree Data Layers
+  - name: baumbestand_0_1_3_4_merged
+    sources: [baumbestand_0_1_gruen_cache]
+    title: Baumbestand Berlin - Straßenbäume, Anlagenbäume und Grün Berlin
+
+  - name: baumbestand_0_1_3_4_alkis
+    sources: [baumbestand_0_1_gruen_alkis_cache]
+    title: Baumbestand Berlin - Straßenbäume, Anlagenbäume und Grün Berlin, ALKIS Berlin s/w
+
+  # Digital Elevation Model
+  - name: atkis_dom
+    sources: [atkis_dom_cache]
+    title: "ATKIS® DOM - Digitales Oberflächenmodell"
+
+  # Pedestrian Network
+  - name: fussgaengernetz_alkis
+    sources: [fussgaengernetz_alkis_cache]
+    title: Fußgängernetz, ALKIS Berlin s/w
+
+  # Street Survey Data
+  - name: strassenbefahrung
+    sources: [strassenbefahrung_cache]
+    title: "Straßenbefahrung 2014"
+
+  - name: strassenbefahrung_alkis
+    sources: [strassenbefahrung_alkis_cache]
+    title: "Straßenbefahrung 2014, ALKIS Berlin s/w"
+
+  # Speed Limits
+  - name: tempolimits_alkis
+    sources: [tempolimits_alkis_cache]
+    title: Tempolimits, ALKIS Berlin s/w
+
+  # Postal Codes
+  - name: postleitzahlen_alkis
+    sources: [postleitzahlen_alkis_cache]
+    title: Postleitzahlen, ALKIS Berlin s/w
+
+  # Micromobility Parking
+  - name: abstell_mikromob_alkis
+    sources: [abstell_mikromob_alkis_cache]
+    title: Abstellflächen für Mikromobilitätsangebote, ALKIS Berlin s/w
+
+  # Bicycle Repair Stations
+  - name: fahrradreparatur_alkis
+    sources: [fahrradreparatur_alkis_cache]
+    title: Fahrradreparaturstationen, ALKIS Berlin s/w
+
+  # Public Lighting
+  - name: k_oeffbeleucht_alkis
+    sources: [k_oeffbeleucht_alkis_cache]
+    title: Öffentliche Beleuchtung, ALKIS Berlin s/w
+
+  # Aerial Photography
+  - name: 2015_cir
+    sources: [2015_cir_cache]
+    title: Digitale Color-Infrarot-Orthophotos 2015 (DOP20CIR)
+
+  - name: 2016_cir
+    sources: [2016_cir_cache]
+    title: Digitale Color-Infrarot-Orthophotos 2016 (DOP20CIR)

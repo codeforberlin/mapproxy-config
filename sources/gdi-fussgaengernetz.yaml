@@ -1,11 +1,6 @@
 # gdi.berlin.de/services/wms/fussgaengernetz - Pedestrian Network  
 # Pedestrian network data with ALKIS background
 
-layers:
-  - name: fussgaengernetz_alkis
-    sources: [fussgaengernetz_alkis_cache]
-    title: Fußgängernetz, ALKIS Berlin s/w
-
 caches:
   fussgaengernetz_alkis_cache:
     grids: [mercator]

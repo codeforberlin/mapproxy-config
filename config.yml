@@ -1,20 +1,34 @@
-# MapProxy Configuration
-# Uses modular approach with separate endpoint files
-
-# Base configurations to include
+## Base configurations to include
+# config_layers.yml MUST be first - MapProxy only processes the first file with 'layers' section
 base:
-  - endpoints/shared-alkis.yaml
-  - endpoints/fbinter-alkis.yaml
-  - endpoints/fbinter-oeffbeleucht.yaml
-  - endpoints/fbinter-senstadt.yaml
-  - endpoints/gdi-baumbestand.yaml
-  - endpoints/gdi-bdom.yaml
-  - endpoints/gdi-fussgaengernetz.yaml
-  - endpoints/gdi-strassenbefahrung.yaml
-  - endpoints/gdi-tempolimits.yaml
-  - endpoints/gdi-postleitzahlen.yaml
-  - endpoints/gdi-abstell-mikromob.yaml
-  - endpoints/gdi-fahrradreparatur.yaml
+  - config_layers.yml
+  - sources/fbinter-alkis.yaml
+  - sources/fbinter-oeffbeleucht.yaml
+  - sources/fbinter-senstadt.yaml
+  - sources/gdi-baumbestand.yaml
+  - sources/gdi-bdom.yaml
+  - sources/gdi-fussgaengernetz.yaml
+  - sources/gdi-strassenbefahrung.yaml
+  - sources/gdi-tempolimits.yaml
+  - sources/gdi-postleitzahlen.yaml
+  - sources/gdi-abstell-mikromob.yaml
+  - sources/gdi-fahrradreparatur.yamluration
+# Uses modular approach with separate sources files
+# config_layers.yml MUST be first - MapProxy only processes the first file with 'layers' section
+base:
+  - config_layers.yml
+  - sources/shared-alkis.yaml
+  - sources/fbinter-alkis.yaml
+  - sources/fbinter-oeffbeleucht.yaml
+  - sources/fbinter-senstadt.yaml
+  - sources/gdi-baumbestand.yaml
+  - sources/gdi-bdom.yaml
+  - sources/gdi-fussgaengernetz.yaml
+  - sources/gdi-strassenbefahrung.yaml
+  - sources/gdi-tempolimits.yaml
+  - sources/gdi-postleitzahlen.yaml
+  - sources/gdi-abstell-mikromob.yaml
+  - sources/gdi-fahrradreparatur.yaml
 
 # Global configuration
 globals: {}
@@ -28,6 +42,6 @@ grids:
 # Service configuration
 services:
   demo: {}
-  tms: 
+  tms:
     origin: nw
     use_grid_names: true

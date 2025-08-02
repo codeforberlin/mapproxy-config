@@ -27,8 +27,9 @@ RUN pip3 install --no-cache-dir MapProxy==1.13.2
 
 # Copy configuration files
 COPY config.yml .
+COPY config_layers.yml .
 COPY log.ini .
-COPY endpoints/ ./endpoints/
+COPY sources/ ./sources/
 
 # Create cache directory
 RUN mkdir -p /mapproxy/cache
@@ -36,5 +37,5 @@ RUN mkdir -p /mapproxy/cache
 # Expose port
 EXPOSE 8080
 
-# Start MapProxy
-CMD ["mapproxy-util", "serve-develop", "-b", "0.0.0.0:8080", "config.yml"]
+# Start MapProxy with debug logging
+CMD ["mapproxy-util", "serve-develop", "-b", "0.0.0.0:8080", "--debug", "config.yml"]
