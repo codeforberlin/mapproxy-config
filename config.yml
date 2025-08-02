@@ -3,14 +3,15 @@
 
 # Base configurations to include
 base:
+  - endpoints/shared-alkis.yaml
   - endpoints/fbinter-alkis.yaml
-  - endpoints/fbinter-senstadt.yaml
   - endpoints/fbinter-oeffbeleucht.yaml
-  - endpoints/gdi-bdom.yaml
-  - endpoints/gdi-strassenbefahrung.yaml
+  - endpoints/fbinter-senstadt.yaml
   - endpoints/gdi-baumbestand.yaml
-  - endpoints/gdi-tempolimits.yaml
+  - endpoints/gdi-bdom.yaml
   - endpoints/gdi-fussgaengernetz.yaml
+  - endpoints/gdi-strassenbefahrung.yaml
+  - endpoints/gdi-tempolimits.yaml
   - endpoints/gdi-postleitzahlen.yaml
   - endpoints/gdi-abstell-mikromob.yaml
   - endpoints/gdi-fahrradreparatur.yaml

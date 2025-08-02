@@ -11,11 +11,6 @@ caches:
     grids: [mercator]
     sources: [alkis_sw_cache, tempolimits_source]
 
-  # ALKIS s/w cache definition (required for self-contained operation)
-  alkis_sw_cache:
-    grids: [mercator]
-    sources: [alkis_sw_source]
-
 sources:
   tempolimits_source:
     req:
@@ -24,18 +19,6 @@ sources:
       style: default
       transparent: true
       url: https://gdi.berlin.de/services/wms/tempolimits
-    supported_srs: ['EPSG:25833']
-    type: wms
-    wms_opts: { version: 1.3.0 }
-
-  # ALKIS s/w source definition (required for self-contained operation)
-  alkis_sw_source:
-    req:
-      format: png
-      layers: 30,21,0,29,4,13,9,25,8,18,20,28,12,24,22,34,26,47,46,44
-      style: default
-      transparent: false
-      url: https://fbinter.stadt-berlin.de/fb/wms/senstadt/wmsk_alkis_sw
     supported_srs: ['EPSG:25833']
     type: wms
     wms_opts: { version: 1.3.0 }
