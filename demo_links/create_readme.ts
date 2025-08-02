@@ -88,14 +88,66 @@ const intro = `
 
 markdownFile.write(intro)
 
+// Function to recursively collect all source URLs from a cache
+function collectSourceUrls(cacheName: string, visitedCaches = new Set<string>()): string[] {
+  if (visitedCaches.has(cacheName)) return []
+  visitedCaches.add(cacheName)
+  
+  const cache = allCaches?.[cacheName]
+  if (!cache) return []
+  
+  const urls: string[] = []
+  
+  cache.sources.forEach(sourceName => {
+    // Check if this is a reference to another cache
+    if (allCaches?.[sourceName]) {
+      urls.push(...collectSourceUrls(sourceName, visitedCaches))
+    } else if (allSources?.[sourceName]?.req?.url) {
+      urls.push(allSources[sourceName].req.url)
+    }
+  })
+  
+  return urls
+}
+
 allLayers.forEach((layer) => {
   const cacheName = layer.sources[0]
-  const sourceNames = allCaches[cacheName].sources
-  const sourceDatas = sourceNames.map((sourceName) => allSources[sourceName])
   const tmsUrl = `https://mapproxy.codefor.de/tiles/1.0.0/${layer.name}/mercator/{z}/{x}/{y}.png`
   const comment = allComments[layer.name]
 
   console.log('Handling', layer.name)
+
+  // Generate WFS Explorer links for each unique source URL
+  const sourceUrls = collectSourceUrls(cacheName)
+  const uniqueSourceUrls = [...new Set(sourceUrls)]
+  const wfsExplorerLinks = uniqueSourceUrls.map(url => {
+    const encodedUrl = encodeURIComponent(url)
+    return `- <a href="https://wfsexplorer.netlify.app/?wfs=${encodedUrl}">WFSExplorer</a> for ${url}`
+  }).join('\n')
+
+  // Collect all actual source configurations by resolving the cache hierarchy
+  function collectSourceConfigs(cacheName: string, visitedCaches = new Set<string>()): any[] {
+    if (visitedCaches.has(cacheName)) return []
+    visitedCaches.add(cacheName)
+    
+    const cache = allCaches?.[cacheName]
+    if (!cache) return []
+    
+    const configs: any[] = []
+    
+    cache.sources.forEach(sourceName => {
+      // Check if this is a reference to another cache
+      if (allCaches?.[sourceName]) {
+        configs.push(...collectSourceConfigs(sourceName, visitedCaches))
+      } else if (allSources?.[sourceName]) {
+        configs.push(allSources[sourceName])
+      }
+    })
+    
+    return configs
+  }
+
+  const sourceDatas = collectSourceConfigs(cacheName)
 
   const listItem = `
 ## ${comment?.deprecated ? '⚠️ ' : ''}${layer.title}
@@ -116,11 +168,13 @@ ${comment?.source_check_note ? `> [!NOTE]\n> ${comment.source_check_note}` : ''}
 - <a href="https://www.openstreetmap.org/edit?editor=id#background=custom:${tmsUrl}&disable_features=boundaries&map=20.00/52.47241/13.44637">Use layer to edit OSM</a>
   ${comment?.osm_editing_note ? `> ${comment.osm_editing_note}` : ''}
 
+${wfsExplorerLinks ? wfsExplorerLinks : ''}
+
 <details>
 <summary>Show layer config options</summary>
 
 \`\`\`
-${JSON.stringify(sourceDatas, undefined, 2)}
+${JSON.stringify(sourceDatas.length > 0 ? sourceDatas : sourceUrls.map(url => ({ url })), undefined, 2)}
 \`\`\`
 
 </details>
