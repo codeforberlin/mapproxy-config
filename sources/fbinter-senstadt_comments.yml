@@ -1,7 +1,7 @@
 2015_cir: 
   deprecated: false
   deprecation_note: null
-  source_check_note: "2024-05-03: https://gdi.berlin.de/viewer/main/ verwendet noch fbinter.stadt-berlin.de.\n"
+  source_check_note: null
   osm_editing_note: null
   last_check_date: 2026-01-30
   check_status: ok

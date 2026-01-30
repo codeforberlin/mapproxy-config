@@ -14,8 +14,6 @@
 
 
 
-> [!NOTE]
-> 2024-05-03: https://gdi.berlin.de/viewer/main/ verwendet noch fbinter.stadt-berlin.de.
 
 
 
@@ -80,7 +78,6 @@
 
 > [!NOTE]
 > 2025-08-02: Added district boundaries (bezirksgrenzen) overlay from gdi.berlin.de/services/wms/alkis_bezirke.
-2024-05-03: https://gdi.berlin.de/viewer/main/ verwendet noch fbinter.stadt-berlin.de.
 
 
 
@@ -823,8 +820,6 @@ Includes both official "Fahrrad Berlin Design" stations and other known repair s
 
 
 
-> [!NOTE]
-> 2024-05-03: https://gdi.berlin.de/viewer/main/ verwendet noch fbinter.stadt-berlin.de.
 
 
 
