@@ -27,13 +27,16 @@ mapproxy-config/
 
 ```bash
 # Start MapProxy locally with Docker
-docker-compose up -d
+docker compose up -d
 
 # View demo with all layers
 open http://localhost:8080/demo/
 
-# View generated demo links
-open http://localhost:3001/
+# View generated demo links -- this does not really work, yet. We cannot view the demo_links/README this way.
+open http://localhost:8888/
+
+# Test tiles from demo_links/README like this
+open http://localhost:8080/tiles/1.0.0/strassenbefahrung/mercator/16/35198/21494.png
 ```
 
 ## Available maps
