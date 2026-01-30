@@ -57,47 +57,33 @@ This MapProxy setup uses a **modular architecture** that separates concerns:
 
 ⚠️ **Important**: MapProxy only processes the first file with a `layers:` section, so all layers must be defined in `config_layers.yml`.
 
+## Helper Scripts
+
+Automated tools for managing configurations:
+
+- **`bun run check-all`**: Run all checks (layer docs, URL validation, demo links)
+- **`bun run discover-layers`**: Discover layers for a WMS service
+- **`bun run generate-layer-docs`**: Generate documentation for all services
+- **`bun run check-urls`**: Validate all WMS URLs and verify layers exist
+- **`bun run create-demo-links`**: Regenerate demo links README
+
+See [docs/wms_wfs_wmts_guide.md](docs/wms_wfs_wmts_guide.md) for detailed usage.
+
 ## Add new layer
 
 ### For Existing Data Sources
 
-1. **Add layer definition** to `config_layers.yml`:
-   ```yaml
-   layers:
-     - name: my_new_layer
-       sources: [my_new_cache]
-       title: "My New Layer"
-   ```
-
-2. **Add cache and source** to the appropriate `sources/xxx.yaml` file:
-   ```yaml
-   caches:
-     my_new_cache:
-       grids: [mercator]
-       sources: [my_new_source]
-   
-   sources:
-     my_new_source:
-       type: wms
-       req:
-         url: https://gdi.berlin.de/services/wms/my_service
-         layers: my_layer
-   ```
-
-3. Use https://gdi.berlin.de/viewer/main/ to inspect network requests
-4. Add documentation in `layer_docs/` if helpful
+1. **Add layer definition** to `config_layers.yml`
+2. **Add cache and source** to the appropriate `sources/xxx.yaml` file
+3. Use `bun run discover-layers <service_url>` to find available layers
+4. See [docs/wms_wfs_wmts_guide.md](docs/wms_wfs_wmts_guide.md) for WMS configuration details
 
 ### For New Data Sources
 
 1. **Create** `sources/new-service.yaml` with caches and sources
-2. **Add layer definitions** to `config_layers.yml` 
-3. **Include the new file** in `config.yml` base section:
-   ```yaml
-   base:
-     - config_layers.yml  # Must be first!
-     # ... existing files
-     - sources/new-service.yaml
-   ```
+2. **Add layer definitions** to `config_layers.yml`
+3. **Include the new file** in `config.yml` base section (after `config_layers.yml`)
+4. Run `bun run check-all` to validate and generate documentation
 
 ## Install
 
@@ -161,56 +147,16 @@ systemctl start nginx
 
 ## Debugging
 
-### Which config sources are recognized by Mapproxy?
+- **Available layers**: Use [MapProxy Debug Page](https://mapproxy.codefor.de/demo/) or `bun run discover-layers <service_url>`
+- **Layer documentation**: See `layer_docs/` for detailed layer information
+- **URL validation**: Run `bun run check-urls` to verify all WMS URLs
+- **Request logging**: Enable in [log.ini](log.ini) and check `mapproxy_log/source-requests.log`
+- **Cache refresh**: Delete `cache_data/` folders to force cache refresh
+- **WMS/WFS details**: See [docs/wms_wfs_wmts_guide.md](docs/wms_wfs_wmts_guide.md)
 
-Use the [Mapproxy Debug Page](https://mapproxy.codefor.de/demo/). It lists all layers that are avaliable based on the config.
-However, there is an issue with the projection, so the previews do not work.
+## Documentation
 
-### Which URLs does the Mapproxy call?
-
-Check that [log.ini](log.ini) "active" (not commented out); if needed, change and restart.
-Use `cat mapproxy-config/mapproxy_log/source-requests.log` to see the requested URLs.
-
-Copy one of those URLs and fiddle with the URL params the browser until the right image is shown.
-
-### Remeber to delete the file system cache.
-
-`ls mapproxy-config/cache_data/` shows all layer that have cached images. Remove the folder to trigger a cache refresh, eg `rm -rf mapproxy-config/cache_data/alkis_30_cache_EPSG900913`
-
-### Remeber to refresh the browser cache.
-
-Even with a fresh file system cache, images might still be cached in the browser. Unfortunately, iD Editor does not allow hard reloads to refresh this data. One workaround is, to zoom and pan the map so new images are requested.
-
-### Which layer are avaliable for a given WMS service?
-
-Use URLs like `https://fbinter.stadt-berlin.de/fb/wms/senstadt/wmsk_alkis?service=WMS&request=GetCapabilities&version=1.3.0` to create a list of layer IDs with description. Examples are [layer_alkis_berlin.md] and [layer_strassenbefahrung_berlin.md].
-
-You can also try https://mybinder.org/v2/gh/rbuffat/eli-helper/master ([GitHub](https://github.com/rbuffat/eli-helper)) with the fbintern URL from above to get a list of avaliable layers.
-
-### Mapproxy documentation.
-
-- https://mapproxy.github.io/mapproxy/latest/index.html
-- https://mapproxy.github.io/mapproxy/latest/configuration_examples.html#merge-multiple-layers how to merge layers
-
-To see the installed version of mapproxy:
-
-```
-cd mapproxy-config
-source env/bin/activate
-mapproxy-util --version
-# MapProxy 1.13.2
-```
-
-## Useful WMS query params
-
-```
-?service=WMS&request=GetCapabilities&version=1.3.0
-```
-
-```
-?format=image%2Fpng&height=512&bbox=388800.010065,5818137.195276,393794.488433,5821374.047744&layers=0&srs=ESPG:25833&style=default&service=WMS&request=GetMap&width=512&version=1.3.0
-```
-
-```
-?width=512&height=512&bbox=388800,5818137,393794,5821374&layers=0&srs=EPSG:4326&styles=default&format=image/png&service=WMS&request=GetMap&version=1.3.0
-```
+- **WMS/WFS/WMTS Guide**: [docs/wms_wfs_wmts_guide.md](docs/wms_wfs_wmts_guide.md) - Protocol details and usage
+- **Layer Documentation**: `layer_docs/` - Detailed layer information (auto-generated)
+- **Demo Links**: [demo_links/README.md](demo_links/README.md) - All available layers with previews
+- **MapProxy Docs**: https://mapproxy.github.io/mapproxy/latest/index.html

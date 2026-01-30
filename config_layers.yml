@@ -70,6 +70,6 @@ layers:
     sources: [2015_cir_cache]
     title: Digitale Color-Infrarot-Orthophotos 2015 (DOP20CIR)
 
-  - name: 2016_cir
-    sources: [2016_cir_cache]
-    title: Digitale Color-Infrarot-Orthophotos 2016 (DOP20CIR)
+  - name: 2020_cir
+    sources: [2020_cir_cache]
+    title: Digitale Color-Infrarot-TrueOrthophotos 2020 (TrueDOP20CIR)

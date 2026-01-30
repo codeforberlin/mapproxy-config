@@ -1,0 +1,24 @@
+{
+  "name": "mapproxy-config",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "check-all": "bun run scripts/check-all.ts && biome check --write .",
+    "check-urls": "bun run scripts/check-urls.ts && biome check --write .",
+    "discover-layers": "bun run scripts/discover-layers.ts && biome check --write .",
+    "generate-layer-docs": "bun run scripts/generate-layer-docs.ts && biome check --write .",
+    "create-demo-links": "bun run scripts/create_readme.ts && biome check --write .",
+    "check": "biome check --write ."
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.11.0",
+    "fast-xml-parser": "^4.3.5"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

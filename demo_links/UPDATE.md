@@ -1,17 +1,17 @@
-# How to update…
+# How to update demo links
 
-## Prepare
+Regenerates `demo_links/README.md` with all layers and URL check results.
 
-- Install Bun
-- Install packages
-  ```
-  cd ./demo_links
-  bun install
-  ```
+## Quick update
 
-## Update
-
+```bash
+bun run create-demo-links
 ```
-cd ./demo_links
-bun run create_readme.ts
+
+Or run all checks (layer docs, URL validation, demo links):
+
+```bash
+bun run check-all
 ```
+
+See [README.md](../README.md#helper-scripts) for all available scripts.

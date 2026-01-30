@@ -16,3 +16,5 @@ cache_data
 mapproxy_log
 
 wsgi.py
+
+node_modules
