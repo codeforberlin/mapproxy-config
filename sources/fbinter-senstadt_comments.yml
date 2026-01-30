@@ -1,20 +1,16 @@
-'2013':
-  deprecated: true
-  deprecation_note:
-  source_check_note: |
-    2024-08-02: Removed; See https://github.com/codeforberlin/tilestache-config/issues/4
-  osm_editing_note:
-
-2015_cir:
+2015_cir: 
   deprecated: false
-  deprecation_note:
-  source_check_note: |
-    2024-05-03: https://gdi.berlin.de/viewer/main/ verwendet noch fbinter.stadt-berlin.de.
-  osm_editing_note:
-
-2016_cir:
+  deprecation_note: null
+  source_check_note: "2024-05-03: https://gdi.berlin.de/viewer/main/ verwendet noch fbinter.stadt-berlin.de.\n"
+  osm_editing_note: null
+  last_check_date: 2026-01-30
+  check_status: ok
+  check_note: "Service accessible, 2 layers available, GetMap test passed"
+2020_cir: 
   deprecated: false
-  deprecation_note:
-  source_check_note: |
-    2024-05-03: https://gdi.berlin.de/viewer/main/ verwendet noch fbinter.stadt-berlin.de.
-  osm_editing_note:
+  deprecation_note: null
+  source_check_note: null
+  osm_editing_note: null
+  last_check_date: 2026-01-30
+  check_status: ok
+  check_note: "Service accessible, 2 layers available, GetMap test passed"

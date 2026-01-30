@@ -11,7 +11,7 @@ sources:
     req:
       format: png
       layers: abstell_mikromob
-      style: default
+      style: abstell_mikromob
       transparent: true
       url: https://gdi.berlin.de/services/wms/abstell_mikromob
     supported_srs: ['EPSG:25833']

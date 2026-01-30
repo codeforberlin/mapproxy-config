@@ -1,17 +1,13 @@
-strassenbefahrung:
+strassenbefahrung: 
   deprecated: false
-  deprecation_note:
-  source_check_note: |
-    2024-05-03: Updated to use gdi.berlin.de.
-  osm_editing_note: |
-    Remember that this data is from 2014.
-    2024-05: Used in https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/de/BerlinStrassenbefahrung.geojson?short_path=10b5602
-
-strassenbefahrung_alkis:
+  deprecation_note: null
+  source_check_note: "2024-05-03: Updated to use gdi.berlin.de.\n"
+  osm_editing_note: "Remember that this data is from 2014.\n2024-05: Used in https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/de/BerlinStrassenbefahrung.geojson?short_path=10b5602\n"
+  last_check_date: 2026-01-30
+  check_status: ok
+  check_note: "Service accessible, 67 layers available, GetMap test passed"
+strassenbefahrung_alkis: 
   deprecated: false
-  deprecation_note:
-  source_check_note: |
-    2024-05-03: Updated to use gdi.berlin.de.
-  osm_editing_note: |
-    Remember that this data is from 2014.
-    2024-05: Used in https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/de/BerlinStrassenbefahrungAlkis.geojson?short_path=10b5602
+  deprecation_note: null
+  source_check_note: "2024-05-03: Updated to use gdi.berlin.de.\n"
+  osm_editing_note: "Remember that this data is from 2014.\n2024-05: Used in https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/de/BerlinStrassenbefahrungAlkis.geojson?short_path=10b5602\n"

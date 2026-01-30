@@ -1,6 +1,8 @@
-atkis_dom:
+atkis_dom: 
   deprecated: false
-  deprecation_note:
-  source_check_note: |
-    2024-05-03: Updated to use gdi.berlin.de.
-  osm_editing_note: OK for trees and houses, but otherwise pretty pixelated.
+  deprecation_note: null
+  source_check_note: "2024-05-03: Updated to use gdi.berlin.de.\n"
+  osm_editing_note: "OK for trees and houses, but otherwise pretty pixelated."
+  last_check_date: 2026-01-30
+  check_status: ok
+  check_note: "Service accessible, 2 layers available, GetMap test passed"

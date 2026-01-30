@@ -1,9 +1,13 @@
-fahrradreparatur_alkis:
+fahrradreparatur_alkis: 
   deprecated: false
-  deprecation_note:
-  source_check_note: |
-    2025-08-02: Added bicycle repair stations from gdi.berlin.de.
-    Part of the extended environmental traffic management system (eUVM) research project.
-    Stations are placed at locations with high bicycle traffic or where cycling should be promoted.
-    Includes both official "Fahrrad Berlin Design" stations and other known repair stations.
+  deprecation_note: null
+  source_check_note: "2025-08-02: Added bicycle repair stations from gdi.berlin.de.\nPart of the extended environmental traffic management system (eUVM) research project.\nStations are placed at locations with high bicycle traffic or where cycling should be promoted.\nIncludes both official \"Fahrrad Berlin Design\" stations and other known repair stations.\n"
   osm_editing_note: Useful for mapping bicycle repair stations. Consider adding amenity=bicycle_repair_station with appropriate tags.
+fahrradreparatur: 
+  deprecated: false
+  deprecation_note: null
+  source_check_note: null
+  osm_editing_note: null
+  last_check_date: 2026-01-30
+  check_status: ok
+  check_note: "Service accessible, 1 layers available, GetMap test passed"

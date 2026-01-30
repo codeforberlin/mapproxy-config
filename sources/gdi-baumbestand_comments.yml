@@ -1,28 +1,36 @@
-baumbestand_0:
+baumbestand_0: 
   deprecated: false
-  deprecation_note:
-  source_check_note: |
-    2024-08-02: Removed; only merged layers remain.
-  osm_editing_note:
-
-baumbestand_1:
+  deprecation_note: null
+  source_check_note: "2024-08-02: Removed; only merged layers remain.\n"
+  osm_editing_note: null
+baumbestand_1: 
   deprecated: false
-  deprecation_note:
-  source_check_note: |
-    2024-08-02: Removed; only merged layers remain.
-  osm_editing_note:
-
-baumbestand_0_1_3_4_merged:
+  deprecation_note: null
+  source_check_note: "2024-08-02: Removed; only merged layers remain.\n"
+  osm_editing_note: null
+baumbestand_0_1_3_4_merged: 
   deprecated: false
-  deprecation_note:
-  source_check_note: |
-    2025-08-02: Updated to gdi URI and new endpoint and layer setup.
+  deprecation_note: null
+  source_check_note: "2025-08-02: Updated to gdi URI and new endpoint and layer setup.\n"
   osm_editing_note: Comprehensive layer with all tree types for mapping.
-
-baumbestand_0_1_3_4_alkis:
+baumbestand_0_1_3_4_alkis: 
   deprecated: false
-  deprecation_note:
-  source_check_note: |
-    2025-08-02: Updated to gdi URI and new endpoint and layer setup.
-  osm_editing_note: |
-    Recommended layer for tree mapping with cadastral background. Includes all tree types.
+  deprecation_note: null
+  source_check_note: "2025-08-02: Updated to gdi URI and new endpoint and layer setup.\n"
+  osm_editing_note: "Recommended layer for tree mapping with cadastral background. Includes all tree types.\n"
+baumbestand_gruen_berlin: 
+  deprecated: false
+  deprecation_note: null
+  source_check_note: null
+  osm_editing_note: null
+  last_check_date: 2026-01-30
+  check_status: ok
+  check_note: "Service accessible, 1 layers available, GetMap test passed"
+baumbestand_0_1_merged: 
+  deprecated: false
+  deprecation_note: null
+  source_check_note: null
+  osm_editing_note: null
+  last_check_date: 2026-01-30
+  check_status: ok
+  check_note: "Service accessible, 2 layers available, GetMap test passed"

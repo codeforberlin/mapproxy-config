@@ -1,5 +1,14 @@
-tempolimits_alkis:
+tempolimits_alkis: 
   deprecated: false
-  deprecation_note:
-  source_check_note:
+  deprecation_note: null
+  source_check_note: null
   osm_editing_note: I did not check if the OSM license waiver applies to this dataset as well.
+tempolimits: 
+  deprecated: false
+  deprecation_note: null
+  source_check_note: null
+  osm_editing_note: null
+  last_check_date: 2026-01-30
+  check_status: ok
+  check_note: "Service accessible, 2 layers available, GetMap test passed"
+  reference_links: "**Sachdaten**: https://gdi.berlin.de/geonetwork/srv/ger/catalog.search#/metadata/e7b13688-63c8-3537-8f98-f1d6b807e62d\n\n**Dokumentation**: https://fbinter.stadt-berlin.de/fb_daten/beschreibung/datenformatbeschreibung/Datenformatbeschreibung_Tempolimits.pdf\n\n**Legende**: https://fbinter.stadt-berlin.de/fb_daten/legenden/leg_tempolimits.png\n"

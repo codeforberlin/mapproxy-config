@@ -23,7 +23,7 @@ sources:
     req:
       format: png
       layers: anlagenbaum_gruenberlin
-      style: default
+      style: baum_gruen_berlin
       transparent: true
       url: https://gdi.berlin.de/services/wms/baumbestand_gruen_berlin
     supported_srs: ['EPSG:25833']

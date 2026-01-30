@@ -11,7 +11,7 @@ sources:
     req:
       format: png
       layers: b_strassenelemente,a_verbindungspunkte
-      style: default
+      style: strassenelemente,verbindungspunkte
       transparent: true
       url: https://gdi.berlin.de/services/wms/fussgaengernetz
     supported_srs: ['EPSG:25833']

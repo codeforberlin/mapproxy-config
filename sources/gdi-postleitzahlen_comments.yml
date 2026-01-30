@@ -1,6 +1,13 @@
-postleitzahlen_alkis:
+postleitzahlen_alkis: 
   deprecated: false
-  deprecation_note:
-  source_check_note: |
-    2025-08-02: Added postal code boundaries from gdi.berlin.de.
+  deprecation_note: null
+  source_check_note: "2025-08-02: Added postal code boundaries from gdi.berlin.de.\n"
   osm_editing_note: Useful for understanding postal code boundaries when mapping addresses.
+postleitzahlen: 
+  deprecated: false
+  deprecation_note: null
+  source_check_note: null
+  osm_editing_note: null
+  last_check_date: 2026-01-30
+  check_status: ok
+  check_note: "Service accessible, 1 layers available, GetMap test passed"

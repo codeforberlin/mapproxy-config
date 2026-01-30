@@ -1,5 +1,13 @@
-fussgaengernetz_alkis:
+fussgaengernetz_alkis: 
   deprecated: false
-  deprecation_note:
-  source_check_note:
+  deprecation_note: null
+  source_check_note: null
   osm_editing_note: I did not check if the OSM license waiver applies to this dataset as well.
+fussgaengernetz: 
+  deprecated: false
+  deprecation_note: null
+  source_check_note: null
+  osm_editing_note: null
+  last_check_date: 2026-01-30
+  check_status: ok
+  check_note: "Service accessible, 2 layers available, GetMap test passed"

@@ -12,7 +12,7 @@ sources:
     req:
       format: png
       layers: hoechstgeschwindigkeit
-      style: default
+      style: tempolimits_vmax
       transparent: true
       url: https://gdi.berlin.de/services/wms/tempolimits
     supported_srs: ['EPSG:25833']

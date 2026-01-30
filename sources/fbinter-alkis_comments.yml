@@ -1,14 +1,24 @@
-alkis_30:
+alkis_30: 
   deprecated: false
-  deprecation_note:
-  source_check_note: |
-    2024-05-03: https://gdi.berlin.de/viewer/main/ verwendet noch fbinter.stadt-berlin.de.
+  deprecation_note: null
+  source_check_note: "2024-05-03: https://gdi.berlin.de/viewer/main/ verwendet noch fbinter.stadt-berlin.de.\n"
   osm_editing_note: Used in https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/de/BerlinAlkis.geojson?short_path=b7406a2
-
-alkis_sw:
+  last_check_date: 2026-01-30
+  check_status: ok
+  check_note: "Service accessible, 7 layers available, GetMap test passed"
+alkis_sw: 
   deprecated: false
-  deprecation_note:
-  source_check_note: |
-    2025-08-02: Added district boundaries (bezirksgrenzen) overlay from gdi.berlin.de/services/wms/alkis_bezirke.
-    2024-05-03: https://gdi.berlin.de/viewer/main/ verwendet noch fbinter.stadt-berlin.de.
-  osm_editing_note:
+  deprecation_note: null
+  source_check_note: "2025-08-02: Added district boundaries (bezirksgrenzen) overlay from gdi.berlin.de/services/wms/alkis_bezirke.\n2024-05-03: https://gdi.berlin.de/viewer/main/ verwendet noch fbinter.stadt-berlin.de.\n"
+  osm_editing_note: null
+  last_check_date: 2026-01-30
+  check_status: ok
+  check_note: "Service accessible, 7 layers available, GetMap test passed"
+alkis_bezirke: 
+  deprecated: false
+  deprecation_note: null
+  source_check_note: null
+  osm_editing_note: null
+  last_check_date: 2026-01-30
+  check_status: ok
+  check_note: "Service accessible, 1 layers available, GetMap test passed"

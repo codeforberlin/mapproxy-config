@@ -11,7 +11,7 @@ sources:
     req:
       format: png
       layers: fahrradreparatur
-      style: default
+      style: fahrradreparatur
       transparent: true
       url: https://gdi.berlin.de/services/wms/fahrradreparatur
     supported_srs: ['EPSG:25833']

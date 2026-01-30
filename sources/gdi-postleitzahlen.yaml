@@ -11,7 +11,7 @@ sources:
     req:
       format: png
       layers: postleitzahlen
-      style: default
+      style: postleitzahlen
       transparent: true
       url: https://gdi.berlin.de/services/wms/postleitzahlen
     supported_srs: ['EPSG:25833']
