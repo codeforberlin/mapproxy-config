@@ -1,4 +1,4 @@
-strassenbefahrung: 
+strassenbefahrung:
   deprecated: false
   deprecation_note: null
   source_check_note: "2024-05-03: Updated to use gdi.berlin.de.\n"
@@ -6,7 +6,7 @@ strassenbefahrung:
   last_check_date: 2026-01-30
   check_status: ok
   check_note: "Service accessible, 67 layers available, GetMap test passed"
-strassenbefahrung_alkis: 
+strassenbefahrung_alkis:
   deprecated: false
   deprecation_note: null
   source_check_note: "2024-05-03: Updated to use gdi.berlin.de.\n"

@@ -1,4 +1,4 @@
-2015_cir: 
+2015_cir:
   deprecated: false
   deprecation_note: null
   source_check_note: null
@@ -6,7 +6,7 @@
   last_check_date: 2026-01-30
   check_status: ok
   check_note: "Service accessible, 2 layers available, GetMap test passed"
-2020_cir: 
+2020_cir:
   deprecated: false
   deprecation_note: null
   source_check_note: null

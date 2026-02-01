@@ -1,9 +1,9 @@
-k_oeffbeleucht_alkis: 
+k_oeffbeleucht_alkis:
   deprecated: false
   deprecation_note: null
   source_check_note: "2025-08-02: Updated to use gdi.berlin.de/services/wms/beleuchtung.\n2024-05-03: Added from https://daten.berlin.de/datensaetze/%C3%B6ffentliche-beleuchtung-wms\n"
   osm_editing_note: I did not check if the OSM license waiver applies to this dataset as well.
-k_oeffbeleucht: 
+k_oeffbeleucht:
   deprecated: false
   deprecation_note: null
   source_check_note: null

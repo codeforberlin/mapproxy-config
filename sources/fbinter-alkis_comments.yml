@@ -1,4 +1,4 @@
-alkis_30: 
+alkis_30:
   deprecated: false
   deprecation_note: null
   source_check_note: null
@@ -6,7 +6,7 @@ alkis_30:
   last_check_date: 2026-01-30
   check_status: ok
   check_note: "Service accessible, 7 layers available, GetMap test passed"
-alkis_sw: 
+alkis_sw:
   deprecated: false
   deprecation_note: null
   source_check_note: "2025-08-02: Added district boundaries (bezirksgrenzen) overlay from gdi.berlin.de/services/wms/alkis_bezirke.\n"
@@ -14,7 +14,7 @@ alkis_sw:
   last_check_date: 2026-01-30
   check_status: ok
   check_note: "Service accessible, 7 layers available, GetMap test passed"
-alkis_bezirke: 
+alkis_bezirke:
   deprecated: false
   deprecation_note: null
   source_check_note: null

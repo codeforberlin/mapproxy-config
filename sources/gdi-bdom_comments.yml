@@ -1,4 +1,4 @@
-atkis_dom: 
+atkis_dom:
   deprecated: false
   deprecation_note: null
   source_check_note: "2024-05-03: Updated to use gdi.berlin.de.\n"

@@ -1,4 +1,4 @@
-# gdi.berlin.de/services/wms/fussgaengernetz - Pedestrian Network  
+# gdi.berlin.de/services/wms/fussgaengernetz - Pedestrian Network
 # Pedestrian network data with ALKIS background
 
 caches:
@@ -14,7 +14,7 @@ sources:
       style: strassenelemente,verbindungspunkte
       transparent: true
       url: https://gdi.berlin.de/services/wms/fussgaengernetz
-    supported_srs: ['EPSG:25833']
+    supported_srs: ["EPSG:25833"]
     type: wms
     wms_opts: { version: 1.3.0 }
 

@@ -1,9 +1,9 @@
-abstell_mikromob_alkis: 
+abstell_mikromob_alkis:
   deprecated: false
   deprecation_note: null
   source_check_note: "2025-08-02: Added micromobility parking areas from gdi.berlin.de.\nShows designated parking areas for rental bikes, e-scooters and other micromobility vehicles.\n"
   osm_editing_note: Useful for mapping designated parking areas for shared mobility services. Consider adding amenity=bicycle_parking with appropriate tags.
-abstell_mikromob: 
+abstell_mikromob:
   deprecated: false
   deprecation_note: null
   source_check_note: null
