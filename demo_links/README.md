@@ -10,7 +10,11 @@
 
 ## ALKIS Berlin (Amtliches Liegenschaftskatasterinformationssystem)
 
-<img src="https://mapproxy.codefor.de/tiles/1.0.0/alkis_30/mercator/16/35198/21494.png" width=200 alt="Demo image for ALKIS Berlin (Amtliches Liegenschaftskatasterinformationssystem)" />
+<img src="https://mapproxy.codefor.de/tiles/1.0.0/alkis_30/mercator/18/140850/86019.png" width=200 alt="Demo image for ALKIS Berlin (Amtliches Liegenschaftskatasterinformationssystem)" />
+
+```
+https://mapproxy.codefor.de/tiles/1.0.0/alkis_30/mercator/18/140850/86019.png
+```
 
 
 
@@ -37,7 +41,6 @@
     "req": {
       "format": "png",
       "layers": "a_alkis_raster",
-      "style": "default-style-a_alkis_raster",
       "transparent": false,
       "url": "https://gdi.berlin.de/services/wms/alkis"
     },
@@ -53,7 +56,6 @@
     "req": {
       "format": "png",
       "layers": "bezirksgrenzen",
-      "style": "alkis_bezirke",
       "transparent": true,
       "url": "https://gdi.berlin.de/services/wms/alkis_bezirke"
     },
@@ -72,7 +74,11 @@
 
 ## ALKIS Berlin s/w (Amtliches Liegenschaftskatasterinformationssystem)
 
-<img src="https://mapproxy.codefor.de/tiles/1.0.0/alkis_sw/mercator/16/35198/21494.png" width=200 alt="Demo image for ALKIS Berlin s/w (Amtliches Liegenschaftskatasterinformationssystem)" />
+<img src="https://mapproxy.codefor.de/tiles/1.0.0/alkis_sw/mercator/18/140850/86019.png" width=200 alt="Demo image for ALKIS Berlin s/w (Amtliches Liegenschaftskatasterinformationssystem)" />
+
+```
+https://mapproxy.codefor.de/tiles/1.0.0/alkis_sw/mercator/18/140850/86019.png
+```
 
 
 
@@ -100,7 +106,6 @@
     "req": {
       "format": "png",
       "layers": "a_alkis_raster_sw",
-      "style": "default-style-a_alkis_raster_sw",
       "transparent": false,
       "url": "https://gdi.berlin.de/services/wms/alkis"
     },
@@ -119,7 +124,11 @@
 
 ## Baumbestand Berlin - Straßenbäume, Anlagenbäume und Grün Berlin
 
-<img src="https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0_1_3_4_merged/mercator/16/35198/21494.png" width=200 alt="Demo image for Baumbestand Berlin - Straßenbäume, Anlagenbäume und Grün Berlin" />
+<img src="https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0_1_3_4_merged/mercator/18/140850/86019.png" width=200 alt="Demo image for Baumbestand Berlin - Straßenbäume, Anlagenbäume und Grün Berlin" />
+
+```
+https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0_1_3_4_merged/mercator/18/140850/86019.png
+```
 
 
 
@@ -183,7 +192,11 @@
 
 ## Baumbestand Berlin - Straßenbäume, Anlagenbäume und Grün Berlin, ALKIS Berlin s/w
 
-<img src="https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0_1_3_4_alkis/mercator/16/35198/21494.png" width=200 alt="Demo image for Baumbestand Berlin - Straßenbäume, Anlagenbäume und Grün Berlin, ALKIS Berlin s/w" />
+<img src="https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0_1_3_4_alkis/mercator/18/140850/86019.png" width=200 alt="Demo image for Baumbestand Berlin - Straßenbäume, Anlagenbäume und Grün Berlin, ALKIS Berlin s/w" />
+
+```
+https://mapproxy.codefor.de/tiles/1.0.0/baumbestand_0_1_3_4_alkis/mercator/18/140850/86019.png
+```
 
 
 
@@ -214,7 +227,6 @@
     "req": {
       "format": "png",
       "layers": "a_alkis_raster_sw",
-      "style": "default-style-a_alkis_raster_sw",
       "transparent": false,
       "url": "https://gdi.berlin.de/services/wms/alkis"
     },
@@ -265,7 +277,11 @@
 
 ## ATKIS® DOM - Digitales Oberflächenmodell
 
-<img src="https://mapproxy.codefor.de/tiles/1.0.0/atkis_dom/mercator/16/35198/21494.png" width=200 alt="Demo image for ATKIS® DOM - Digitales Oberflächenmodell" />
+<img src="https://mapproxy.codefor.de/tiles/1.0.0/atkis_dom/mercator/18/140850/86019.png" width=200 alt="Demo image for ATKIS® DOM - Digitales Oberflächenmodell" />
+
+```
+https://mapproxy.codefor.de/tiles/1.0.0/atkis_dom/mercator/18/140850/86019.png
+```
 
 
 
@@ -312,7 +328,11 @@
 
 ## Fußgängernetz, ALKIS Berlin s/w
 
-<img src="https://mapproxy.codefor.de/tiles/1.0.0/fussgaengernetz_alkis/mercator/16/35198/21494.png" width=200 alt="Demo image for Fußgängernetz, ALKIS Berlin s/w" />
+<img src="https://mapproxy.codefor.de/tiles/1.0.0/fussgaengernetz_alkis/mercator/18/140850/86019.png" width=200 alt="Demo image for Fußgängernetz, ALKIS Berlin s/w" />
+
+```
+https://mapproxy.codefor.de/tiles/1.0.0/fussgaengernetz_alkis/mercator/18/140850/86019.png
+```
 
 
 
@@ -339,7 +359,6 @@
     "req": {
       "format": "png",
       "layers": "a_alkis_raster_sw",
-      "style": "default-style-a_alkis_raster_sw",
       "transparent": false,
       "url": "https://gdi.berlin.de/services/wms/alkis"
     },
@@ -374,7 +393,11 @@
 
 ## Straßenbefahrung 2014
 
-<img src="https://mapproxy.codefor.de/tiles/1.0.0/strassenbefahrung/mercator/16/35198/21494.png" width=200 alt="Demo image for Straßenbefahrung 2014" />
+<img src="https://mapproxy.codefor.de/tiles/1.0.0/strassenbefahrung/mercator/18/140850/86019.png" width=200 alt="Demo image for Straßenbefahrung 2014" />
+
+```
+https://mapproxy.codefor.de/tiles/1.0.0/strassenbefahrung/mercator/18/140850/86019.png
+```
 
 
 
@@ -422,7 +445,11 @@
 
 ## Straßenbefahrung 2014, ALKIS Berlin s/w
 
-<img src="https://mapproxy.codefor.de/tiles/1.0.0/strassenbefahrung_alkis/mercator/16/35198/21494.png" width=200 alt="Demo image for Straßenbefahrung 2014, ALKIS Berlin s/w" />
+<img src="https://mapproxy.codefor.de/tiles/1.0.0/strassenbefahrung_alkis/mercator/18/140850/86019.png" width=200 alt="Demo image for Straßenbefahrung 2014, ALKIS Berlin s/w" />
+
+```
+https://mapproxy.codefor.de/tiles/1.0.0/strassenbefahrung_alkis/mercator/18/140850/86019.png
+```
 
 
 
@@ -453,7 +480,6 @@
     "req": {
       "format": "png",
       "layers": "a_alkis_raster_sw",
-      "style": "default-style-a_alkis_raster_sw",
       "transparent": false,
       "url": "https://gdi.berlin.de/services/wms/alkis"
     },
@@ -487,7 +513,11 @@
 
 ## Tempolimits, ALKIS Berlin s/w
 
-<img src="https://mapproxy.codefor.de/tiles/1.0.0/tempolimits_alkis/mercator/16/35198/21494.png" width=200 alt="Demo image for Tempolimits, ALKIS Berlin s/w" />
+<img src="https://mapproxy.codefor.de/tiles/1.0.0/tempolimits_alkis/mercator/18/140850/86019.png" width=200 alt="Demo image for Tempolimits, ALKIS Berlin s/w" />
+
+```
+https://mapproxy.codefor.de/tiles/1.0.0/tempolimits_alkis/mercator/18/140850/86019.png
+```
 
 
 
@@ -520,7 +550,6 @@
     "req": {
       "format": "png",
       "layers": "a_alkis_raster_sw",
-      "style": "default-style-a_alkis_raster_sw",
       "transparent": false,
       "url": "https://gdi.berlin.de/services/wms/alkis"
     },
@@ -555,7 +584,11 @@
 
 ## Postleitzahlen, ALKIS Berlin s/w
 
-<img src="https://mapproxy.codefor.de/tiles/1.0.0/postleitzahlen_alkis/mercator/16/35198/21494.png" width=200 alt="Demo image for Postleitzahlen, ALKIS Berlin s/w" />
+<img src="https://mapproxy.codefor.de/tiles/1.0.0/postleitzahlen_alkis/mercator/18/140850/86019.png" width=200 alt="Demo image for Postleitzahlen, ALKIS Berlin s/w" />
+
+```
+https://mapproxy.codefor.de/tiles/1.0.0/postleitzahlen_alkis/mercator/18/140850/86019.png
+```
 
 
 
@@ -584,7 +617,6 @@
     "req": {
       "format": "png",
       "layers": "a_alkis_raster_sw",
-      "style": "default-style-a_alkis_raster_sw",
       "transparent": false,
       "url": "https://gdi.berlin.de/services/wms/alkis"
     },
@@ -619,7 +651,11 @@
 
 ## Abstellflächen für Mikromobilitätsangebote, ALKIS Berlin s/w
 
-<img src="https://mapproxy.codefor.de/tiles/1.0.0/abstell_mikromob_alkis/mercator/16/35198/21494.png" width=200 alt="Demo image for Abstellflächen für Mikromobilitätsangebote, ALKIS Berlin s/w" />
+<img src="https://mapproxy.codefor.de/tiles/1.0.0/abstell_mikromob_alkis/mercator/18/140850/86019.png" width=200 alt="Demo image for Abstellflächen für Mikromobilitätsangebote, ALKIS Berlin s/w" />
+
+```
+https://mapproxy.codefor.de/tiles/1.0.0/abstell_mikromob_alkis/mercator/18/140850/86019.png
+```
 
 
 
@@ -649,7 +685,6 @@ Shows designated parking areas for rental bikes, e-scooters and other micromobil
     "req": {
       "format": "png",
       "layers": "a_alkis_raster_sw",
-      "style": "default-style-a_alkis_raster_sw",
       "transparent": false,
       "url": "https://gdi.berlin.de/services/wms/alkis"
     },
@@ -684,7 +719,11 @@ Shows designated parking areas for rental bikes, e-scooters and other micromobil
 
 ## Fahrradreparaturstationen, ALKIS Berlin s/w
 
-<img src="https://mapproxy.codefor.de/tiles/1.0.0/fahrradreparatur_alkis/mercator/16/35198/21494.png" width=200 alt="Demo image for Fahrradreparaturstationen, ALKIS Berlin s/w" />
+<img src="https://mapproxy.codefor.de/tiles/1.0.0/fahrradreparatur_alkis/mercator/18/140850/86019.png" width=200 alt="Demo image for Fahrradreparaturstationen, ALKIS Berlin s/w" />
+
+```
+https://mapproxy.codefor.de/tiles/1.0.0/fahrradreparatur_alkis/mercator/18/140850/86019.png
+```
 
 
 
@@ -716,7 +755,6 @@ Includes both official "Fahrrad Berlin Design" stations and other known repair s
     "req": {
       "format": "png",
       "layers": "a_alkis_raster_sw",
-      "style": "default-style-a_alkis_raster_sw",
       "transparent": false,
       "url": "https://gdi.berlin.de/services/wms/alkis"
     },
@@ -751,7 +789,11 @@ Includes both official "Fahrrad Berlin Design" stations and other known repair s
 
 ## Öffentliche Beleuchtung, ALKIS Berlin s/w
 
-<img src="https://mapproxy.codefor.de/tiles/1.0.0/k_oeffbeleucht_alkis/mercator/16/35198/21494.png" width=200 alt="Demo image for Öffentliche Beleuchtung, ALKIS Berlin s/w" />
+<img src="https://mapproxy.codefor.de/tiles/1.0.0/k_oeffbeleucht_alkis/mercator/18/140850/86019.png" width=200 alt="Demo image for Öffentliche Beleuchtung, ALKIS Berlin s/w" />
+
+```
+https://mapproxy.codefor.de/tiles/1.0.0/k_oeffbeleucht_alkis/mercator/18/140850/86019.png
+```
 
 
 
@@ -781,7 +823,6 @@ Includes both official "Fahrrad Berlin Design" stations and other known repair s
     "req": {
       "format": "png",
       "layers": "a_alkis_raster_sw",
-      "style": "default-style-a_alkis_raster_sw",
       "transparent": false,
       "url": "https://gdi.berlin.de/services/wms/alkis"
     },
@@ -816,7 +857,11 @@ Includes both official "Fahrrad Berlin Design" stations and other known repair s
 
 ## Digitale Color-Infrarot-Orthophotos 2015 (DOP20CIR)
 
-<img src="https://mapproxy.codefor.de/tiles/1.0.0/2015_cir/mercator/16/35198/21494.png" width=200 alt="Demo image for Digitale Color-Infrarot-Orthophotos 2015 (DOP20CIR)" />
+<img src="https://mapproxy.codefor.de/tiles/1.0.0/2015_cir/mercator/18/140850/86019.png" width=200 alt="Demo image for Digitale Color-Infrarot-Orthophotos 2015 (DOP20CIR)" />
+
+```
+https://mapproxy.codefor.de/tiles/1.0.0/2015_cir/mercator/18/140850/86019.png
+```
 
 
 
@@ -861,7 +906,11 @@ Includes both official "Fahrrad Berlin Design" stations and other known repair s
 
 ## Digitale Color-Infrarot-TrueOrthophotos 2020 (TrueDOP20CIR)
 
-<img src="https://mapproxy.codefor.de/tiles/1.0.0/2020_cir/mercator/16/35198/21494.png" width=200 alt="Demo image for Digitale Color-Infrarot-TrueOrthophotos 2020 (TrueDOP20CIR)" />
+<img src="https://mapproxy.codefor.de/tiles/1.0.0/2020_cir/mercator/18/140850/86019.png" width=200 alt="Demo image for Digitale Color-Infrarot-TrueOrthophotos 2020 (TrueDOP20CIR)" />
+
+```
+https://mapproxy.codefor.de/tiles/1.0.0/2020_cir/mercator/18/140850/86019.png
+```
 
 
 

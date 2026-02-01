@@ -130,9 +130,12 @@ function collectSourceConfigs(cacheName: string, visitedCaches = new Set<string>
   return configs
 }
 
+const demoTile = { z: 18, x: 140850, y: 86019 }
+
 for (const layer of allLayers) {
   const cacheName = layer.sources[0]
   const tmsUrl = `https://mapproxy.codefor.de/tiles/1.0.0/${layer.name}/mercator/{z}/{x}/{y}.png`
+  const demoImageUrl = `https://mapproxy.codefor.de/tiles/1.0.0/${layer.name}/mercator/${demoTile.z}/${demoTile.x}/${demoTile.y}.png`
 
   const sourceDatas = collectSourceConfigs(cacheName)
 
@@ -194,10 +197,11 @@ ${comment.suggested_new_url ? `\n**Suggested URL**: ${comment.suggested_new_url}
   const listItem = `
 ## ${comment?.deprecated ? '⚠️ ' : ''}${layer.title}
 
-<img src="${tmsUrl
-    .replace('{z}', '16')
-    .replace('{x}', '35198')
-    .replace('{y}', '21494')}" width=200 alt="Demo image for ${layer.title}" />
+<img src="${demoImageUrl}" width=200 alt="Demo image for ${layer.title}" />
+
+\`\`\`
+${demoImageUrl}
+\`\`\`
 
 ${comment?.deprecation_note ? `> [!CAUTION]\n> ${comment.deprecation_note}` : ''}
 
