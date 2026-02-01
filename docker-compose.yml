@@ -8,8 +8,13 @@ services:
     volumes:
       # Mount configuration files for live editing
       - ./config.yml:/mapproxy/config.yml:ro
+      - ./config_layers.yml:/mapproxy/config_layers.yml:ro
+      - ./sources:/mapproxy/sources:ro
       - ./log.ini:/mapproxy/log.ini:ro
+      - ./run_mapproxy.py:/mapproxy/run_mapproxy.py:ro
       - ./endpoints:/mapproxy/endpoints:ro
+      # Request logs (source URLs) for debugging
+      - ./mapproxy_log:/mapproxy/mapproxy_log
     environment:
       - MAPPROXY_PROCESSES=1
       - MAPPROXY_THREADS=4

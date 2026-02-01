@@ -39,6 +39,12 @@ open http://localhost:8888/
 open http://localhost:8080/tiles/1.0.0/strassenbefahrung/mercator/16/35198/21494.png
 ```
 
+**Applying config changes:** `config.yml`, `config_layers.yml` and `sources/` are mounted into the container. After editing any of these, restart MapProxy (no image rebuild):
+
+```bash
+docker compose restart mapproxy
+```
+
 ## Available maps
 
 [🗺 A list of all available maps with demo and editing urls …](./demo_links)
