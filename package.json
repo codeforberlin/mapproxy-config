@@ -8,7 +8,8 @@
     "discover-layers": "bun run scripts/discover-layers.ts && biome check --write .",
     "generate-layer-docs": "bun run scripts/generate-layer-docs.ts && biome check --write .",
     "create-demo-links": "bun run scripts/create_readme.ts && biome check --write .",
-    "check": "biome check --write ."
+    "check": "biome check --write .",
+    "format:yaml": "prettier --write \"**/*.yml\" \"**/*.yaml\""
   },
   "dependencies": {
     "@clack/prompts": "^0.11.0",
@@ -16,7 +17,8 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "prettier": "^3.4.2"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
